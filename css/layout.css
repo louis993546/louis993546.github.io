@@ -325,36 +325,27 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
+.Cpp {
+  	width: 70%;
+  	-moz-animation: Cpp 2s ease;
+  	-webkit-animation: Cpp 2s ease;
+}
+.Java {
   	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+  	-moz-animation: Java 2s ease;
+  	-webkit-animation: Java 2s ease;
 }
-.illustrator {
+.Csharp {
   	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+  	-moz-animation: Csharp 2s ease;
+  	-webkit-animation: Csharp 2s ease;
 }
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.Lightroom {
+  	width: 40%;
+  	-moz-animation: Lightroom 2s ease;
+  	-webkit-animation: Lightroom 2s ease;
 }
-.css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
-}
-.html5 {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
-}
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
-}
+
 
 @-moz-keyframes photoshop {
   0%   { width: 0px;  }
