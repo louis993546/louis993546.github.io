@@ -1,3 +1,19 @@
+Louis Tsai's personal website
+=====================================
+
+Needs to be fix:
+
+1. Content
+
+2. a lot of links
+
+   1. font awesome icons
+
+   2. Download Resume
+
+3. font color
+
+4. etc
 
 ==================================================================================================
 
