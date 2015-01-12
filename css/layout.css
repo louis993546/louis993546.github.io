@@ -345,7 +345,21 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: Lightroom 2s ease;
   	-webkit-animation: Lightroom 2s ease;
 }
-
+.Madarine {
+  	width: 60%;
+  	-moz-animation: Madarine 2s ease;
+  	-webkit-animation: Madarine 2s ease;
+}
+.English {
+  	width: 70%;
+  	-moz-animation: English 2s ease;
+  	-webkit-animation: English 2s ease;
+}
+.Cantonese {
+  	width: 80%;
+  	-moz-animation: Cantonese 2s ease;
+  	-webkit-animation: Cantonese 2s ease;
+}
 
 @-moz-keyframes photoshop {
   0%   { width: 0px;  }
