@@ -326,12 +326,12 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .Cpp {
-  	width: 70%;
+  	width: 60%;
   	-moz-animation: Cpp 2s ease;
   	-webkit-animation: Cpp 2s ease;
 }
 .Java {
-  	width: 60%;
+  	width: 75%;
   	-moz-animation: Java 2s ease;
   	-webkit-animation: Java 2s ease;
 }
@@ -340,7 +340,7 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: Csharp 2s ease;
   	-webkit-animation: Csharp 2s ease;
 }
-.Lightroom {
+.Javascript {
   	width: 40%;
   	-moz-animation: Lightroom 2s ease;
   	-webkit-animation: Lightroom 2s ease;
@@ -355,8 +355,8 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: English 2s ease;
   	-webkit-animation: English 2s ease;
 }
-.Cantonese {
-  	width: 80%;
+.German {
+  	width: 30%;
   	-moz-animation: Cantonese 2s ease;
   	-webkit-animation: Cantonese 2s ease;
 }
