@@ -12,6 +12,11 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        
+        <!-- CSS -->
+        <link href='assets/css/styles.css' rel='stylesheet'>
+        <!-- JS -->
+        <script src='assets/js/GifLinks.min.js'></script>
 	</head>
 	<body id="top">
 
@@ -30,7 +35,7 @@
                     <header class="major">
                         <h2>About me</h2>
                     </header>
-                    <p>I am in my junior year in Hong Kong University of Science and Technology, interested in finding ways to make people's life better with my knowledge in computer and other fields</p>
+                    <p>I am a soon-to-be-graduate university student majoring in Computer Science, interested in finding ways to make people's life better with my knowledge in computer and other fields</p>
                     <ul class="actions fit">
 								<li><a href="TSAITszHoCV.pdf" class="button special fit icon fa-download">Download my CV here</a></li>
 							</ul>
@@ -50,11 +55,15 @@
 											<td>80%</td>
 										</tr>
                                         <tr>
+											<td>Android</td>
+											<td>75%</td>
+										</tr>
+                                        <tr>
 											<td>C#</td>
 											<td>50%</td>
 										</tr>
 										<tr>
-											<td>node.js</td>
+											<td>Node.js</td>
 											<td>40%</td>
 										</tr>
 										<tr>
@@ -63,7 +72,7 @@
 										</tr>
 										<tr>
 											<td>HTML/JS/CSS</td>
-											<td>30%</td>
+											<td>25%</td>
 										</tr>
 									</tbody>
 								</table>
@@ -78,7 +87,7 @@
 									</thead>
 									<tbody>
                                         <tr>
-											<td><a href="images/imsuperchillallthetime.gif">Chill</a></td>
+                                            <td><article><a class="giflink" data-src="images/imsuperchillallthetime.gif">Chill</a></article></td>
 											<td>100%</td>
 										</tr>
                                         <tr>
@@ -87,15 +96,19 @@
 										</tr>
                                         <tr>
 											<td>Project Management</td>
-											<td>40%</td>
+											<td>60%</td>
 										</tr>
                                         <tr>
 											<td>UI/UX Design</td>
-											<td>30%</td>
+											<td>50%</td>
 										</tr>
                                         <tr>
 											<td>German</td>
-											<td>20%</td>
+											<td>10%</td>
+										</tr>
+                                        <tr>
+											<td>HTML/JS/CSS</td>
+											<td>30%</td>
 										</tr>
 									</tbody>
 								</table>
@@ -517,6 +530,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+            
+            <script src="assets/js/GifLinks.min.js"></script>
+        
+        <script>
+            var elements = document.querySelectorAll( 'article a' );
+            GifLinks( elements );
+        </script>
 	</body>
 </html>
