@@ -1,0 +1,13 @@
+
+article {
+	
+}
+
+article .giflink {
+	color: rgb(245, 90, 3);
+	font-style: italic;
+}
+
+article .no-link {
+	cursor: default;
+}
