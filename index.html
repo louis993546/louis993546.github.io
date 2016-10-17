@@ -1,565 +1,949 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Louis Tsai</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <!-- giflink -->
-        <link href='assets/css/giflink.css' rel='stylesheet'>
-	</head>
-	<body id="top">
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="#" class="image avatar"><img src="images/profilepic.jpg" alt="" /></a>
-				<h1><strong>I am Louis</strong>, a developer<br />
-				from <a href="http://html5up.net">Hong Kong</a>.</h1>
-			</header>
+        <!--- basic page needs
+================================================== -->
+        <meta charset="utf-8">
+        <title>Louis Tsai - Portfolio</title>
+        <meta name="description" content="">  
+        <meta name="author" content="">
 
-		<!-- Main -->
-			<div id="main">
+        <!-- mobile specific metas
+================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-				<!-- about me -->
-                <section id="who">
-                    <header class="major">
-                        <h2>About me</h2>
-                    </header>
-                    <p>I am a recently university graduate with a BEng in Computer Science, interested in finding ways to make people's life better with my knowledge in computer and other fields</p>
-                    <ul class="actions fit">
-								<li><a href="TSAITszHoCV.pdf" class="button special fit icon fa-download">Download my CV here</a></li>
-							</ul>
+        <!-- CSS
+================================================== -->
+        <link rel="stylesheet" href="css/base.css">  
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/vendor.css">     
+
+        <!-- script
+================================================== -->   
+        <script src="js/modernizr.js"></script>
+        <script src="js/pace.min.js"></script>
+
+        <!-- favicons
+================================================== -->
+        <link rel="icon" type="image/png" href="favicon.png">
+
+    </head>
+
+    <body id="top">
+
+        <!-- header 
+================================================== -->
+        <header>   	
+            <div class="row">
+
+                <div class="top-bar">
+                    <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+                    <div class="logo">
+                        <a href="index.html">KARDS</a>
+                    </div>		      
+
+                    <nav id="main-nav-wrap">
+                        <ul class="main-navigation">
+                            <li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+                            <li><a class="smoothscroll"  href="#about" title="">About</a></li>
+                            <li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+                            <li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+                            <li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+                            <li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+                            <li><a href="styles.html" title="">Style Demo</a></li>				
+                        </ul>
+                    </nav>    		
+                </div> <!-- /top-bar --> 
+
+            </div> <!-- /row --> 		
+        </header> <!-- /header -->
+
+        <!-- intro section
+================================================== -->
+        <section id="intro">   
+
+            <div class="intro-overlay"></div>	
+
+            <div class="intro-content">
+                <div class="row">
+
+                    <div class="col-twelve">
+
+                        <h5>Developer for hire:</h5>
+                        <h1>Louis Tsai.</h1>
+
+                        <p class="intro-position">
+                            <span>Android Developer</span>
+                        </p>
+
+                        <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+                    </div>  
+
+                </div>   		 		
+            </div> <!-- /intro-content --> 
+
+            <ul class="intro-social">        
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul> <!-- /intro-social -->      	
+
+        </section> <!-- /intro -->
+
+
+        <!-- about section
+================================================== -->
+        <section id="about">  
+
+            <div class="row section-intro">
+                <div class="col-twelve">
+
+                    <h5>About</h5>
+                    <h1>Let me introduce myself.</h1>
+
+                    <div class="intro-info">
+
+                        <img src="images/profile-pic.jpg" alt="Profile Picture">
+
+                        <p class="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
+                    </div>   			
+
+                </div>   		
+            </div> <!-- /section-intro -->
+
+            <div class="row about-content">
+
+                <div class="col-six tab-full">
+
+                    <h3>Profile</h3>
+                    <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+
+                    <ul class="info-list">
+                        <li>
+                            <strong>Fullname:</strong>
+                            <span>Tsai Tsz Ho</span>
+                        </li>
+                        <li>
+                            <strong>Birth Date:</strong>
+                            <span>September 16, 1994</span>
+                        </li>
+                        <li>
+                            <strong>Job:</strong>
+                            <span>Freelancer, Android Developer</span>
+                        </li>
+                        <li>
+                            <strong>Website:</strong>
+                            <span><a href="https://louistsaitszho.github.io">louistsaitszho.github.io</a></span>
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            <span><a href="mailto:tsaitszho@gmail.com">tsaitszho@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <strong>Location</strong>
+                            <span>Hong Kong</span>
+                        </li>
+
+                    </ul> <!-- /info-list -->
+
+                </div>
+
+                <div class="col-six tab-full">
+
                     <h3>Skills</h3>
-                    <div class="row">
-                        <div class="6u 12u$(xsmall) fit">
-                            <table class="fit">
-									<thead>
-										<tr>
-											<th>Skill</th>
-											<th>%</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Java</td>
-											<td>80%</td>
-										</tr>
-                                        <tr>
-											<td>Android</td>
-											<td>75%</td>
-										</tr>
-                                        <tr>
-											<td>Node.js</td>
-											<td>50%</td>
-										</tr>
-                                        <tr>
-											<td>(Postgre)SQL</td>
-											<td>40%</td>
-										</tr>
-                                        <tr>
-											<td>C#</td>
-											<td>40%</td>
-										</tr>
-										<tr>
-											<td>C++</td>
-											<td>30%</td>
-										</tr>
-									</tbody>
-								</table>
-                        </div>
-                        <div class="6u 12u$(xsmall) fit">
-                            <table class="fit">
-									<thead>
-										<tr>
-											<th>Skill</th>
-											<th>%</th>
-										</tr>
-									</thead>
-									<tbody>
-                                        <tr>
-                                            <td><article><a class="giflink" data-src="images/imsuperchillallthetime.gif" href="images/imsuperchillallthetime.gif">Chill</a></article></td>
-											<td>100%</td>
-										</tr>
-                                        <tr>
-											<td>Mandarin</td>
-											<td>70%</td>
-										</tr>
-                                        <tr>
-											<td>Project Management</td>
-											<td>60%</td>
-										</tr>
-                                        <tr>
-											<td>UI/UX Design</td>
-											<td>50%</td>
-										</tr>
-                                        <tr>
-											<td>HTML/JS/CSS</td>
-											<td>30%</td>
-										</tr>
-                                        <tr>
-											<td>German</td>
-											<td>20%</td>
-										</tr>
-									</tbody>
-								</table>
-                        </div>    
+                    <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="progress percent90"><span>Very good</span></div>
+                            <strong>Android</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent85"><span>Pretty good</span></div>
+                            <strong>Node.js</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent70"><span>Good enough</span></div>
+                            <strong>Java</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent95"><span>Good enough</span></div>
+                            <strong>(Postgre)SQL</strong>
+                        </li>
+                        <li>
+
+                            <div class="progress percent75"><span>I know some</span></div>
+                            <strong>C#</strong>
+                        </li>
+
+                    </ul> <!-- /skill-bars -->		
+
+                </div>
+
+            </div>
+
+            <div class="row button-section">
+                <div class="col-twelve">
+                    <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+                    <a href="LouisTsaiTszHoCV.pdf" title="Download CV" class="button button-primary">Download CV</a>
+                </div>   		
+            </div>
+
+        </section> <!-- /process-->    
+
+
+        <!-- resume Section
+================================================== -->
+        <section id="resume" class="grey-section">
+
+            <div class="row section-intro">
+                <div class="col-twelve">
+
+                    <h5>Resume</h5>
+                    <h1>More of my credentials.</h1>
+
+                    <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+                </div>   		
+            </div> <!-- /section-intro--> 
+
+            <div class="row resume-timeline">
+
+                <div class="col-twelve resume-header">
+
+                    <h2>Work Experience</h2>
+
+                </div> <!-- /resume-header -->
+
+                <div class="col-twelve">
+
+                    <div class="timeline-wrap">
+
+                        <div class="timeline-block">
+
+                            <div class="timeline-ico">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+
+                            <div class="timeline-header">
+                                <h3>IT Volunteer</h3>
+                                <p>January 2016 - April 2016</p>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h4>One-2-One CAMBODIA, Phnom Penh, CAMBODIA</h4>
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+
+                        </div> <!-- /timeline-block -->
+
+                        <div class="timeline-block">
+
+                            <div class="timeline-ico">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+
+                            <div class="timeline-header">
+                                <h3>Software Development Intern</h3>
+                                <p>June 2014 - August 2014</p>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h4>Ikky Limited, Hong Kong, HONG KONG</h4>
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+                            </div>
+
+                        </div> <!-- /timeline-block -->
+
+
+                    </div> <!-- /timeline-wrap -->   			
+
+                </div> <!-- /col-twelve -->
+
+            </div> <!-- /resume-timeline -->
+
+            <div class="row resume-timeline">
+
+                <div class="col-twelve resume-header">
+
+                    <h2>Education</h2>
+
+                </div> <!-- /resume-header -->
+
+                <div class="col-twelve">
+
+                    <div class="timeline-wrap">
+
+                        <div class="timeline-block">
+
+                            <div class="timeline-ico">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+
+                            <div class="timeline-header">
+                                <h3>Bachelor Degree</h3>
+                                <p>September 2012 - August 2016</p>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h4>Hong Kong University of Science and Technology, Hong Kong, HONG KONG</h4>
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+                            </div>
+
+                        </div> <!-- /timeline-block -->
+
+                        <div class="timeline-block">
+
+                            <div class="timeline-ico">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+
+                            <div class="timeline-header">
+                                <h3>Bachelor Degree</h3>
+                                <p>September 2014 - January 2015</p>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h4>Sabanci University, Istanbul, TURKEY</h4>
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+                            </div>
+
+                        </div> <!-- /timeline-block -->
+
+                    </div> <!-- /timeline-wrap -->   			
+
+                </div> <!-- /col-twelve -->
+
+            </div> <!-- /resume-timeline -->
+
+        </section> <!-- /features -->
+
+
+        <!-- Portfolio Section
+================================================== -->
+        <section id="portfolio">
+
+            <div class="row section-intro">
+                <div class="col-twelve">
+
+                    <h5>Portfolio</h5>
+                    <h1>Check Out Some of My Works.</h1>
+
+                    <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+                </div>   		
+            </div> <!-- /section-intro--> 
+
+            <div class="row portfolio-content">
+
+                <div class="col-twelve">
+
+                    <!-- portfolio-wrapper -->
+                    <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+                        <div class="bgrid folio-item">
+                            <div class="item-wrap">
+                                <img src="images/portfolio/liberty.jpg" alt="Liberty">
+                                <a href="#modal-01" class="overlay">	                  	           
+                                    <div class="folio-item-table">
+                                        <div class="folio-item-cell">
+                                            <h3 class="folio-title">Liberty</h3>	     					    
+                                            <span class="folio-types">
+                                                Graphic Design
+                                            </span>
+                                        </div>	                      	
+                                    </div>                    
+                                </a>
+                            </div>	               
+                        </div> <!-- /folio-item -->
+
+                        <div class="bgrid folio-item">
+                            <div class="item-wrap">
+                                <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
+                                <a href="#modal-02" class="overlay">              		                  
+                                    <div class="folio-item-table">
+                                        <div class="folio-item-cell">
+                                            <h3 class="folio-title">Shutterbug</h3>	     					    
+                                            <span class="folio-types">
+                                                Web Design
+                                            </span>		     		
+                                        </div> 	                      	
+                                    </div>                    
+                                </a>
+                            </div>
+                        </div> <!-- /folio-item -->
+
+                        <div class="bgrid folio-item">
+                            <div class="item-wrap">
+                                <img src="images/portfolio/clouds.jpg"alt="Clouds">
+                                <a href="#modal-03" class="overlay">             		                  
+                                    <div class="folio-item-table">
+                                        <div class="folio-item-cell">
+                                            <h3 class="folio-title">Clouds</h3>	     					    
+                                            <span class="folio-types">
+                                                Web Design
+                                            </span>		     		
+                                        </div> 	                      	
+                                    </div>                    
+                                </a>
+                            </div>
+                        </div> <!-- /folio-item -->
+
+                        <div class="bgrid folio-item">
+                            <div class="item-wrap">
+                                <img src="images/portfolio/beetle.jpg" alt="Beetle">
+                                <a href="#modal-04" class="overlay">                  	                 
+                                    <div class="folio-item-table">
+                                        <div class="folio-item-cell">
+                                            <h3 class="folio-title">Beetle</h3>	     					    
+                                            <span class="folio-types">
+                                                Branding
+                                            </span>		     		
+                                        </div>  	                      	
+                                    </div>                    
+                                </a>
+                            </div>
+                        </div> <!-- /folio-item -->     
+
+                        <div class="bgrid folio-item">
+                            <div class="item-wrap">
+                                <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+                                <a href="#modal-05" class="overlay">             		                  
+                                    <div class="folio-item-table">
+                                        <div class="folio-item-cell">
+                                            <h3 class="folio-title">Lighthouse</h3>	     					    
+                                            <span class="folio-types">
+                                                Web Development
+                                            </span>		     		
+                                        </div> 	                      	
+                                    </div>                    
+                                </a>
+                            </div>
+                        </div> <!-- /folio-item -->
+
+                        <div class="bgrid folio-item">
+                            <div class="item-wrap">
+                                <img src="images/portfolio/salad.jpg" alt="Salad">
+                                <a href="#modal-06" class="overlay">
+                                    <div class="folio-item-table">
+                                        <div class="folio-item-cell">
+                                            <h3 class="folio-title">Salad</h3>	     					    
+                                            <span class="folio-types">
+                                                Branding
+                                            </span>		     		
+                                        </div>	                      	
+                                    </div>                    
+                                </a>
+                            </div>
+                        </div> <!-- /folio-item -->   
+
+                        <!-- modal popups - begin
+============================================================= -->
+                        <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+                            <div class="media">
+                                <img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+                            </div>      	
+
+                            <div class="description-box">
+                                <h4>Liberty</h4>		      
+                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                                <div class="categories">Web Development</div>			               
+                            </div>
+
+                            <div class="link-box">
+                                <a href="http://www.behance.net">Details</a>
+                                <a href="#" class="popup-modal-dismiss">Close</a>
+                            </div>		      
+
+                        </div> <!-- /modal-01 -->
+
+                        <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+                            <div class="media">
+                                <img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+                            </div>      	
+
+                            <div class="description-box">
+                                <h4>Shutterbug</h4>		      
+                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                                <div class="categories">Web Design</div>			               
+                            </div>
+
+                            <div class="link-box">
+                                <a href="http://www.behance.net">Details</a>
+                                <a href="#" class="popup-modal-dismiss">Close</a>
+                            </div>		      
+
+                        </div> <!-- /modal-02 -->
+
+                        <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+                            <div class="media">
+                                <img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+                            </div>      	
+
+                            <div class="description-box">
+                                <h4>Clouds</h4>		      
+                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                                <div class="categories">Web Design</div>			               
+                            </div>
+
+                            <div class="link-box">
+                                <a href="http://www.behance.net">Details</a>
+                                <a href="#" class="popup-modal-dismiss">Close</a>
+                            </div>		      
+
+                        </div> <!-- /modal-03 -->
+
+                        <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+                            <div class="media">
+                                <img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+                            </div>      	
+
+                            <div class="description-box">
+                                <h4>Beetle</h4>		      
+                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                                <div class="categories">Branding</div>			               
+                            </div>
+
+                            <div class="link-box">
+                                <a href="http://www.behance.net">Details</a>
+                                <a href="#" class="popup-modal-dismiss">Close</a>
+                            </div>		      
+
+                        </div> <!-- /modal-04 -->
+
+                        <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+                            <div class="media">
+                                <img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+                            </div>      	
+
+                            <div class="description-box">
+                                <h4>Lighthouse</h4>		      
+                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                                <div class="categories">Web Development</div>			               
+                            </div>
+
+                            <div class="link-box">
+                                <a href="http://www.behance.net">Details</a>
+                                <a href="#" class="popup-modal-dismiss">Close</a>
+                            </div>		      
+
+                        </div> <!-- /modal-05 -->
+
+                        <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+                            <div class="media">
+                                <img src="images/portfolio/modals/m-salad.jpg" alt="" />
+                            </div>      	
+
+                            <div class="description-box">
+                                <h4>Salad</h4>		      
+                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                                <div class="categories">Branding</div>			               
+                            </div>
+
+                            <div class="link-box">
+                                <a href="http://www.behance.net">Details</a>
+                                <a href="#" class="popup-modal-dismiss">Close</a>
+                            </div>		      
+
+                        </div> <!-- /modal-06 -->
+
+
+                        <!-- modal popups - end
+============================================================= -->
+
+                    </div> <!-- /portfolio-wrapper --> 
+
+                </div>  <!-- /twelve -->   
+
+            </div> <!-- /portfolio-content --> 
+
+        </section> <!-- /portfolio --> 
+
+
+        <!-- CTA Section
+================================================== -->
+        <section id="cta" class="grey-section">
+
+            <div class="row cta-content">
+
+                <div class="col-twelve section-ads">  
+
+                    <h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
+
+                    <p class="lead">
+                        Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+                        Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
+                        <!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->	
+                    </p>
+
+                    <div class="action">
+                        <a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
+                    </div>		     	
+
+                </div>
+
+            </div> <!-- /cta-content -->
+
+        </section> <!-- /cta --> 
+
+
+        <!-- services Section
+================================================== -->
+        <section id="services">
+
+            <div class="overlay"></div>
+
+            <div class="row section-intro">
+                <div class="col-twelve">
+
+                    <h5>Services</h5>
+                    <h1>What Can I Do For You?</h1>
+
+                    <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+                </div>   		
+            </div> <!-- /section-intro -->
+
+            <div class="row services-content">
+
+                <div id="owl-slider" class="owl-carousel services-list">
+
+                    <div class="service">	
+
+                        <span class="icon"><i class="icon-earth"></i></span>            
+
+                        <div class="service-content">	
+
+                            <h3>Webdesign</h3>
+
+                            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                            </p>
+
+                        </div> 	         	 
+
+                    </div> <!-- /service -->
+
+                    <div class="service">	
+
+                        <span class="icon"><i class="icon-window"></i></span>                          
+
+                        <div class="service-content">	
+
+                            <h3>Web Development</h3>  
+
+                            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                            </p>
+
+                        </div>	                          
+
+                    </div> <!-- /service -->
+
+                    <div class="service">
+
+                        <span class="icon"><i class="icon-paint-brush"></i></span>		            
+
+                        <div class="service-content">
+
+                            <h3>Branding</h3>
+
+                            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                            </p> 
+
+                        </div> 	            	               
+
+                    </div> <!-- /service -->
+
+                    <div class="service">
+
+                        <span class="icon"><i class="icon-toggles"></i></span>	              
+
+                        <div class="service-content">
+
+                            <h3>UI/UX Design</h3>
+
+                            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                            </p> 
+
+                        </div>                
+
+                    </div> <!-- /service -->
+
+                    <div class="service">
+
+                        <span class="icon"><i class="icon-image"></i></span>	            
+
+                        <div class="service-content">
+
+                            <h3>Graphics Design</h3>
+
+                            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                            </p> 
+
+                        </div>	               
+
+                    </div> <!-- /service -->
+
+                    <div class="service">
+
+                        <span class="icon"><i class="icon-chat"></i></span>	   	           
+
+                        <div class="service-content">
+
+                            <h3>Consultancy</h3>
+
+                            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                            </p> 
+
+                        </div>	               
+
+                    </div> <!-- /service -->
+
+                </div> <!-- /services-list -->
+
+            </div> <!-- /services-content -->
+
+        </section> <!-- /services -->	
+
+
+        <!-- stats Section
+================================================== -->
+        <section id="stats" class="count-up">
+
+            <div class="row">
+                <div class="col-twelve">
+
+                    <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+                        <div class="bgrid stat">
+
+                            <div class="icon-part">
+                                <i class="icon-pencil-ruler"></i>
+                            </div>
+
+                            <h3 class="stat-count">
+                                1500
+                            </h3>
+
+                            <h5 class="stat-title">
+                                Projects Completed
+                            </h5>
+
+                        </div> <!-- /stat -->					
+
+                        <div class="bgrid stat">
+
+                            <div class="icon-part">
+                                <i class="icon-users"></i>
+                            </div>
+
+                            <h3 class="stat-count">
+                                900
+                            </h3>
+
+                            <h5 class="stat-title">
+                                Happy Clients
+                            </h5>
+
+                        </div> <!-- /stat -->
+
+                        <div class="bgrid stat">
+
+                            <div class="icon-part">
+                                <i class="icon-badge"></i>
+                            </div>
+
+                            <h3 class="stat-count">
+                                200
+                            </h3>
+
+                            <h5 class="stat-title">
+                                Awards Received
+                            </h5>
+
+                        </div> <!-- /stat -->									
+
+                        <div class="bgrid stat">
+
+                            <div class="icon-part">
+                                <i class="icon-light-bulb"></i>
+                            </div>
+
+                            <h3 class="stat-count">
+                                120
+                            </h3>
+
+                            <h5 class="stat-title">
+                                Crazy Ideas
+                            </h5>
+
+                        </div> <!-- /stat -->
+
+                        <div class="bgrid stat">
+
+                            <div class="icon-part">
+                                <i class="icon-cup"></i>
+                            </div>
+
+                            <h3 class="stat-count">
+                                1500
+                            </h3>
+
+                            <h5 class="stat-title">
+                                Coffee Cups
+                            </h5>
+
+                        </div> <!-- /stat -->
+
+                        <div class="bgrid stat">
+
+                            <div class="icon-part">
+                                <i class="icon-clock"></i>
+                            </div>
+
+                            <h3 class="stat-count">
+                                7200
+                            </h3>
+
+                            <h5 class="stat-title">
+                                Hours
+                            </h5>
+
+                        </div> <!-- /stat -->
+
+                    </div> <!-- /stats-list -->
+
+                </div> <!-- /twelve -->
+            </div> <!-- /row -->
+
+        </section> <!-- /stats -->
+
+
+        <!-- contact
+================================================== -->
+        <section id="contact">
+
+            <div class="row section-intro">
+                <div class="col-twelve">
+
+                    <h5>Contact</h5>
+                    <h1>I'd Love To Hear From You.</h1>
+
+                    <p class="lead">Wnat to hire me? Want to know more about projects I have worked on? Or just want to know more about me? Just let me know.</p>
+
+                </div> 
+            </div> <!-- /section-intro -->
+
+            <div class="row contact-info">
+
+                <div class="col-four tab-full">
+
+                    <div class="icon">
+                        <i class="icon-pin"></i>
                     </div>
-                            
-                </section>
-                
-				<!-- work -->
-					<section id="work">
-						<h2>Recent Work</h2>
-						<div class="row">
-                            
-                            <article class="6u 12u$(xsmall) work-item">
-								<a href="https://play.google.com/apps/testing/io.github.louistsaitszho.erg2000" class="image fit thumbPlayStore"><img src="images/thumbs/fg2000.png" alt="" /></a>
-								<h3>2000 (Alpha)</h3>
-								<p>An easy way to keep track of your indoor rowing records</p>
-							</article>
-                            
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="http://hkust1516csefyp43.github.io" class="image fit thumb"><img src="images/thumbs/ehr.jpg" alt="" /></a>
-								<h3>EHR</h3>
-								<p>An electronic health record solution for third world countries</p>
-							</article>
-            
-                            <article class="6u 12u$(xsmall) work-item">
-								<a href="https://github.com/louistsaitszho/Icon-Generator" class="image fit thumb"><img src="images/thumbs/iconGenerator.png" alt="" /></a>
-								<h3>Icon Generator</h3>
-								<p>A simple android app that generates text-based icon</p>
-							</article>
-                            
-                            <article class="6u 12u$(xsmall) work-item">
-								<a href="http://www.ikky.com/" class="image fit thumb2"><img src="images/thumbs/ikky.png" alt="" /></a>
-								<h3>ikky</h3>
-								<p>Restrurant, transportation and health care reservation service in Hong Kong</p>
-							</article>
-                            
-<!--
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="https://github.com/louistsaitszho/Erg-Alpha" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Erg</h3>
-								<p>Simple Android application to keep track of indoor rowing result</p>
-							</article>
--->
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="https://github.com/louistsaitszho/Basic-multi-user-calendar" class="image fit thumb"><img src="images/thumbs/calendar.png" alt="" /></a>
-								<h3>Calendar</h3>
-								<p>Simple Java + Swing calendar application</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="https://github.com/louistsaitszho/Simple-Chat" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Chat client</h3>
-								<p>Simple C# chatting software for Windows</p>
-							</article>
-						</div>
-					</section>
 
-				<!-- contact -->
-					<section id="contact">
-						<h2>Get In Touch</h2>
-						<div class="row">
-                            <div class="6u 12u$(xsmall)">
-									<ul class="labeled-icons">
-									<li>
-										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-										<a href="tel:+85260944831">(+852) 6094 4831</a>
-									</li>
-                                    <li>
-										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-										<a href="mailto:tsaitszho@gmail.com">tsaitszho@gmail.com</a>
-									</li>
-                                    <li>
-										<h3 class="icon fa-500px"><span class="label">500px</span></h3>
-										<a href="https://500px.com/louis993546">500px.com/louis993546</a>
-									</li>
-                                    <li>
-										<h3 class="icon fa-android"><span class="label">Play Store</span></h3>
-										<a href="https://play.google.com/store/apps/dev?id=6430310970377888902">Play Store Profile</a>
-									</li>
-                                        
-								</ul>
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<ul class="labeled-icons">
-                                    <li>
-										<h3 class="icon fa-github"><span class="label">GitHub</span></h3>
-										<a href="https://github.com/louistsaitszho">github.com/louistsaitszho</a>
-									</li>
-									<li>
-										<h3 class="icon fa-linkedin"><span class="label">Linkedin</span></h3>
-										<a href="https://hk.linkedin.com/in/tsaitszho">hk.linkedin.com/in/tsaitszho</a>
-									</li>
-                                    <li>
-										<h3 class="icon fa-angellist"><span class="label">AngelList</span></h3>
-										<a href="https://angel.co/tsz-ho-tsai">angel.co/tsz-ho-tsai</a>
-									</li>
-                                    <li>
-										<h3 class="icon fa-stack-overflow"><span class="label">StackOverflow</span></h3>
-										<a href="https://stackoverflow.com/cv/louistsaitszho">stackoverflow.com/cv/louistsaitszho</a>
-									</li>
-								</ul>
-								</div>
-						</div>
-					</section>
+                    <h5>Where to find me</h5>
 
-				<!-- Four -->
-				
-<!--
-					<section id="four">
-						<h2>Elements</h2>
+                    <p>
+                        1600 Amphitheatre Parkway<br>
+                        Mountain View, CA<br>
+                        94043 US
+                    </p>
 
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
+                </div>
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+                <div class="col-four tab-full collapse">
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
+                    <div class="icon">
+                        <i class="icon-mail"></i>
+                    </div>
 
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="6u 12u$(xsmall)">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button special">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button special small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="6u 12u$(small)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button special">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(small)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button special small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="6u 12u$(small)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button special fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(small)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button special small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+                    <h5>Email/Text Me At</h5>
 
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
+                    <p>
+                        Email: tsaitszho@gmail.com<br>
+                        WhatsApp: (+852) 6094 4831<br>
+                    </p>
 
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
+                </div>
 
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button special">Special</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button big">Big</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button special fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button special fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button special fit icon fa-download">Icon</a></li>
-								<li><a href="#" class="button icon fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button special disabled">Special</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
+                <div class="col-four tab-full">
 
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row uniform 50%">
-									<div class="6u 12u$(xsmall)">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="6u$ 12u$(xsmall)">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="12u$">
-										<div class="select-wrapper">
-											<select name="demo-category" id="demo-category">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
-											</select>
-										</div>
-									</div>
-									<div class="4u 12u$(small)">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="4u 12u$(small)">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="4u$ 12u(small)">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="6u 12u$(small)">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="6u$ 12u$(small)">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="12u$">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="12u$">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
+                    <div class="icon">
+                        <i class="icon-phone"></i>
+                    </div>
 
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row 50% uniform">
-									<div class="12u$"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
+                    <h5>Call Me At</h5>
 
-					</section>
--->
-				
+                    <p>Mobile: (+852) 6094 4831</p>
 
-			</div>
+                </div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://github.com/louistsaitszho" class="icon fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="mailto:tsaitszho@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					<li><a href="https://hk.linkedin.com/in/tsaitszho" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-                    <li><a href="https://play.google.com/store/apps/dev?id=6430310970377888902" class="icon fa-android"><span class="label">Play Store</span></a></li>
-                    
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Louis Tsai</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+            </div> <!-- /contact-info -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-            
-            <script src="assets/js/GifLinks.min.js"></script>
-        
-        <script>
-            var elements = document.querySelectorAll( 'article a' );
-            GifLinks( elements );
-        </script>
-	</body>
+        </section> <!-- /contact -->
+
+
+        <!-- footer
+================================================== -->
+
+        <footer>
+            <div class="row">
+
+                <div class="col-six tab-full pull-right social">
+
+                    <ul class="footer-social">        
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul> 
+
+                </div>
+
+                <div class="col-six tab-full">
+                    <div class="copyright">
+                        <span>© Copyright Tsai Tsz Ho 2016.</span> 
+                        <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+                    </div>		                  
+                </div>
+
+                <div id="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+                </div>
+
+            </div> <!-- /row -->     	
+        </footer>  
+
+        <div id="preloader"> 
+            <div id="loader"></div>
+        </div> 
+
+        <!-- Java Script
+================================================== --> 
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+
 </html>
