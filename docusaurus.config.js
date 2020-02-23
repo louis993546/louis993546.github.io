@@ -16,8 +16,8 @@ module.exports = {
       links: [
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://twitter.com/louis993546',
+          label: 'Twitter',
           position: 'right',
         },
       ],
@@ -26,25 +26,8 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-          ],
-        },
-        {
           title: 'Social',
           items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/louistsaitszho',
@@ -52,6 +35,10 @@ module.exports = {
             {
               label: 'Twitter',
               href: 'https://twitter.com/louis993546',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/tsaitszho/',
             },
           ],
         },
