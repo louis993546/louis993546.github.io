@@ -49,11 +49,11 @@ This is something I have been thinking about for the last 48 hours (i.e. not tha
 
 For now that’s the list of things that I can come up with, and that brings up to a topic that I am no an expert in, but after watching this video, makes me appreciate this whole movement a lot more:
 
-{% youtube RSgXcFdHxFI %}
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RSgXcFdHxFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 While it is not about salary or compensation or money, it does bring up a quite interesting topic on how much an individual can do, when facing a deep-rooted mental model that the society held. And from this video, this reminds me of this somewhat exaggerate & American-focus snippet of Adam Ruins Everything:
 
-{% youtube 7xH7eGFuSYI %}
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7xH7eGFuSYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The more I think about it, the more I agree that currently the common practices for companies are the biggest bottleneck for achieving fair compensation regardless of age, gender, sexuality, race, and more. How can people have an open discussion on how to tackle pay gap, when people are still arguing that pay gap is not real (although to be fair, there are also people who think the earth is flat, so I guess data and statistics are not as powerful as I think they are 🤷‍♀️).
 
