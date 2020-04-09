@@ -8,7 +8,7 @@ module.exports = {
       summary: `🤷‍♀️`,
     },
     description: `Louis is trying to write his thoughs out because he is bad at speaking`,
-    siteUrl: `https://gatsby-starter-low-tech-blog.netlify.com/`,
+    siteUrl: `https://louistsaitszho.github.io`,
     social: {
       twitter: `louis993546`,
     },
