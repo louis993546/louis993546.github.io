@@ -1,7 +1,7 @@
 ---
 title: Went from “liking tweets about remote working” to “being 100% remote” in 1 day
 date: "2020-04-08T19:22:48Z"
-description: TL;DR stay safe
+description: "TL;DR: stay safe"
 ---
 
 ![](./desk.jpg)

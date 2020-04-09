@@ -1,7 +1,7 @@
 ---
 title: "Mental Models of Jetpack Compose #4: Components and Hindsight"
 date: "2020-02-26T23:36:58Z"
-description: 
+description: "TL;DR: Try React or Flutter or both!"
 ---
 
 ![](https://cdn-images-1.medium.com/max/1024/0*maVyEvb84qWJfihU)<figcaption>Photo by <a href="https://unsplash.com/@jamie452?utm_source=medium&amp;utm_medium=referral">Jamie Street</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral">Unsplash</a></figcaption>
