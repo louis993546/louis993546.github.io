@@ -5,11 +5,14 @@ on:
     branches: [ develop ]
 
 jobs:
-  build:
+  make-sure-it-builds:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - run: npm install
       - run: npm run build
-      
+  make-sure-the-code-looks-nice:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo TODO
