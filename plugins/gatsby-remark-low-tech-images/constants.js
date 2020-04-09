@@ -1,7 +1,7 @@
 exports.DEFAULT_OPTIONS = {
   maxWidth: 590,
   toFormat: "jpg",
-  grayscale: true,
+  grayscale: false,
   wrapperStyle: ``,
   backgroundColor: `white`,
   linkImagesToOriginal: true,

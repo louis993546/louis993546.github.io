@@ -2,15 +2,15 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Low Tech Blog`,
+    title: `Louis Tsai blog`,
     author: {
-      name: `Mathieu Dutour`,
-      summary: `who builds useful things.`,
+      name: `Louis Tsai`,
+      summary: `🤷‍♀️`,
     },
-    description: `A starter blog demonstrating what Gatsby can do with the lowest carbon footprint.`,
+    description: `Louis is trying to write his thoughs out because he is bad at speaking`,
     siteUrl: `https://gatsby-starter-low-tech-blog.netlify.com/`,
     social: {
-      twitter: `mathieudutour`,
+      twitter: `louis993546`,
     },
   },
   plugins: [
@@ -63,13 +63,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Low Tech Blog`,
-        short_name: `GatsbyJS`,
+        name: `Louis Tsai Blog`,
+        short_name: `Louis Tsai`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/profile-pic.jpg`,
       },
     },
     `gatsby-plugin-react-helmet`,
