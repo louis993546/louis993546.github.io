@@ -4,7 +4,7 @@ date: "2019-11-13T09:19:52"
 description: "TL;DR: Project Hoverboard is great, but not perfect for smaller events?"
 ---
 
-![](https://cdn-images-1.medium.com/max/1024/1*wK6GttdsHUMYcoQVfXpY0w.jpeg)<figcaption>I made\* this</figcaption>
+![](./hoverboard.jpg)<figcaption>I made\* this</figcaption>
 
 So for the last few weeks, I have been helping out with [DevFest Berlin 2019](https://2019.devfest-berlin.de/), which just happened last Saturday. From [what I can tell](https://twitter.com/search?q=%23DevFest19%20%23devfestBerlin&src=typed_query), people really enjoyed the event, which is definitely the most important thing. For that, I have to **thank everyone who attended, all the speakers who share their knowledge, and, and most importantly the other volunteers and organizers for making this possible!** And as a volunteer, one of my biggest contributions would be “building” and maintaining the website. The reason why I put double quotes around the word _building_ is because instead of making a website from scratch, I use another project as the template, and that would be [Project Hoverboard](https://github.com/gdg-x/hoverboard).
 
@@ -75,4 +75,4 @@ So what have we learned today?
 
 And this is my quick review of Project Hoverboard, and now that I have written things down, I started to get motivated to build my own version of “a small-ish conference website”. Let see how it goes……
 
-![Group photo of DevFest Berlin 2019](https://cdn-images-1.medium.com/max/1024/1*Vxp0cjo4CYC11ALUg0gp2A.jpeg)<figcaption>🙌 It shouldn’t be hard to spot me 😝 (Credit: <a href="https://www.kimlahav.com/">kimlahav.com</a>)</figcaption>
+![Group photo of DevFest Berlin 2019](./devfest-berlin-2019.jpg)<figcaption>🙌 It shouldn’t be hard to spot me 😝 (Credit: <a href="https://www.kimlahav.com/">kimlahav.com</a>)</figcaption>

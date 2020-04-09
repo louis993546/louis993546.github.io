@@ -4,7 +4,7 @@ date: "2020-02-26T23:36:58Z"
 description: "TL;DR: Try React or Flutter or both!"
 ---
 
-![](https://cdn-images-1.medium.com/max/1024/0*maVyEvb84qWJfihU)<figcaption>Photo by <a href="https://unsplash.com/@jamie452?utm_source=medium&amp;utm_medium=referral">Jamie Street</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral">Unsplash</a></figcaption>
+![](./direction.jpg)<figcaption>Photo by <a href="https://unsplash.com/@jamie452?utm_source=medium&amp;utm_medium=referral">Jamie Street</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral">Unsplash</a></figcaption>
 
 After months of procrastinating, I am finally getting to the last chapter of “Mental Models of Jetpack Compose”, at least for now. Today, we are gonna talk about components, and hindsight.
 
@@ -14,21 +14,21 @@ If you just look at the basics structure of Component in React or Widget in Flut
 
 React:
 
-![](https://cdn-images-1.medium.com/max/1024/1*SYCkv93V-Ljo6gF-olC7Rg.png)
+![](./react-component.png)
 
 Flutter:
 
-![](https://cdn-images-1.medium.com/max/1024/1*ECaQmCkUuBB3HanGUz4sJA.png)
+![](./flutter-widget.png)
 
 Typical Android View:
 
-![](https://cdn-images-1.medium.com/max/1024/1*v2CHCknVxL9iaPwW8LZSCw.png)
+![](./android-view.png)
 
 More specifically, they all have 1 method that ultimately determines what should be display. So what makes the concept of Component different? Well, the biggest distinction is that the render/build function defines an **abstraction** on what the view should look like, while in onDraw function you are responsible for specifying every last detail. Basically it goes back to [episode 1](https://dev.to/louis993546/mental-models-of-jetpack-compose-1-state-programming-models-20eh), which we talk about declarative programming vs imperative programming.
 
 And that’s pretty much what the concept of component is! On it’s own component is nothing special, what makes it fun and powerful is that it only carries information, not instructions, which usually makes it more understandable, and also more lightweight. Speaking of fun, that brings us to a minor addition to the concept of component. But first, let’s take a look at this example from React:
 
-![](https://cdn-images-1.medium.com/max/1024/1*klU5pzPuLrP0noo1COP7uA.png)
+![](./react-classes.png)
 
 > _Sample from_ [_React documentation_](https://reactjs.org/docs/hooks-overview.html)
 
@@ -42,7 +42,7 @@ And if we take a step back, and try to remember why React was created in the beg
 
 So what if we just take that **literally**? That brings us to the concept of **functional component**. The mental model of component is still there, but instead of representing it with a “class”, just directly represent it with the function, and it would look like this:
 
-![](https://cdn-images-1.medium.com/max/1024/1*TwpI41PzVluyKsHeP2SaNw.png)
+![](./react-hooks.png)
 
 > Sample from [React documentation](https://reactjs.org/docs/hooks-overview.html)
 

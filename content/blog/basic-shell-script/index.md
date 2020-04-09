@@ -4,7 +4,7 @@ date: "2020-01-12T15:57:28Z"
 description: "TL;DR: It can do anything*"
 ---
 
-![](https://cdn-images-1.medium.com/max/1024/1*wS0i4sDFxELGwQ-_R4Q9Tg.png)<figcaption>A bunch of random stuff you can do with shell script</figcaption>
+![](./script-example.png)<figcaption>A bunch of random stuff you can do with shell script</figcaption>
 
 It has been a while since I did my last “From Android zero to kinda-middle” series, and today I’d like to talk about shell script.
 

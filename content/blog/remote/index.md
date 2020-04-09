@@ -74,7 +74,7 @@ There is only so much you can do to improve your home office in such short
 notice. And I tried to compensate for it with working extra hours, which ever
 so slightly cancel out my reduced productivity (but not sustainable at all).
 
-![](https://cdn-images-1.medium.com/max/1024/0*OI7YC42PLEtTNTV7)<figcaption>Thiscomic from Alex Norris speaks to my soul: <a href="https://twitter.com/nadiaoxford/status/1239588500212789248">https://twitter.com/nadiaoxford/status/1239588500212789248</a></figcaption>
+![](./comic.jpg)<figcaption>Thiscomic from Alex Norris speaks to my soul: <a href="https://twitter.com/nadiaoxford/status/1239588500212789248">https://twitter.com/nadiaoxford/status/1239588500212789248</a></figcaption>
 
 The biggest change probably happens in terms of my sanity. This sheer amount of
 news around the pandemic drives my stress level high already, combine with

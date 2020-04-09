@@ -4,7 +4,7 @@ date: "2020-02-16T21:32:51Z"
 description: "TL;DR: I am worthless, yet I am worth too much."
 ---
 
-![](https://cdn-images-1.medium.com/max/1024/1*2ZIck82yK7X9Jb906WgFhA.png)<figcaption>The beginning of #KnowYourWirth</figcaption>
+![](./zac.png)<figcaption>The beginning of #KnowYourWirth</figcaption>
 
 In the last 2 days, the tech community on Twitter blew up with the [#KnowYourWorth](https://twitter.com/hashtag/KnowYourWorth) movement. The TL;DR it is to share your salary, so that minorities can have a better grasp of what the market rate is, instead of relying on anonymous sites that you never really know if they can be trusted.
 
