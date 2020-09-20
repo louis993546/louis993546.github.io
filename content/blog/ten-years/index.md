@@ -3,9 +3,6 @@ title: Where do I see myself in 10 years?
 date: "2020-09-20T20:00:00Z"
 description: "I have no fucking clue"
 ---
-
-# Where do I see myself in 10 years?
-
 It has been almost 4 years since I graduated from university, and some recent event allows me to start to explore being other than an Android developer. And it'a about a month in, so I want to write down the random thoughts in my brain, hopefully at the end I will have a better vision of where do I see myself in 10 years.
 
 ## What's new
