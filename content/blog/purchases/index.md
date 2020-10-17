@@ -1,3 +1,8 @@
+---
+title: Review of all the crabs I bought during quarantine
+date: "2020-10-17T19:17:42Z"
+description: "TL;DR: I made a lot of useless/stupid purchases"
+---
 # Review of all the crabs I bought during quarantine
 
 Over the last few months, I have bought a shit ton of things online, and my brain is happy to supply a tiny dose of serotonin to keep me alive.
