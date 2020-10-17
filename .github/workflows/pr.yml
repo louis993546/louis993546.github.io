@@ -12,7 +12,3 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install
       - run: npm run build
-  make-sure-the-code-looks-nice:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo TODO
