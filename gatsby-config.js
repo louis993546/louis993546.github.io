@@ -56,7 +56,7 @@ module.exports = {
       options: {
         useMozJpeg: true,
         stripMetadata: true,
-        defaultQuality: 30,
+        defaultQuality: 60,
       },
     },
     `gatsby-plugin-feed`,
