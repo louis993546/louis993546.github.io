@@ -1,3 +1,8 @@
+---
+title: My plan to become more productive in a month
+date: "2020-12-06T22:10:00Z"
+description: "TL;DR: using Jira + Google Calendar to organize my tasks"
+---
 # My plan to become more productive in a month
 
 2020 is almost over, and I just so happen to have almost an entire month off to do whatever I want. One of the things I have learn about myself this year is that my productivity often relies on supervision & "too afraid to say no so now I have to get it done in the next 4 hours". So one of my goal in the next ~~month~~ 25 days is to figure out something that can keep me productive (and hopefully subsequently fulfilled and happy).
