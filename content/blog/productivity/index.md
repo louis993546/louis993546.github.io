@@ -11,15 +11,13 @@ description: "TL;DR: using Jira + Google Calendar to organize my tasks"
 
 Currently, I have 2(-ish) system going on: 1 for my work stuff, and 1 for my personal stuff
 
-
-
 ### Work: 2D version of Einsenhower Matrix using Asana
 
 For some reason, I remember very distinctly how I got introduce to the Eisenhower Matrix: it was when I was like 16, during a tutorial session (Hong Kong style, i.e. watching a pre-recorded video from one of the "famous" tutors), in which there was just me and 1 other student. Anyway, ever since then, I have this concept in mind for a lot of the things I do, but for like 10 years, I have not been able to translate to something that works. I either worry too much about things that I should not be (e.g. "What if I need to work remotely", which never happen until COVID-19), or I just don't really need/care about a comprehensive system. That chances a few months ago:
 
 Back in August, I got a chance to become a temporary team lead, which means my role changes from "dealing with Jira tickets" to "making sure others have Jira tickets to deal with", which means a shit ton of meetings, a shit ton of messages and emails, and a shit ton of documents to write. It doesn't take long before I realize how fucked I am if I don't come up with some system that works, and that combine with moving to a bigger place for myself, I ended up dedicating a wall to build a physical Einsenhower Matrix
 
-![An image of my wall with 5 post-it notes creating a grid, 2 for x-axis, 2 for y-axis, and 1 in the middle](C:\Users\louis\Desktop\git\website\content\blog\productivity\wallEisenhower.jpg)
+![An image of my wall with 5 post-it notes creating a grid, 2 for x-axis, 2 for y-axis, and 1 in the middle](wallEisenhower.jpg)
 
 And it actually works pretty well! It forces me to be honest to myself what is urgent/important, and stop working on things that's interesting but can be dealt with later. And that's what I have been using for about 2.5 months. And then November comes, and I started to take some lessons before going to work in the office, which means now I need some ways to make it portable. And right now in our team, there seems to be a trend to use more of Asana to organize tasks, and since the company is already paying for it, I might as well give it a shot. 
 
