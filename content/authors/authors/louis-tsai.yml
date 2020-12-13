@@ -1,12 +1,5 @@
 name: Louis Tsai
 bio: |
-  Written by You. This is where your author bio lives. Share your work, your
-  joys and of course, your Twitter handle.
+  Android Dev at Zalando by day, human by night, and helping out GDG Berlin on weekends. And if someone can give me a lesson of how to adult that’d be great thank you.
 avatar: ./avatars/louis-tsai.jpg
-social:
-  - url: https://unsplash.com
-  - url: https://stackoverflow.com
-  - url: https://github.com
-  - url: https://github.com
-  - url: https://github.com
 featured: true

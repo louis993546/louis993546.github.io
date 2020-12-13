@@ -1,33 +1,37 @@
 module.exports = {
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
-    siteUrl: `https://novela.narative.co`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: `Louis Tsai`,
+    name: `Louis Tsai`,
+    siteUrl: `https://louis993546.com`,
+    description: `Blog posts from Louis Tsai`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: `This is where Louis write all of his blog posts.`,
       maxWidth: 652,
     },
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/narative`,
+        url: `https://twitter.com/louis993546`,
       },
       {
         name: `github`,
-        url: `https://github.com/narative`,
-      },
-      {
-        name: `instagram`,
-        url: `https://instagram.com/narative.co`,
+        url: `https://github.com/louis993546`,
       },
       {
         name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
+        url: `https://www.linkedin.com/in/tsaitszho`,
       },
       {
-        name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
+        name: `medium`,
+        url: `https://louis993546.medium.com`,
+      },
+      {
+        name: `stackoverflow`,
+        url: `https://stackoverflow.com/users/2384934/louis-tsai`,
+      },
+      {
+        name: `unsplash`,
+        url: `https://unsplash.com/@louis993546`,
       },
     ],
   },
@@ -38,7 +42,7 @@ module.exports = {
         contentPosts: "content/posts",
         contentAuthors: "content/authors",
         basePath: "/",
-        authorsPage: true,
+        authorsPage: false,
         sources: {
           local: true,
         },
