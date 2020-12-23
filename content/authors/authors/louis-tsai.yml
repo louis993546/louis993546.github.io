@@ -2,4 +2,6 @@ name: Louis Tsai
 bio: |
   Android Dev at Zalando by day, human by night, and helping out GDG Berlin on weekends. And if someone can give me a lesson of how to adult that’d be great thank you.
 avatar: ./avatars/louis-tsai.jpg
+social:
+  - url: https://twitter.com/louis993546
 featured: true
