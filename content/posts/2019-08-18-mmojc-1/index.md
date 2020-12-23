@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # Mental Models of Jetpack Compose #1: State & Programming Models
 
 Update (2019.08.19): Chapter 2 is now up 🎉

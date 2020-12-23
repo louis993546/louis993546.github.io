@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # From Android zero to kinda-middle: Parsing JSON with Moshi
 
 From Android zero to kinda-middle is a new series, which explores stuff that I have learn in the last 2 years that elevates me from the worst Android developer in the world to “He can be worse”. It will mostly focuses on the little things that don’t get talked about enough, and references to people who actually know what they are talking about.

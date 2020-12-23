@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # A bunch of random things that I think PM should be aware of, from the POV of a developer
 
 It has been about 1.5 years since I officially join the workforce, and I am currently in my 2nd full time job. Just like everything else in life, there’s ups and downs, but overall I would say that it has been very interesting, and I am still learning a lot from everyone and everything. I just want to share a little bit of my experiences and feeling to help Project Managers and Product Managers (I am mixing the 2 because all of my prior experiences mix them together as well 😑) to get their job done more efficiently and more effectively, because for me, this is one of the biggest problem I have been facing.

@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # From Android zero to kinda-middle: What Kotlin null safety means to your code base and product
 
 I guess it’s a metaphor of Kotlin? IDK. (Credit: @andreilazarev on Unsplash)

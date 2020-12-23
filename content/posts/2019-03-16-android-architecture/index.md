@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # From Android zero to kinda-middle: Don’t be scare, “Architecture” and “Pattern” just fancy words…
 
 I just search for a photo that represents “sustainable” and this is what it comes up with (Photo by Jonathan Klok on Unsplash)

@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # Prepare a Jetpack Compose talk with me #1: Where do I even start?
 
 It starts with excitement, but 30s later, the horror starts to set in……

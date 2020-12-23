@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # From Android zero to kinda-middle: understanding what Gradle is & does
 
 Side note: Google Drawing like Paint but much worse, but hey, if it works, it works!

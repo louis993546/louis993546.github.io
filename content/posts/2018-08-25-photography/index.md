@@ -1,5 +1,10 @@
-
-# Photography and me, from start to end
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---# Photography and me, from start to end
 
 This is a derivative of a comment I made on reddit a few days back.
 

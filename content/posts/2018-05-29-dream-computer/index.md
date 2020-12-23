@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # My dream computer setup (mid 2018)
 
 As an Android Developer, it is actually not that hard nor expensive to have a setup that allows you to work efficiently. A couple hundred euros is already more than enough to get yourself a fast enough desktop, and maybe 200 more and you will get a very decent laptop. So why am I writing this? I don’t know. I just want to get it out of my head mostly.

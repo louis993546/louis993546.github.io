@@ -1,5 +1,10 @@
-
-# Life with Chromebook ep. 3: The end
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---# Life with Chromebook ep. 3: The end
 
 I would have never though my affair with Chrombook will end so soon.
 

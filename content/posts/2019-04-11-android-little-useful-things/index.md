@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # From Android zero to kinda-middle: a whole bunch of little useful things for your development…
 
 So many little things! (Photo by S O C I A L . C U T on Unsplash)

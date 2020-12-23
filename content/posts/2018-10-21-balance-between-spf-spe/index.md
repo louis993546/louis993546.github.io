@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # Finding a balance between “Single point of failure” and “Single point of entry”?
 
 I was browsing my RSS feed (when I should be working on my React.js project that I promised my friends that it would have been done more than a month ago) and I run into this article about what YouTube went down taught us. And it remind me that as a programmer working (primarily) for startups, I often find myself saying the following basically opposite statements:

@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # From gqlgen to GraphQL.js: a story of “choosing the right tool for the right job”
 
 Oh this? It has nothing to do with the content, I just took this yesterday and I quite like it ¯\_(ツ)_/¯

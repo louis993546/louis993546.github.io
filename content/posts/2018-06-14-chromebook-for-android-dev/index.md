@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # A Chromebook design for Android dev would be nice…
 
 With the recent announcement of Linux container in Chrome OS, which begins to bring Android Studio to Chrome OS, I can’t stop to wonder what could a Android developer friendly Chromebook could be. So here it is, my spit take on what I would like to have in a Chromebook for Android dev by Android dev:

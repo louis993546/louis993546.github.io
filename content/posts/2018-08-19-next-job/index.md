@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # What I will be looking for in my next job (Android dev, mid-2018 edition)
 
 It has been about a year and a half since I got my first real job, and I have learn a lot since then. I still remember back then, I don’t really have a clear goal on what do I want in a job, but just follow my gut feeling and something that looks cool and hip. Now, I realized that in order to grow faster, I need to be more specific on what am I looking for in my next career, and what do I ultimately want to achieve. The possibility of just randomly picked the perfect job for the rest of my life is next to impossible, so I need to be more specific about everything.

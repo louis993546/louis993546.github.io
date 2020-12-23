@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # First 2 weeks with the iPad Pro 11”
 
 If anyone knows how to “fix” the chipped paint on an IKEA table, please let me know 🙇‍♀️

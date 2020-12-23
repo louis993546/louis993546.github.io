@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # Gadget list (August 2018)
 
 A few days back, I set down and list out all of my gadgets down (again) to try to get my shit together. Here’s what I have and what I will do with them:

@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # Loft: I’ll be back
 
 Over the weekend, I have a full review of what I have been working on, and what I want to achieve in the next 6–12 months. And in the process, I realized that Loft is not the best project for me to achieve those goals, so it will go into hibernation for a while.

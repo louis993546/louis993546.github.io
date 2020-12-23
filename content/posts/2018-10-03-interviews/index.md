@@ -1,5 +1,10 @@
-
-# Interviews: the good, the bad, and the (sort of) ugly
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---# Interviews: the good, the bad, and the (sort of) ugly
 
 Now that I am pretty much off the interview treadmill, I just want to quickly write down my experience in the last 2-ish months. Hopefully some of this will give recruiters/HR/someone a bit better understanding of what I (and hopefully other developers) look for during an interview.
 

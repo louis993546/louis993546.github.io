@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # Loft: Using single Activity with Navigation Library: The good, the bad, and the ugly
 
 In the last episode, I briefly mentioned that I have been using the Navigation Library from the architecture component. And today I am going to talk about my experience with it so far.

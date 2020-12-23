@@ -1,4 +1,10 @@
-
+---
+title: Test
+author: Louis Tsai
+date: 2019-04-30
+hero: ./images/hero.jpg
+excerpt: With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.
+---
 # 2019 photography resolution: falling in love with it again?
 
 A few months back, I wrote a short article on my future relationship with photography in general. Fast forward to today, not much has changed, but instead I have done a lot more thinking, and I think now I have a slightly better picture of what I want in the future.
