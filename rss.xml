@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Louis Tsai blog]]></title><description><![CDATA[Louis is trying to write his thoughs out because he is bad at speaking]]></description><link>https://louistsaitszho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 03 Mar 2021 22:13:59 GMT</lastBuildDate><item><title><![CDATA[I Used Jira & Confluence to Manage My Life for 3 Months. Here's My Review]]></title><description><![CDATA[Back in early December 2020, I wrote an article on how I was testing out Jira & Confluence as my management tool. And it’s about time for me…]]></description><link>https://louistsaitszho.github.io/jira-review/</link><guid isPermaLink="false">https://louistsaitszho.github.io/jira-review/</guid><pubDate>Wed, 03 Mar 2021 21:30:00 GMT</pubDate><content:encoded>&lt;p&gt;Back in early December 2020, I wrote an article on how I was testing out Jira &amp;#x26; Confluence as my management tool. And it’s about time for me to write down what I have learned.&lt;/p&gt;
+&lt;h2&gt;What was the plan?&lt;/h2&gt;
+&lt;p&gt;For all the reasons and context of why I do this, you can read it from &lt;a href=&quot;https://louis993546.com/productivity/&quot;&gt;the last article&lt;/a&gt;. The gist is that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use Jira to manage the tasks I have&lt;/li&gt;
+&lt;li&gt;Use Confluence to document the thing I want to remember in the long run&lt;/li&gt;
+&lt;li&gt;Use Google Calendar to manage time by filling it up with rough time blocks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;So what works?&lt;/h2&gt;
+&lt;h3&gt;Writing on Confluence is great 👍&lt;/h3&gt;
+&lt;p&gt;One of the key problem that I was trying to solve is to avoid having more and more unstructured documentation, and so far I am very impressed with what Confluence. I can actually use it to get into a flow, and start writing down things, and most importantly, this actually helps/forces me to clear my brain, and see all the random thoughts I have as a bigger picture.&lt;/p&gt;
+&lt;p&gt;And that’s what I am want from any documentation tool. It has the right set of tools, plus a good enough user experience to help me solve real world problems. It’s definitely not the fastest/smoothest/prettiest website, and it does have a fair share of quirks. But overall it’s pros definitely beats it’s cons 👍&lt;/p&gt;
+&lt;h3&gt;Epics forces me to pick and choose 🎯&lt;/h3&gt;
+&lt;p&gt;One of the takeaways I have from this experience is that I always “tries” to do too many things at one. Learn 3 different programming language all at once? Sure why not!? Should I spend time to learn how to cook better, how to write better, or how to get fit? Why not all!?&lt;/p&gt;
+&lt;p&gt;And when I starts to write my tasks down in Jira, the little “Add an epic” hint text nudges me to categorize all the tasks I am doing, and with the help of the timeline view, it actually helps me better understand that “No, you probably shouldn’t do all of that at the same time”. Like it’s fine to be “Jack of all trades, master of none”, but you know, you at least have to be a “Jack”, i.e. “good enough” for each of those things. And having the timeline view visualize all of it, and pushes me to say “no”, or at the very least “not now”.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/61c0817106b6413e1cd017a22ef31586/f4562/epics.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 22.2972972972973%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;epics&quot;
+        title=&quot;epics&quot;
+        src=&quot;/static/61c0817106b6413e1cd017a22ef31586/294ce/epics.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Google Calendar mostly works 📅&lt;/h3&gt;
+&lt;p&gt;So far the best part of this experiment is definitely the use time blocks on Google Calendar. It’s not the best because it works perfectly. It’s the best because I learn the most from it. Here’s what happens&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In month 1 (i.e. December)&lt;/strong&gt;: Since I took vacation for almost the entire month, I can very easily fit tasks onto it, and follow what I have planned. No problem so far.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In month 2 (i.e. January)&lt;/strong&gt;: Now that I am back to work, now I have to figure out how to balance between work, the German course that I’m taking, and all the other tasks that I want to do. And pretty much for the entire month, I failed to actually stick to the schedule. Either by not having the energy/mood to finish my tasks after work, working extra hours, or combination of both.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In month 3 (i.e. February)&lt;/strong&gt;: After all the setback and further experiments, by mid-February, I have made enough changes to mostly stick to the schedule again.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0d60d60efd091fe2bb1b7cc4834ed0dd/be47b/badScheduling.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 36.486486486486484%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;badScheduling&quot;
+        title=&quot;badScheduling&quot;
+        src=&quot;/static/0d60d60efd091fe2bb1b7cc4834ed0dd/294ce/badScheduling.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;figcaption&gt;Scheduling tasks like this does not work for me at all&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;So what happened? Back in month 1, since I have pretty much the entire day to play with, I often make each time block bigger than it has to be, so that even if I start doing random things (e.g. replying to messages in the 1 hour reading block), there is probably still enough time to get back to flow.&lt;/p&gt;
+&lt;p&gt;And when month 2 and work starts, What I did was just to squeeze all of those into smaller blocks, but still with the same frequencies. That means I always have like 10 events on the calendar, each one is 30 minutes or less, and that means way too much jumping between tasks, and it just got extremely tiring and frustrating really quick.&lt;/p&gt;
+&lt;p&gt;So I started to make changes, moving things around, delete a task or two, but turns out it’s not enough. I ended up deleting all the future time blocks, and start fresh to figure out what I actually want to do, and where do they fit on the schedule. I know I have German course in the morning, and work in the afternoon. I know I will have lunch in between, and dinner after work. And just keep doing that, and slowly figure out how much “free” time I actually have for each day, and start scheduling bigger blocks. And there are a few more adjustments before I got back to the point of “mostly sticking to schedule”.&lt;/p&gt;
+&lt;p&gt;One thing I want to clarify is that this is what works for &lt;strong&gt;me&lt;/strong&gt;. Maybe your brain likes having different tasks to keep it fresh. The key takeaway is that &lt;strong&gt;by forcing myself to plan what I want to do, it forces me to understand what I actually want to do&lt;/strong&gt;, and adjust my plan accordingly.&lt;/p&gt;
+&lt;h2&gt;And what doesn’t work?&lt;/h2&gt;
+&lt;h3&gt;Jira is not for managing small tasks 😡&lt;/h3&gt;
+&lt;p&gt;It all broke down the first time I try to use Jira to manage my grocery list. It is just not design for simple “check-and-forget” type of task management. And to be fair that’s not they are trying to be anyway, so that is perfectly fine. All I have to do it to replace it with something much simpler, and for now I am using the build-in Reminder app on my iPhone. It is good enough to keep track of grocery list, as the integration with Siri is kinda useful.&lt;/p&gt;
+&lt;h3&gt;Next-gen project is master of none&lt;/h3&gt;
+&lt;p&gt;So in the original article, I cite the existence of the next-gen project as one of the main reason I want to give it a shot. And after 3 months, I have come to the conclusion that it is not good (yet). In Cantonese there is a idiom “兩頭唔到岸”, which literally translates to “both sides not touching the shore”, figuratively translates to “you try 2 different options but neither of them work (probably because you try both at the same time)“. And to me that feels like the state the next-gen project is in right not.&lt;/p&gt;
+&lt;p&gt;On one hand, it sit somewhere in the middle of configurability; on the other hand, it is not flexible enough to get it to work exactly the way I want it, while on the other hand, it also try give people some choices by putting way too many feature toggles. I understand that why Jira is taking this approach to build the future of their product, but at this point in time, it’s not that fun to actually use it.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/328cddb8898eaf5dc2271423653c8162/e20e0/features.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.13513513513513%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;features&quot;
+        title=&quot;features&quot;
+        src=&quot;/static/328cddb8898eaf5dc2271423653c8162/294ce/features.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;It’s not mobile-friendly&lt;/h3&gt;
+&lt;p&gt;First what I want to clarify is that the app itself is pretty damn good. The iOS app is snappy, and it’s UI strike a good balance between Atlassin and Apple. However, because of the structure of how Jira works, it’s just gonna be hard to make it easy to use on small screen devices. From having to pan in both directions to see all your tasks on the board, to having no shortcut to move a ticket from one lane to the other one.&lt;/p&gt;
+&lt;h2&gt;So are you going to stick with it?&lt;/h2&gt;
+&lt;p&gt;The results are in, and they are:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tool&lt;/th&gt;
+&lt;th&gt;Grade&lt;/th&gt;
+&lt;th&gt;Action&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Jira&lt;/td&gt;
+&lt;td&gt;❌&lt;/td&gt;
+&lt;td&gt;Moving away from it&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Confluence&lt;/td&gt;
+&lt;td&gt;🤔&lt;/td&gt;
+&lt;td&gt;Looking for replacement&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Google Calendar&lt;/td&gt;
+&lt;td&gt;✅&lt;/td&gt;
+&lt;td&gt;Keep using it&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;❌ Jira&lt;/h4&gt;
+&lt;p&gt;When I look back, it’s very obvious that Jira is not actually helping me to actually get things done. However, it is very good at making me feel productive when I am playing with it, which IMO is exactly the worst part of Jira. Even with next-gen project, Jira is still a very complex product, and that’s why we ended up spending so much time and effort just to use it. For me, task management is just a means to an end. I don’t need to feel productive using Jira, I need to feel productive working on things I listed on Jira.&lt;/p&gt;
+&lt;p&gt;And for the time being, I have move all the tasks to another task manager. Once I got more ideas of what exactly I am looking for, I might write another follow-up for that 🤷‍♀️&lt;/p&gt;
+&lt;h4&gt;🤔 Confluence&lt;/h4&gt;
+&lt;p&gt;On one hand, the experience of using Confluence is good enough that I am actually using it to clear my head. On the other hand, without Jira, it loses the biggest reason why I picked it in the first place: easy of connection with Jira.&lt;/p&gt;
+&lt;p&gt;For the time being, I am keeping most of the documents there. Some types of document with specific purposes (e.g. journal/blog post) is being moved to other places. I can slowly start looking for some documentation workflow that fits what I have, hopefully I will find something by the time everything falls apart 🤞&lt;/p&gt;
+&lt;h4&gt;✅ Google Calendar&lt;/h4&gt;
+&lt;p&gt;Given it’s one of the high-light of this experiment, of course I am going to keep it. As I mentioned above, this is a lot less about the tools itself, but more about having a workflow that works for me. So I will just keep an eye to make sure I adhere to my time block schedule 👍&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;So what’s the plan?&lt;/h2&gt;
+&lt;p&gt;Apart from those 3, there are also other things that I am trying out to improve my productivity.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep track of how much time I spent (wasted) using Toggl Track&lt;/li&gt;
+&lt;li&gt;Note taking and reading with reMarkable 2&lt;/li&gt;
+&lt;li&gt;How to use Pomodoro in moderation to keep free-flow focus time running smoothly&lt;/li&gt;
+&lt;li&gt;How does the physical environment (i.e. my apartment) affects my motivation&lt;/li&gt;
+&lt;li&gt;How does the equipment (e.g. my computer) affects my focus and efficiency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If any of them start getting interesting, I will just write another post. But at this point it’s still too early to tell 🧐&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My plan to become more productive in a month]]></title><description><![CDATA[My plan to become more productive in a month 2020 is almost over, and I just so happen to have almost an entire month off to do whatever I…]]></description><link>https://louistsaitszho.github.io/productivity/</link><guid isPermaLink="false">https://louistsaitszho.github.io/productivity/</guid><pubDate>Sun, 06 Dec 2020 22:10:00 GMT</pubDate><content:encoded>&lt;h1&gt;My plan to become more productive in a month&lt;/h1&gt;
+&lt;p&gt;2020 is almost over, and I just so happen to have almost an entire month off to do whatever I want. One of the things I have learn about myself this year is that my productivity often relies on supervision &amp;#x26; “too afraid to say no so now I have to get it done in the next 4 hours”. So one of my goal in the next &lt;del&gt;month&lt;/del&gt; 25 days is to figure out something that can keep me productive (and hopefully subsequently fulfilled and happy).&lt;/p&gt;
+&lt;h2&gt;What’s the status quo&lt;/h2&gt;
+&lt;p&gt;Currently, I have 2(-ish) system going on: 1 for my work stuff, and 1 for my personal stuff&lt;/p&gt;
+&lt;h3&gt;Work: 2D version of Einsenhower Matrix using Asana&lt;/h3&gt;
+&lt;p&gt;For some reason, I remember very distinctly how I got introduce to the Eisenhower Matrix: it was when I was like 16, during a tutorial session (Hong Kong style, i.e. watching a pre-recorded video from one of the “famous” tutors), in which there was just me and 1 other student. Anyway, ever since then, I have this concept in mind for a lot of the things I do, but for like 10 years, I have not been able to translate to something that works. I either worry too much about things that I should not be (e.g. “What if I need to work remotely”, which never happen until COVID-19), or I just don’t really need/care about a comprehensive system. That chances a few months ago:&lt;/p&gt;
+&lt;p&gt;Back in August, I got a chance to become a temporary team lead, which means my role changes from “dealing with Jira tickets” to “making sure others have Jira tickets to deal with”, which means a shit ton of meetings, a shit ton of messages and emails, and a shit ton of documents to write. It doesn’t take long before I realize how fucked I am if I don’t come up with some system that works, and that combine with moving to a bigger place for myself, I ended up dedicating a wall to build a physical Einsenhower Matrix&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ebf125684aace3f7676a8805f6578388/708a4/wallEisenhower.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;An image of my wall with 5 post-it notes creating a grid, 2 for x-axis, 2 for y-axis, and 1 in the middle&quot;
+        title=&quot;An image of my wall with 5 post-it notes creating a grid, 2 for x-axis, 2 for y-axis, and 1 in the middle&quot;
+        src=&quot;/static/ebf125684aace3f7676a8805f6578388/294ce/wallEisenhower.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And it actually works pretty well! It forces me to be honest to myself what is urgent/important, and stop working on things that’s interesting but can be dealt with later. And that’s what I have been using for about 2.5 months. And then November comes, and I started to take some lessons before going to work in the office, which means now I need some ways to make it portable. And right now in our team, there seems to be a trend to use more of Asana to organize tasks, and since the company is already paying for it, I might as well give it a shot. &lt;/p&gt;
+&lt;p&gt;It does not take long before I start missing the Eisenhower Matrix. While “urgent or not” can easily be reproduce by due date, there does not seems to be a build-in way to indicate importance. Thankfully after a quick Google, I found an extension call &lt;a href=&quot;https://chrome.google.com/webstore/detail/asana2go/meaajmlecpkbjcofehfpjngpnpfpjlkd&quot;&gt;Asana2Go&lt;/a&gt;, which has a feature to build an Eisenhower Matrix by adding a custom field to specify which quadrant does a task falls into. Actually, after like 2 days, I just use the custom field and forgot about the extension completely. I just rely on sorting to display the tasks by due date first, then pick the next task to work on according to its quadrant. &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b638b6c3de6d92c41aaca35c6c5c903f/6bf30/asanaEisenhower.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 106.75675675675676%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;An obfuscated image of my Asana board, which has 2 project: &amp;quot;In Progress&amp;quot; and &amp;quot;Backlog&amp;quot;. There is a &amp;quot;Eisenhower&amp;quot; column, and each task has a Q1 - Q4 assign to it. Each task also has a due date.&quot;
+        title=&quot;An obfuscated image of my Asana board, which has 2 project: &amp;quot;In Progress&amp;quot; and &amp;quot;Backlog&amp;quot;. There is a &amp;quot;Eisenhower&amp;quot; column, and each task has a Q1 - Q4 assign to it. Each task also has a due date.&quot;
+        src=&quot;/static/b638b6c3de6d92c41aaca35c6c5c903f/294ce/asanaEisenhower.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And it has been about 2 weeks since I started using this Asana + custom field to mimic Eisenhower Matrix, and so far I really like this approach. As long as I can figure out a way to Asana visible (i.e. a vertical monitor), I am able make sure I work on the next most urgent and/or important task 👍&lt;/p&gt;
+&lt;p&gt;(And of course we use Jira for all the tickets 😭)&lt;/p&gt;
+&lt;h3&gt;Personal: “Whatever is closest to me” is a system, right?&lt;/h3&gt;
+&lt;p&gt;For my personal tasks, I have not been paying much attentions to it for a very long time. I switch between different to-do-list-app constantly, and even more ways to keep track of my notes. Here are some of the things I have tried&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Evernote + Google Tasks&lt;/li&gt;
+&lt;li&gt;OneNote + Google Tasks&lt;/li&gt;
+&lt;li&gt;Google Drive + Wunderlist (RIP)&lt;/li&gt;
+&lt;li&gt;Google Drive + Todoist&lt;/li&gt;
+&lt;li&gt;GitHub + (every to-do-list-app)&lt;/li&gt;
+&lt;li&gt;Calendar + Google Tasks (the new one)&lt;/li&gt;
+&lt;li&gt;Google Keep + Apple Reminder&lt;/li&gt;
+&lt;li&gt;Apple Notes + Apple Reminder&lt;/li&gt;
+&lt;li&gt;Microsoft To Do + reMarkable + Post-it notes on the wall + Apple Notes + Google Keep&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As you can see, it’s really a mess.&lt;/p&gt;
+&lt;h2&gt;What’s working&lt;/h2&gt;
+&lt;h3&gt;Separating work &amp;#x26; person tasks is mostly good&lt;/h3&gt;
+&lt;p&gt;Except for 1 or 2 edge cases, I have extremely separate personal and work life (that’s just how I always deal with things). And so far the only “issue” I really have is that there is no way to check work tasks if I don’t have work machines with me. For 95% of the time, that’s not a bad thing anyway.&lt;/p&gt;
+&lt;h3&gt;Due date + Eisenhower sorting is actually not bad&lt;/h3&gt;
+&lt;p&gt;Like I said above, so far I am really enjoying the 2D version of Eisenhower matrix using Asana. It forces me to give each task an end date, it’s easy enough to figure out how those tasks are gonna fit into the schedule, and it’s super easy and satisfying to update and finish a task 👍&lt;/p&gt;
+&lt;h2&gt;What’s not working?&lt;/h2&gt;
+&lt;p&gt;The entirety of my personal system is not working. It’s not just the fact that I didn’t get things done on time, the fact that I constant switch systems also translates to a lot of long term tasks and goals getting lost. While so far it has not cause any major trouble, it definitely needs to be fix up ASAP, hence this article.&lt;/p&gt;
+&lt;h2&gt;What are the options&lt;/h2&gt;
+&lt;h3&gt;Notion&lt;/h3&gt;
+&lt;p&gt;It sponsored so many YouTube channels to a point that it’s kinda hard to escape it. I have created an account to play with it a little bit to see what it’s all about, and while it definitely looks nice, I am not sure Notion is the right approach.&lt;/p&gt;
+&lt;p&gt;(Note: this is &lt;strong&gt;not&lt;/strong&gt; a review of Notion at all)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It feels too flexible&lt;/li&gt;
+&lt;li&gt;It often feels like a bad compromise between “a full fledge tasks management system” and “a full fledge note taking system”&lt;/li&gt;
+&lt;li&gt;It’s not satisfying to use, esp. from my phone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Google Calendar everything, LITERALLY&lt;/h3&gt;
+&lt;p&gt;I think I very briefly tried it in the past, but life is just way too chaotic to try to schedule every little tasks. It took me maybe 2 days before I realize how stupid I was.&lt;/p&gt;
+&lt;h3&gt;Other apps/system/method that I have heard of/tried before&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://apps.apple.com/gb/app/hour-blocks-day-planner/id1456275153&quot;&gt;Hour Blocks&lt;/a&gt;: not a bad idea, but the fact that it relies on my phone (i.e. source of distraction) means I can’t use it. However, I do like the idea a lot 😍, which you will see in a minute.&lt;/li&gt;
+&lt;li&gt;Pomodoro: In a world where I have a bunch of meetings, Pomodoro just doesn’t fit well into the system. I need something that’s more flexible &amp;#x26; more predictable at the same time, and “let just start a 25 minutes timer at any time of the day” it just not gonna work on itself.&lt;/li&gt;
+&lt;li&gt;Asana: I don’t wanna pay for my personal account🤑. Also I don’t think all the project/milestone/roadmap are useful to organize my personal tasks anyway.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Build my own app&lt;/h3&gt;
+&lt;p&gt;Because I don’t have enough dead side projects already 😂&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;And the winner is…&lt;/p&gt;
+&lt;h3&gt;Jira!? 🤨&lt;/h3&gt;
+&lt;p&gt;I know this does sound like the stupidest idea. Isn’t it already tragic enough that I have to use Jira on a daily basis at work, why am I doing this to my personal life as well? Well, let me explain a bit of what I have learned in the last 3 months of dealing with Jira…&lt;/p&gt;
+&lt;h4&gt;Pros 1: Configurable&lt;/h4&gt;
+&lt;p&gt;On one hand of the spectrum, you have tools like Microsoft To Do, in which there is pretty much nothing you can configure. And then you get tools like Asana, which (if you pay) you have access to custom fields, some decent filtering, but you are still very much in the bubble of how Asana thinks you should work. And then there is Jira, in which most things are configurable, but it still feels very “type-safe” and somewhat complicated to change, but at least it’s possible. And if you keep driving along the spectrum, you will get to tools like Notion and AirTable, which basically is a free canvas/spreadsheet/database/all-of-the-above with extra steps. &lt;/p&gt;
+&lt;h4&gt;Pros 2: JQL&lt;/h4&gt;
+&lt;p&gt;As a programmer, the fact that there is a query language to find tasks has proven to be a godsend. Imagine if you got dozens of new tickets a day (that’s not kidding, it seriously happen for like 2 months straight), there is no reasonable way to keep them sorted and filter correctly without something advance, and JQL has proven itself to be very useful. I hope it won’t come to that day for my personal tasks, but you’ll never know.&lt;/p&gt;
+&lt;h4&gt;Pros 3: Next-gen project&lt;/h4&gt;
+&lt;p&gt;Another thing that makes my personal Jira better than the work Jira is the fact that I am using the next-gen project. It is actually a lot closer to Trello (which is now another Atlassian product anyway) than the traditional Jira. And since it’s just me and myself in the “project”, something lighter and simpler is just what I need&lt;/p&gt;
+&lt;h4&gt;Pros 4: Reasonable app&lt;/h4&gt;
+&lt;p&gt;There are so many software that never figured out how make their mental model works well in mobile client, and for that I really have to applaud the Jira apps. It’s actually pretty useable. A lot of other apps either can’t figure out how to make all the info fit on screen (e.g. Asana, in which the list does not display any fields), not a very good app (e.g. Microsoft To Do, in which I very often swipe away a task when I was just trying to go back), or combination of both (e.g. Notion, which is just trying to cramp the entire webpage to a small screen. Please stop). &lt;/p&gt;
+&lt;h4&gt;Pros 5: Confluence (🤞)&lt;/h4&gt;
+&lt;p&gt;If you take another look in my person system above, you can see that I often have a tasks list + a note taking app. And so far, they are always 2 separate entities, and some information are always separated. And right now I am hoping the fact that Jira &amp;#x26; confluence can cross-reference each other can turn itself into something a lot more powerful. I have seen how it makes my life a lot easier when I build our team’s documentation at work, and I am hoping to transfer that to my own Jira + Confluence setup.&lt;/p&gt;
+&lt;h4&gt;Pros 6: I am already using it at work anyway&lt;/h4&gt;
+&lt;p&gt;I have spend the last 3 months managing tickets on Jira, and documents on Confluence, I am already quite familiar with how it works, even though we are still using the &lt;del&gt;ugly&lt;/del&gt; classic version of Atlassian apps. And at the end of the day, I am trying to get shit done, and spending way too much time to figure out how to setup a new system is not particular practical.&lt;/p&gt;
+&lt;h3&gt;Actually, it’s Jira + Google Calendar&lt;/h3&gt;
+&lt;p&gt;So Jira should explain all the part about task management &amp;#x26; documentation. And for time management, I think we are all stuck with Google Calendar anyway (if you have any reasonable alternative please let me know 🙏). However, I took the idea of Hour Blocks, and only put big generic blocks of tasks, instead of trying to make detail and accurate schedule. &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/94dea69e766296677c665c7ac1275a19/f5c5a/googleCalendar.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.189189189189186%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;An obfuscated image of how I am using Google Calendar. Each event have at least 15 minutes gap between them, and they almost never overlap. There are also almost no short events&quot;
+        title=&quot;An obfuscated image of how I am using Google Calendar. Each event have at least 15 minutes gap between them, and they almost never overlap. There are also almost no short events&quot;
+        src=&quot;/static/94dea69e766296677c665c7ac1275a19/294ce/googleCalendar.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For example: currently I am reading the “Atomic Habits” by James Clear, and I am trying to have a committed time and place to actually build my habits. So about 80% of the blocks you see are actually events to build my habit. And the fact that I can easily make sure they are not interfering with my other events and meetings is extremely useful. &lt;/p&gt;
+&lt;p&gt;So far the only major thing that’s missing for me is the lack of a easy (and free) way to see both Jira and Google Calendar together, and so far it has not been a big issue.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;So this is what I am trying out for the next 25 days. Let’s see if this system is enough to drive me back to a productive and healthy lifestyle. And if you don’t see a follow-up of this article in January 2021, there are only 3 possibilities&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shit hits the fan and I got busy AF&lt;/li&gt;
+&lt;li&gt;The system does not work&lt;/li&gt;
+&lt;li&gt;I am dead&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🤞🤞🤞🤞🤞&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Review of all the crabs I bought during quarantine]]></title><description><![CDATA[Review of all the crabs I bought during quarantine Over the last few months, I have bought a shit ton of things online, and my brain is…]]></description><link>https://louistsaitszho.github.io/purchases/</link><guid isPermaLink="false">https://louistsaitszho.github.io/purchases/</guid><pubDate>Sat, 17 Oct 2020 19:17:42 GMT</pubDate><content:encoded>&lt;h1&gt;Review of all the crabs I bought during quarantine&lt;/h1&gt;
+&lt;p&gt;Over the last few months, I have bought a shit ton of things online, and my brain is happy to supply a tiny dose of serotonin to keep me alive.&lt;/p&gt;
+&lt;p&gt;This is not an objective review &lt;strong&gt;at all&lt;/strong&gt;. It’s more of a review of how it fits into my life (or not)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Dell U2515H monitor, used: 8/10&lt;/h3&gt;
+&lt;p&gt;Before jumping into it’s pros and cons, funny story: 3+ years ago, when I first moved to Berlin, I bought a brand new monitor (this exact model). And then when I moved into my last place, because of how shallow the table was, I ended up getting selling it for like 200€. And fast forward to maybe 6 months ago, after spending a couple of weeks with the tiny 13” monitor from the company MBP, I decided to say “screw it I need a monitor”. And after way too many research and still found nothing reasonable, I randomly hop onto facebook marketplace, and I saw the same monitor I have 2 years ago :joy: It’s not from the same person, so I don’t know if it could be the exact same one that I owned, but still :joy:&lt;/p&gt;
+&lt;h4&gt;Pros&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;I like the 1440p resolution. More desktop real-estate than 1080p display&lt;/li&gt;
+&lt;li&gt;DisplayPort = I can control the brightness from the computer using some software&lt;/li&gt;
+&lt;li&gt;It’s a pretty good monitor for 200€&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Cons&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s definitely not as colorful &amp;#x26; accurate as the MBP 16 display&lt;/li&gt;
+&lt;li&gt;I often forgot to switch between Windows and macOS gamma settings&lt;/li&gt;
+&lt;li&gt;The stand is very deep, which force me to get a monitor stand back when I was in a rented room &amp;#x26; a very shallow IKEA desk&lt;/li&gt;
+&lt;li&gt;Apparently 1440p vertically is not wide enough for GitHub code review to show side-by-side without wrapping the code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;Magic Trackpad: 6/10&lt;/h3&gt;
+&lt;p&gt;After getting monitor, I started to find some way to further improve my posture by using my old K380 keyboard, but the issue is that I can never get used to using mouse with macOS. It feel so much more natural. And when I saw that iPad starts supporting it, I decided to give it a shot&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It feels very normal for macOS &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s really expensive&lt;/li&gt;
+&lt;li&gt;Can’t pair to 2 device, so I just never use it with the iPad&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the end, this is nice to improve my posture, and that’s the only reason why I kept it.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Creative T40 II: 8/10&lt;/h3&gt;
+&lt;p&gt;Shortly after I took the work computer home (which was a MacBook Pro 13 at the time), I realized that the speaker is super crack and sounds terrible. I don’t really know what’s going on, so I was looking for something that can make hours and hours of video call more bearable. At after narrowing down to this, and the one from Bose, I found a great discount and made the purchase.&lt;/p&gt;
+&lt;p&gt;(But then 2 weeks later, I realized that the cause of the cracking sound is due to a lose screw getting stuck on the speaker, and it went back to normal after I took it out. Also then we got MacBook Pro 16 as replacement)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It does sounds pretty sweet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Now that I use mostly wireless headset, having to find adapter and plug it in to random devices is pretty annoying&lt;/li&gt;
+&lt;li&gt;It’s bigger than I expected&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nowadays I just use the laptop’s speaker, and move the speaker to TV. It could be just placebo, but I think it sounds better than my TV’s speaker. Dialog sounds better, plus it’s easier to adjust the Treble and Base when needed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Jabra Talk 2: 8/10&lt;/h3&gt;
+&lt;p&gt;I don’t remember exactly why I bought it at this point, but it’s probably something along the line of making it easier to walk around my tiny room and still able to chat. But I didn’t do that a lot, and I almost forgot it.&lt;/p&gt;
+&lt;p&gt;But then I move to the new apartment, and due to the lack of anything, the echo is terrible, and the fan noise of the computer also got picked up very easily. So I dig it back out and it’s now what I use on a daily basis&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s super consistent: almost no echo sound, and far enough from the computer to not pick up it’s fan noise&lt;/li&gt;
+&lt;li&gt;Pretty light weight&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Not very comfortable&lt;/li&gt;
+&lt;li&gt;Battery is mediocre, definitely at least once a day&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And given the fact that it’s not expensive + so easy to use, I would highly recommend Bluetooth headset for home office 👍&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;New apartment: 8.5/10&lt;/h3&gt;
+&lt;p&gt;I was already looking for apartment back in 2019, but COVID-19 makes it so much easier to spot even more issues with my 2-6 people share flat. I need more space both physically &amp;#x26; emotionally. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finally living alone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s expensive AF 💸💸💸💸💸💸💸💸💸💸&lt;/li&gt;
+&lt;li&gt;It took forever to get it furnish to a livable point&lt;/li&gt;
+&lt;li&gt;What if I had a heart attack or something, and no once notice my decaying corpse until 2 years later when my bank account runs out of money?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;Joby tripod: 4/10&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To be found&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I only used it like once&lt;/li&gt;
+&lt;li&gt;I don’t really see myself using it often in the future either&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR: I don’t know why I bought this&lt;/strong&gt;. At least it’s not crazy expensive&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Pixel Slate, used: 4/10&lt;/h3&gt;
+&lt;p&gt;I bought it because I though I am going to get series to build an Android app, but the second I got it I realized how stupid that sounds. Not to mention it took forever to get it ship, and oh god the import tax. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s thin&lt;/li&gt;
+&lt;li&gt;It’s speaker is not bad&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s a terrible tablet&lt;/li&gt;
+&lt;li&gt;Almost no good Android tablet apps&lt;/li&gt;
+&lt;li&gt;It’s battery is not good&lt;/li&gt;
+&lt;li&gt;Why is the entire side load &amp;#x26; debug Android app so annoying!?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am so gonna sell this ASAP, before it’s price drops further.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Alesis Turbo Mesh drum set: 8.5/10&lt;/h3&gt;
+&lt;p&gt;A bit of back story: I kinda had a thing for drums, ever since I was in the marching band back in scout group in Hong Kong. And now that I have space of my own, I can actually afford to fill some of the space with something as my hobby. And one day I was talking to a college, turns out he just got himself a new electric drum set, and I immediately go to the internet to find what’s suitable. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s pretty fun so far&lt;/li&gt;
+&lt;li&gt;I can connect it to my computer and record it&lt;sup&gt;*&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;(It’s not about the drum set but still) Below me is the mail room, and next to me is a demo unit of the building, so It’s almost perfect to not affect anyone 👍&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It feels a bit cheap (because it is)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;sup&gt;*&lt;/sup&gt; When connect to iPad, close high-hat and floor tom does not work with Garageband; and when connect to macOS, close high-hat does not work out of the box, but there are hacks I’ve found online that fixes it.&lt;/p&gt;
+&lt;p&gt;So far online drum lesson is still quite fun, let’s hope I can keep it going, unlike my 200 other hobbies!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;TCL C715 TV: 7/10&lt;/h3&gt;
+&lt;p&gt;I bought a TV shelve from IKEA first, and then when on video chat with my family, one of them ask “Why would you get a TV shelve if you haven’t decide if you want a TV or not?”, then I’m like “yeah that’s fair. Time to get a TV I guess”. Next thing I know I am ordering a TV from the internet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s pretty cheap&lt;/li&gt;
+&lt;li&gt;it’s color is quite decent (technically it has HDR but it’s not that bright TBH)&lt;/li&gt;
+&lt;li&gt;Android TV is nice&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Turns out 55” is smaller than I expected&lt;/li&gt;
+&lt;li&gt;It’s kinda slow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am not an AV expert, so I don’t know if it’s good or not. All I care is that it works, it looks not ugly, and has the basic sets of apps (YouTube, Netflix, Spotify)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Fujifilm 50-230mm: ?/10&lt;/h3&gt;
+&lt;p&gt;I think I was watching some YouTube video about landscape photography, and I was hook to the idea that a narrow lens will open a few more ways for me to take photos. Last time I had a telephoto lens was probably 4-5 years ago with my D7000 and 55-200mm back in Hong Kong.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TBD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TBD&lt;/li&gt;
+&lt;li&gt;I haven’t bought it out to take photos yet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The reason why I am giving it a ”?” instead of a low score is that I still see I slight chance that I will like it once I use it, it’s just that I have to actually plan a simple hiking trip&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Nikon FM: 6/10&lt;/h3&gt;
+&lt;p&gt;Again, I was watching YouTube videos, and I got myself into a series of analog photography channels, and next thing I know I am looking on eBay for old Nikon camera to pair with my lonely 50mm f1.8/D.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It feels really sturdy&lt;/li&gt;
+&lt;li&gt;It’s also quite small &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some gunk got onto the focus screen thing and it’s kinda pissing me off, and there is no way to take it off from what I can tell&lt;/li&gt;
+&lt;li&gt;I have a roll of film in my fridge for like 3 months now. I really need to take it to get it developed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So far it’s kinda low score because I have not seen the results yet, so let’s wait and see if the photos can wow me&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Logitech K780: 6/10&lt;/h3&gt;
+&lt;p&gt;I have had a Logitech K380 for 3 years, and during my “I need to make my workspace more ergonomic” phase, one of the thing I got my eyes on was to improve my phone holding situation. And when I also saw that K780 supports USB unify dongle, that peeks my interest even more.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s a good keyboard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Turns out backlit keyboard is pretty useful&lt;/li&gt;
+&lt;li&gt;The phone holder plan does not work out that well, due to the fact that as an Android Dev, I need access to the USB port&lt;/li&gt;
+&lt;li&gt;Num pad is not as useful as I think. It makes it a bit too wide IMO.&lt;/li&gt;
+&lt;li&gt;The difference between the Windows and macOS keys are constantly pissing me off&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If there is a version of K780 that looks exactly the same, but chop off the num pad, that’d be great. But It’s still very nice to have for my office setup.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Twelve South laptop stand: 5/10&lt;/h3&gt;
+&lt;p&gt;Another first world problem: The laptop can’t get close enough to the display without taking up all the space for the keyboard and trackpad. So I guess I will get something to elevating it then.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It does the job&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I know it’s like decent quality Aluminum, but that’s still a bit expensive for a banded bar of metal.&lt;/li&gt;
+&lt;li&gt;More flimsy than I expected (or maybe not design for MacBook Pro 16?)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It fits in my current setup, so it’s staying for now.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Tristar Rice Cooker: 9/10&lt;/h3&gt;
+&lt;p&gt;Now that I am stuck at home most of the days, the ability to cook carbs other than pasta easily has been crucial. Is the rice cooker perfect? Of course not, but since it’s cheap &amp;#x26; easy to use, I am not gonna complain at all&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It works perfectly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The non-stick is kinda sticky&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you cook rice more than 3 times a month and you don’t have a rice cooker, go get one.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Some random monitor stand: 8/10&lt;/h3&gt;
+&lt;p&gt;Again, “ergonomic office” phase, shallow desk, deep monitor stand&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It get’s the job done&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The one I got is not that flexible, esp. lacking height adjustment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It serves me well back in my old apartment, but in this new one, I went out of my way to make sure I don’t have to get monitor stand through the cable hold on a particle board desk. So overall recommend only if you have similar space issue.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Polaroid Impulse AF: ?/10&lt;/h3&gt;
+&lt;p&gt;I just got it last week, and so far haven’t taken a lot of pictures yet. Although the 1 selfie I took got a lot of likes on IG, so there’s that. My original idea is that it would sit on my dining table or shelve, and act as the memory capture device when I have friends over. So far that has not happen yet, so we’ll see how that goes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It does feel kinda magic&lt;/li&gt;
+&lt;li&gt;It’s mind-blowing to see a 30+ years camera works that well&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s not exactly the cheapest hobby over time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let’s try to invite people to my place soon (and in a safe way), and before I do that I need to clean up the place again 🧹&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;reMarkable 2&lt;/h3&gt;
+&lt;p&gt;I bought and return the first generation about 2 years ago, and somehow what’s my most read article on Medium. I guess I accidentally did a great SEO on that article and it’s now one of the top search result I guess. The TL;DR of that article is that I like it a lot, it’s just really expensive for what it cannot do. And when I saw reMarkable 2, I know I have to give it a chance. And sure enough after months and months of waiting, I got my delivered yesterday.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Still the same almost magical writing experience&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some things from my wishlist did not get fullfill, like front-lit&lt;/li&gt;
+&lt;li&gt;Cheaper but still more expensive than an iPad, which still sounds kinda insane&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Right now I am trying really hard to find a system that I can incorporate it into my work (or daily life), and I really hope to keep it. Let’s see if the honeymoon phase will end before the return period&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Wow that’s a lot of crab I bought in the last few months. I really got to get better at managing my finance.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Where do I see myself in 10 years?]]></title><description><![CDATA[It has been almost 4 years since I graduated from university, and some recent event allows me to start to explore being other than an…]]></description><link>https://louistsaitszho.github.io/ten-years/</link><guid isPermaLink="false">https://louistsaitszho.github.io/ten-years/</guid><pubDate>Sun, 20 Sep 2020 20:00:00 GMT</pubDate><content:encoded>&lt;p&gt;It has been almost 4 years since I graduated from university, and some recent event allows me to start to explore being other than an Android developer. And it’a about a month in, so I want to write down the random thoughts in my brain, hopefully at the end I will have a better vision of where do I see myself in 10 years.&lt;/p&gt;
+&lt;h2&gt;What’s new&lt;/h2&gt;
+&lt;p&gt;For the last month or so, I have started to pick up the task of temporarily leading a team of developers in Zalando. And just to be clear, I am not here to discuss the internals of my company, or what exactly I am working on (but you should definitely stay tune). &lt;/p&gt;
+&lt;p&gt;So what do I do now? Well, just like other types of team lead, you became the middleman between your bosses and your team, which mean you have to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Forward useful information to your team&lt;/li&gt;
+&lt;li&gt;Gether information to your bosses&lt;/li&gt;
+&lt;li&gt;Ensure your team is clear what is our goal, and how are we planning on doing&lt;/li&gt;
+&lt;li&gt;Help unblock my team members whenever necessary&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And on the contrary, it also means I have a lot less time &amp;#x26; energy to code 😢&lt;/p&gt;
+&lt;h2&gt;What’s my impression so far?&lt;/h2&gt;
+&lt;p&gt;So far my impression of the role is “it can be worse”. I still don’t see myself as a so call “people person”, and being in a position where you spent so many time talking to other people (via the internet) just feels really really exhausting. Right now I don’t know if it’s because of the environment, this particular network of people I am working with, or just the fact that this year has been a really fucking downer (or all of the above). But so far this does not feel very sustainable, because I am not necessarily happy about this.&lt;/p&gt;
+&lt;p&gt;To clarify this a bit more: I am not happy because work feels really exhausting, when I think it shouldn’t have been. Again, not getting into details, just saying that compare to my (handful of) past experiences, there are a lot of efforts to be made before real work can start. To be fair, it’s the first time I work in company of this scale, and there are definitely good reasons to not act like a rackless startup and just do whatever I want. But still, my brain is still taking it’s time to adjust my expectations. Afterall, this is the first time taking on such responsibilities (not counting the week in the old company where all the bosses are sick/injured/vacation and somehow it becomes my turn to pick up admin tasks for a specific feature).&lt;/p&gt;
+&lt;h2&gt;So do you see yourself staying in your current company?&lt;/h2&gt;
+&lt;p&gt;In short term (let say 1 year), yes. There are a few reasons&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a very unique opportunity to start to think about what I want to do in the long run&lt;/li&gt;
+&lt;li&gt;There are still great things about working here that I want to treasure.&lt;/li&gt;
+&lt;li&gt;I don’t think it’s fair to the others if I get up and leave (so I am guilt tripping myself I guess)&lt;/li&gt;
+&lt;li&gt;To be fair, I am &lt;a href=&quot;https://twitter.com/louis993546/status/1228570372771123201&quot;&gt;getting pay quite decently&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Also itt’s 2020, a stable job is a lot harder to ask for&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Which means in 2 week, it will officially be my longest lasting job 🤣 i.e. first time work in a company for more than a year.&lt;/p&gt;
+&lt;p&gt;But do I see myself to continue to lead a team of people in the next year? Honestly I’d prefer not to, at least not right now. Like I said above, I feel like the way we work is not efficient, and I am not really in a position to change it (to be clear, we do have feedback channels, it’s just that it’s unlikely/unfair/unrealistic for me to say “hey I start leading a team a month ago and here are all the things you should change ASAP” and have it adopted, no matter if you are at Zalando or Google or whatever medium/big tech companies). At the end of the day, I am still very much a nerd, I have a tendency to buy in to the latest hype of the “hottest” framework/language/feature/trend/unnecessary gadget/ways of work. I would prefer to do something that can leave a reasonable amount of time &amp;#x26; energy for me to do that, and “having 6 hours of meetings in an 10 hour day” is just not gonna cut it.&lt;/p&gt;
+&lt;h2&gt;So now do you know where you see yourself in 10 years?&lt;/h2&gt;
+&lt;p&gt;It’s still not clear, but at least I have started to narrow things down a bit more&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If I want to stay as a developer, I have to be working on things that I really like, from both a feature/impact perspective &amp;#x26; technical perspective&lt;/li&gt;
+&lt;li&gt;If I want to take on more managerial role, it mostly likely wouldn’t be any type of big company (at least not join company to become manager)&lt;/li&gt;
+&lt;li&gt;If I want to have my own company, I still have no fucking idea what I want to do, but that door is technically still open&lt;/li&gt;
+&lt;li&gt;If I don’t want to work in tech anymore, based on my YouTube history from this month, I would most likely to pick up metal working (I just found The Old Tony and I am basically binge watching it right now). Jokes aside, some type of crafting that still can be easily be linked to programming&lt;/li&gt;
+&lt;li&gt;The most likely scenario is WW3/even worse global pandemic/alien invasion/all of the above. And I am probably not gonna survive for long&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Pretty sure nobody cares about this so I am just gonna post this onto my blog and call it a day. Good morning, good evening, and good night!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Let’s see if Flipper can make me a 1.1x engineer]]></title><description><![CDATA[Website of Flipper Flipper is a debugging tool build by facebook, which in a sense is a spiritual successor to Stetho. For those who don’t…]]></description><link>https://louistsaitszho.github.io/flipper/</link><guid isPermaLink="false">https://louistsaitszho.github.io/flipper/</guid><pubDate>Sun, 16 Aug 2020 07:36:39 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1024/1*zcH7d_sJTAgIvdgWwUhH-g.png&quot; alt=&quot;Website of Flipper&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://fbflipper.com/&quot;&gt;Flipper&lt;/a&gt; is a debugging tool build by facebook, which in a sense is a spiritual successor to &lt;a href=&quot;https://facebook.github.io/stetho/&quot;&gt;Stetho&lt;/a&gt;. For those who don’t know, Stetho is also a debugging tool, which allows Android apps to redirect a bunch of debugging data to chrome://inspect, most notably networking requests. I have used Stetho quite extensively in one of my last companies, because how easy it is to setup and use, so I do have some fond memory of it. However, slowly and gradually, it stops being maintain, and then I found out the existence of Flipper. So obviously the next logical step is to give it a shot, and see how useful it is 👀👀&lt;/p&gt;
+&lt;h3&gt;Setup&lt;/h3&gt;
+&lt;p&gt;The process is actually quite straight forward, thanks to the pretty extensive-yet-not-too-verbose &lt;a href=&quot;https://fbflipper.com/docs/getting-started/indexhttps://fbflipper.com/docs/getting-started/index&quot;&gt;documentation site&lt;/a&gt;. The only hurdle I ran into is when setting up the &lt;a href=&quot;https://fbflipper.com/docs/setup/network-plugin&quot;&gt;networking plugin&lt;/a&gt;, you have to make sure you have the same instance of the plugin use by both the interceptor, and the setup step. I messed up some setup in Dagger, and it took me like a solid 30 minutes before I really how stupid I was 🤦‍♀&lt;/p&gt;
+&lt;h3&gt;Custom Plugin&lt;/h3&gt;
+&lt;p&gt;So the biggest selling point of Flipper is probably it’s plugin API. &lt;strong&gt;It opens the door to build project-specific and user-friendly GUI dev tools.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In a lot of projects, probably at some point someone will think “hmm, what if I just wrote a script to make it easier to debug this?”, and then they hack the script together in record breaking time (because it’s usually the fun part), and tell the entire team “now your problem is solved”. But when team grow/change, suddenly everyone is relying on that script with little to no test, often convoluted code, and even more confusing and cryptic inputs/outputs (and stacktrace if something went terribly wrong).&lt;/p&gt;
+&lt;p&gt;So these are the problems that I hope Flipper can solve/mitigate:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Confusing to use&lt;/strong&gt; : By having a GUI, I can at least try to layout all the buttons and text in a way that is less confusing. And the fact that it uses React should also help make it easier to build the UI.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Too many dev tools&lt;/strong&gt; : By having just 1 debugging application, this can consolidate most of the random dev tools into just 1 windows, which should make it easier to deal with.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;“Sketchy” dev tools&lt;/strong&gt; : It’s not that you cannot write script that testes those script, it’s just that by having a “normal” project setup, hopefully it can encourage me to not only write dev tools, but also write test to make sure those dev tools works in the long run&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So with these goal in mind, here’s what I have learned:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;documentation of building your own native (i.e. apps) plugin is also very good&lt;/strong&gt;: on the &lt;a href=&quot;https://fbflipper.com/docs/tutorial/android/&quot;&gt;client side,&lt;/a&gt; it took me maybe 15 minutes to have a basic network plugin that filters out only the traffic that I care&lt;/li&gt;
+&lt;li&gt;And for &lt;strong&gt;building desktop plugin, it’s less good but still not terrible&lt;/strong&gt; : While &lt;a href=&quot;https://fbflipper.com/docs/tutorial/js-setup&quot;&gt;the documentation&lt;/a&gt; itself is still pretty good, there are quite a few issue that I ran into and with not a lot of useful debugging. The biggest problem I have is “how to get Flipper Desktop to see my plugin”, and according to the documentation, it is to add the path to the plugin to the config.json Flipper created in your machine. But it looks like if Flipper thinks the path you added is “wrong”, it will just remove it when Flipper Desktop closes. So it ended up taking me another hour of trial and error, and looking through the entire site to found &lt;a href=&quot;https://fbflipper.com/docs/extending/js-setup#dynamically-loading-plugins&quot;&gt;another page&lt;/a&gt; that explains what is the exact path that I should have used, and the fact that I should have run yarn watch to build the tar ball for Flipper to detect the plugin correctly.&lt;/li&gt;
+&lt;li&gt;Depends on what you want to build, you can put the logic on the client plugin or desktop plugin. Putting logic on client side means writing those logic in Kotlin, which would have been a lot easier; but at the end &lt;strong&gt;I’d recommend putting those logic on the desktop side&lt;/strong&gt; , in the hope that A) it might be share if the iOS all also adopts it, and B) my TypeScript knowledge is good enough, or worst case scenario, it’s not that hard to Google the solution.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Building a user-friendly desktop plugin is not as simple as it seems&lt;/strong&gt; , mostly because the level of abstraction that comes with Flipper is either too high, or too low. If you just want to show “a list of something”, createTablePlugin makes things very simple. But since I want to do some data processing before it shows on table, I ended up copying that entire file, make like 10 line changes in there to expose a lambda for me to sanitize the data, before showing it in the table.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Currently it is entirely still an experiment, and also I have not asked my boss if I can even share it. I hope in a month or 2, I will be able to share if Flipper turns out to be a good idea or not.&lt;/p&gt;
+&lt;h3&gt;1.1x Engineer&lt;/h3&gt;
+&lt;p&gt;And to end this blog post, I just want to do a quick shout-out to the &lt;a href=&quot;https://dev.to/tlakomy/become-a-10-engineer-g78&quot;&gt;&lt;strong&gt;1.1x/+10% engineer concept&lt;/strong&gt;&lt;/a&gt;. What I have started to realized that I like to do is to “help other people do what they are good at, but even better”, and I think more people should give it a shot. Imagine if every month, 1 of the engineers build/do something that makes everyone works 10% more efficient/more productive/happier, in 2 years, 1.1²⁴ = 9.85, i.e. the team will be almost &lt;strong&gt;10 times better than 2 years ago&lt;/strong&gt;! And I am 1000% sure you cannot simulate these kind of growth just by hiring more people/“10x” engineers.&lt;/p&gt;
+&lt;p&gt;At the end of the day, I hope Flipper will allow me to make our team 10% more efficient, and so far it looks promising, and I recommend you to give it a shot!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Random Compose Project #1: Compose95]]></title><description><![CDATA[Random Compose Project #1: Compose95 Jetpack Compose is getting closer and closer to becoming “stable enough”, and for the next few weeks…]]></description><link>https://louistsaitszho.github.io/compose95/</link><guid isPermaLink="false">https://louistsaitszho.github.io/compose95/</guid><pubDate>Sat, 25 Jul 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Random Compose Project #1: Compose95&lt;/h3&gt;
+&lt;p&gt;Jetpack Compose is getting closer and closer to becoming “stable enough”, and for the next few weeks/months, I will be working on a bunch of completely random projects, and document what I have learned along the way.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR: This is not tutorial/how-to of Jetpack Compose at all. This is just blog post of my experience of using it.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;What is Compose95&lt;/h3&gt;
+&lt;p&gt;As it’s name suggest, it’s trying to build Jetpack Compose that looks like it’s 1995, more specifically, Windows 95. It is inspired by Miguel Beltran’s work on &lt;a href=&quot;https://github.com/miquelbeltran/flutter95&quot;&gt;Flutter95&lt;/a&gt;, which is inspired by Artur Bień’s &lt;a href=&quot;https://github.com/arturbien/React95&quot;&gt;React95&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*jt7pi5ngR2aNOLD5QsM81g.png&quot; alt=&quot;Screenshot of Flutter95 on GitHub&quot;&gt;miquelbeltran/flutter95&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*nkfvrtln7TS2C4KWywN7fw.png&quot; alt=&quot;Screenshot of home page of React95 on GitHub&quot;&gt;arturbien/React95&lt;/p&gt;
+&lt;h3&gt;What am I building, exactly?&lt;/h3&gt;
+&lt;p&gt;For this post, I am documenting what I went through when buildling&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Window (most of it)&lt;/li&gt;
+&lt;li&gt;Button&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s all open-source, click &lt;a href=&quot;https://github.com/louis993546/Compose95&quot;&gt;here&lt;/a&gt; to judge how bad the code is 😂&lt;/p&gt;
+&lt;h3&gt;Window&lt;/h3&gt;
+&lt;p&gt;Window is the relatively straight forward component to build. It is basically just a container with a bar at the top, optionally the ability to minify/maximize/close the window, which doesn’t make sense in the case of an Android app anyway.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2400/1*55NcXvojhGPXkBYD10d2_A.png&quot; alt=&quot;Screenshot of Android Studio, which has code of Window95, Preview of Window95, and an emulator showing what it looks like&quot;&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, &lt;code class=&quot;language-text&quot;&gt;Windows95&lt;/code&gt; is pretty straight forward. The most “complicated” part is probably the border. If you remember, Windows 95 is very skeuomorphism (is this word an adjective?), and the borders colors really sells the elevation, even to this date. I am not saying it looks great, but it certainly is effective. Using React95 as reference, I can see that the border is actually more like 2 boarders:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 on the outsize with pure white or black&lt;/li&gt;
+&lt;li&gt;1 on the inside a few shares of grey to make it look more like shadow, instead of just color borders&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And to achieve that look, basically I have to figure out how to draw border that has different color accordingly, and that means digging into what &lt;code class=&quot;language-text&quot;&gt;.drawBorder&lt;/code&gt; is doing. Since it is a receiver function of &lt;code class=&quot;language-text&quot;&gt;Modifier&lt;/code&gt;, of course there is a &lt;code class=&quot;language-text&quot;&gt;Modifier.Element&lt;/code&gt; powering it, in this case: &lt;code class=&quot;language-text&quot;&gt;DrawModifier&lt;/code&gt;. And once you get the draw scope inside of it, you just have to figure out the coordinates, and then it is not too complicated to draw the 8 lines.&lt;/p&gt;
+&lt;p&gt;And 1 last thing: if you check &lt;code class=&quot;language-text&quot;&gt;DrawBorder&lt;/code&gt;, you can see there are a lot more complexity inside, with how round corner should be, and most importantly cache. At some point &lt;code class=&quot;language-text&quot;&gt;Window95&lt;/code&gt; probably should do that, but it is way too early for me to do any kind of optimization. Hell the code still looks like shit.&lt;/p&gt;
+&lt;h3&gt;Button&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Button95&lt;/code&gt; is also structurally quite simple, the “biggest” challenge is to figure out how to detect press state, and flip the borders around to sell the effect of “from above surface to below surface”. And to figure out how, I digged into &lt;code class=&quot;language-text&quot;&gt;.ripple&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Inside &lt;code class=&quot;language-text&quot;&gt;.ripple&lt;/code&gt;, I found &lt;code class=&quot;language-text&quot;&gt;RippleModifier&lt;/code&gt;, but there is nothing too interesting to look into, since it looks like most of the code is about the animation of the ripple. What I want in this case is just a very basic “is it pressed or not” callback of some sort. And after I while, I realized that there are more than 1 argument for &lt;code class=&quot;language-text&quot;&gt;.clickable&lt;/code&gt;, esp. &lt;code class=&quot;language-text&quot;&gt;Indication&lt;/code&gt;. It is exactly what I need in this case.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2400/1*8syesNMCHQ-yswfx6-rqwQ.png&quot; alt=&quot;Screenshot of Android Studio, which has code of Button95, Preview of Button95, and an emulator showing what it looks like&quot;&gt;&lt;/p&gt;
+&lt;p&gt;What &lt;code class=&quot;language-text&quot;&gt;Indication&lt;/code&gt; does is actually more like &lt;code class=&quot;language-text&quot;&gt;IndicationFactory&lt;/code&gt;, which creates &lt;code class=&quot;language-text&quot;&gt;IndicationInstance&lt;/code&gt;, and that &lt;code class=&quot;language-text&quot;&gt;IndicationInstance&lt;/code&gt; just have a function that gets a &lt;code class=&quot;language-text&quot;&gt;ContentDrawScope&lt;/code&gt; to draw whatever I want. And now things are starting to look very similar to how I draw the boarders in&lt;code class=&quot;language-text&quot;&gt;Window95&lt;/code&gt;, except I have to check &lt;code class=&quot;language-text&quot;&gt;interactionState&lt;/code&gt; to see what color each border should be.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*5y3sebbyauJ_H3A6XFs2WA.gif&quot; alt=&quot;A GIF of Button95 being click, and what happens when it got long press (content got highlited)&quot;&gt;&lt;/p&gt;
+&lt;p&gt;While technically not a bug, it looks like I still have some work to do to figure out how to make it behave more naturally……&lt;/p&gt;
+&lt;p&gt;This is the end of this blog post, it is absolutely gonna take me forever to get it to a working state. I wish I have more energy and time to work on stuff like this……&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Am I still taking photos in 2020? Kinda]]></title><description><![CDATA[On my way home from office, one of the last picture I took before WFH started. More than a year ago, I wrote about how I wanted to regain my…]]></description><link>https://louistsaitszho.github.io/photo-2020/</link><guid isPermaLink="false">https://louistsaitszho.github.io/photo-2020/</guid><pubDate>Sun, 19 Jul 2020 17:08:38 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1024/1*fz5eVlEeY1qJomd1g5elcw.jpeg&quot;&gt;&lt;figcaption&gt;On my way home from office, one of the last picture I took before WFH started.&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;More than a year ago, &lt;a href=&quot;https://medium.com/@louis993546/2019-photography-resolution-falling-in-love-with-it-again-6fb7cd44f7f4&quot;&gt;I wrote about how I wanted to regain my love for photography&lt;/a&gt;. Which means it’s about time for a quick review.&lt;/p&gt;
+&lt;p&gt;Now that I looked back at my last article, I can’t help but cringe the entire time, mostly because I can’t shut up about photography gear. I am still a nerd and enjoy all the great gears, but in the last 18 months, I have slowly realized how little attention I was paying to the rest of “photography”: composition, lighting, timing, location, emotion, all that jazz. And that is absolutely something I am still trying to grasp. And before diving into that, I am just gonna have a quick paragraph to list my gears and the reason why they are here to stay:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;iPhone 11 Pro: The best camera is the one that’s with you. Also it takes amazing picture&lt;/li&gt;
+&lt;li&gt;Fujifilm X-T1: it works, and it feels nice&lt;/li&gt;
+&lt;li&gt;Fujifilm 16mm f/2.8: it’s quite compact, fast AF, and quite.&lt;/li&gt;
+&lt;li&gt;(Selling) Fujifilm 27mm f/2.8: if I want a compact camera, I have my phone for that.&lt;/li&gt;
+&lt;li&gt;(Selling) Samyang 12mm f/2: turns out wide angle &amp;#x26; no AF = really hard to focus at night&lt;/li&gt;
+&lt;li&gt;(Shipping) Fujifilm 50–230mm XC: it’s on discount, and I do want to explore telephoto for street photography a little bit. Let’s see how it goes&lt;/li&gt;
+&lt;li&gt;Nikon FM: I will explain it later&lt;/li&gt;
+&lt;li&gt;Nikon 50mm f/1.8D: I have had this lens for probably more than 10 years now. Part of the reason why I got the Nikon FM is to use this lens to it’s full advantage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1024/1*FJk_ilGL1hoRz_M13yhCIw.jpeg&quot;&gt;&lt;figcaption&gt;Main photography gear mid-2020 ( - the iPhone 11 Pro that took this picture)&lt;/figcaption&gt;&lt;/p&gt;
+&lt;h3&gt;What has changed?&lt;/h3&gt;
+&lt;p&gt;Back in secondary school (or so call high school), I fall in love with photography because it allows me to connect to all sorts of people: all the athletes during sports days, random student event organizers from other grades, even people from other schools.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1024/1*ErNAMmO3FFKLzDptBT-Q-Q.jpeg&quot;&gt;&lt;figcaption&gt;2010 me: lend my D40 to one of my friend to take pictures, when I participate in javelin&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;Now that I am 10 years older, work in a 9–5 job, and haven’t went out for anything other then shopping/business for the last 4 months, how I see photography has changed a lot. It’s a lot more about nostalgia of my student days, which probably explains why I am more into retro-looking gears; now it’s also a lot less social, a lot less active. Instead of taking photos of athletes, now I take photos of pedestrians, and often even without any particular reason/subject/anything.&lt;/p&gt;
+&lt;h3&gt;How am I dealing with those changes?&lt;/h3&gt;
+&lt;p&gt;Honestly, not well. I really missed back being able to make friends at school when I was young; I missed when my knee was not a shit show; I missed actually being slightly good at some sports. And that’s probably why for the last few years, I have kinda indulge myself in “what’s the gear that would make it feel like taking pictures with my D40 when I was 16”. Well, sadly the answer is “none”.&lt;/p&gt;
+&lt;p&gt;I don’t remember how it happens, but slowly I started to watch more videos about film photography, firstly I was still focusing on the camera, the film, or even how to process them. What’s different this time is that a lot of those videos also pay a lot more attention on other aspects of photography, which slowly opens up my eyes to what I’ve been missing. Hopefully, I am slowing getting to a point where taking picture is just a hobby, and not a event.&lt;/p&gt;
+&lt;h3&gt;Aaaaand we’re stuck inside&lt;/h3&gt;
+&lt;p&gt;For the first month or two of WFH, I spent way too much time online buying shit I don’t need, which includes the Nikon FM. I definitely have no idea how is it gonna make any difference to my X-T1, and even 3 months in, I still haven’t finished a roll of film. While I do enjoy the physicality of the camera, from a logical stand point, it is not a wise purchase decision at all. Thankfully it’s not expensive, so I am going to give it a few more months, to see if the process of going to a camera store, get the picture printed, can make the photo more meaningful or personal.&lt;/p&gt;
+&lt;p&gt;And there is 1 more potential stupid camera gear that’s on it’s way: a cheap-ish telephoto zoom lens. Over the last 18 months, I have been using almost exclusive wide angle lens, because “that’s the type of lens for landscape/cityscape”. And now that I have slightly better understanding of how the focal length of a photo can change the perspective and framing of a picture, I would like to give telephoto lens a shot. I am still very uncomfortable to take photos on the street, because my stupid brain keep saying “you look dumb as hell, just like all the tourists”, and having a long lens *might* make it slightly more comfortable, since I don’t have to get close to my subject anyway. And after so long with just wide angle lens and having a hard time making effective composition for photos, I am open to trying new things, especially from my the window of my room (no, not as a creep).&lt;/p&gt;
+&lt;h3&gt;In Conclusion,&lt;/h3&gt;
+&lt;p&gt;While I haven’t necessarily “fall in love” with photography, I think I am much more comfortable to have it be part of my life, my normal-boring-quiet life.&lt;/p&gt;
+&lt;p&gt;P.S.: The good thing about camera gear is that their value depreciate not that much, relative to other electronics. As long as you are not “buying the latest and greatest”, it’s actually less expensive of a hobby as I expected.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Went from “liking tweets about remote working” to “being 100% remote” in 1 day]]></title><description><![CDATA[My desk setup from a week ago Today is 2020 April 1st , and we are in the middle of a pandemic. Roughly 2
+weeks ago, the company I worked…]]></description><link>https://louistsaitszho.github.io/remote/</link><guid isPermaLink="false">https://louistsaitszho.github.io/remote/</guid><pubDate>Wed, 08 Apr 2020 19:22:48 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bd58d9adabd8be16ec4273f1aafb16f2/b19e6/desk.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;desk&quot;
+        title=&quot;desk&quot;
+        src=&quot;/static/bd58d9adabd8be16ec4273f1aafb16f2/294ce/desk.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;em&gt;My desk setup from a week ago&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Today is &lt;strong&gt;2020 April 1st&lt;/strong&gt; , and we are in the middle of a pandemic. Roughly 2
+weeks ago, the company I worked for went “remote first”, and in terms of work,
+things are starting to get back to usual (well, as usual as it can get). So
+today, I’d like to write down some of my first impressions of the whole
+situation so far!&lt;/p&gt;
+&lt;h3&gt;How it went down (simplified)&lt;/h3&gt;
+&lt;p&gt;Even before Berlin starts getting it’s first COVID-19 case, there has been a
+bunch of people asking if the company’s policy about WFH and other preventive
+measures are gonna adapt to it. And after Berlin has it’s first confirmed case,
+it takes a few more days until the management establishes official news source.
+And a few more days (&amp;#x26; a lot of messages on the chat room) later, the company
+held a basically impromptu-all-hands in the morning, and announced the procedure
+of how to “apply” for WFH for most employees. And the next thing you know, half
+the people are gone before lunch.&lt;/p&gt;
+&lt;h3&gt;Perception of remote working before this&lt;/h3&gt;
+&lt;p&gt;I have been living in Berlin for 3 years now, and worked in multiple companies
+as full time employee, in their office, at least 9–5. I am now mostly used to
+it, but I don’t think I ever really liked it.&lt;/p&gt;
+&lt;p&gt;I like being able to easily make friends at work, but I don’t like waking up
+when it’s one of those days where I just don’t feel like socializing at all.&lt;/p&gt;
+&lt;p&gt;I like that it forces me to have a consistent schedule and lifestyle, but I
+don’t really enjoy the hours being so inflexible, given my work is not really
+time-specific.&lt;/p&gt;
+&lt;p&gt;I like that an office provides a safe space in terms of productivity (usually),
+but I hate having to spend 1+ hour each day on the commute.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TL;DR: I never &lt;strong&gt;hate&lt;/strong&gt; showing up to office per se, but I have a list of
+things I can complain about.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;The first 24 hours of “OK you work from home now”&lt;/h3&gt;
+&lt;p&gt;Even though I was one of the people who tried to push the company to adopt WFH
+as soon as possible (i.e. “wrote on the super long COVID-19 thread to keep the
+conversation going”), the sudden announcement still throws me off. I spend
+basically the whole afternoon planning what do I have to do to get my room
+ready, and try to organize the work to make sure I won’t forget anything
+(although this didn’t really work because I was so distracted the entire time).&lt;/p&gt;
+&lt;p&gt;I left office a bit later than usual to try to avoid the crowd, and then I went
+to supermarket to get enough groceries for a week, and tried to go get a
+microphone for all the video chat (although the store was out of the cheap one).
+The last thing I did before officially working remotely is that on the next day
+at 7AM, I planned out how I am gonna move the furnitures in my room around to
+have a more separate work &amp;#x26; rest place (sorry downstairs neighbors). Living in
+a tiny room in a share flat in the middle of a pandemic is not ideal.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TL;DR: Chaotic&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;What happens in the next week&lt;/h3&gt;
+&lt;p&gt;In terms of the work itself, things are quite typical, since it is such a short
+notice, we are not really prepared to adapt anything to be more remote friendly.
+We still have a lot of meetings, but with video chat instead of face-to-face.
+It’s ever so slightly worse than what I usually experience.&lt;/p&gt;
+&lt;p&gt;In terms of productivity, I’d say I am able to focus around 60% of the time.
+There is only so much you can do to improve your home office in such short
+notice. And I tried to compensate for it with working extra hours, which ever
+so slightly cancel out my reduced productivity (but not sustainable at all).&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 42.567567567567565%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;comic&quot;
+        title=&quot;comic&quot;
+        src=&quot;/static/c880311a8eabfcdfab54eed20d61fa9d/294ce/comic.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;figcaption&gt;Thiscomic from Alex Norris speaks to my soul: &lt;a href=&quot;https://twitter.com/nadiaoxford/status/1239588500212789248&quot;&gt;https://twitter.com/nadiaoxford/status/1239588500212789248&lt;/a&gt;&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;The biggest change probably happens in terms of my sanity. This sheer amount of
+news around the pandemic drives my stress level high already, combine with
+issues with the work itself with a tight deadline that actually needs to be met
+or “shit might go down”, and me trying to compensate it with extra work hour, is
+driving my mood to an all time low.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TL;DR: Externally business as usual, internally pulling my hairs out&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Now what?&lt;/h3&gt;
+&lt;p&gt;Knowing that I will be stuck on this chair for a while, I am starting to plan
+how am I gonna survive this without going me insane (if I am not already
+insane).&lt;/p&gt;
+&lt;p&gt;First thing I did: online shopping. If all the advertisements have taught me
+anything, it is “buy this product and your problem will go away”. I am now aware
+of how much “useless” things I just bought, and I am doing a slightly better job
+at controlling my spending habit than a week ago. But I do need to make a few
+adjustments to the physical environments, and I am fortunate enough to have some
+saving &amp;#x26; incomes to do just that.&lt;/p&gt;
+&lt;p&gt;Next thing I did: spend a lot of time on the internet to try to figure out how
+WFH usually work. What should I expect (under normal circumstances), how should
+I adjust that expectation based on the situation, how people usually work, etc.
+One of the thing that kinda blows my mind is the &lt;a href=&quot;https://www.pscp.tv/w/1nAKEdbbnPgxL&quot;&gt;Q&amp;#x26;A session by David
+Heinemeier Hansson and Jason Fried from
+Basecamp&lt;/a&gt;. While some of it do feel a bit
+too much like an ad for Basecamp, I think the rest is a good short summary of
+what a team of expert remote workers is experiencing, along with how newly
+remote workers can/should expect.&lt;/p&gt;
+&lt;p&gt;While I am coming up with a list of improvements for my surrounds physically, I
+also started to think about how to change my behavior to reduce my stress level,
+so that I don’t have to pull my hairs out.&lt;/p&gt;
+&lt;h4&gt;Workout&lt;/h4&gt;
+&lt;p&gt;A lot of people have suggested that keeping your workout routine is very
+helpful, and I will try to do some quick research on what body weight exercise
+can I do in such a tiny space. I haven’t do much body weight exercise since my
+Uni days.&lt;/p&gt;
+&lt;h4&gt;“Separation of concerns”&lt;/h4&gt;
+&lt;p&gt;A lot of people also suggested to keep your work space and personal space
+separate. While it’s physically hard to do in my tiny room, I can kinda achieve
+that by removing all work-related items from my sight (all notes, computer,
+accessories, etc.) when the day is over, and let my laziness do the the rest
+(a.k.a. “Nah I am too lazy to move the chair and take the computer back out. I
+will check it tomorrow”)&lt;/p&gt;
+&lt;h4&gt;Clean your room/apartment/mansion/whatever&lt;/h4&gt;
+&lt;p&gt;A lot of people suggested to keep your space tidy, plus the act of tidying can
+double as a distraction. That’s just a good idea in general, especially now that
+we are all spending 24 hours in the apartment everyday.&lt;/p&gt;
+&lt;h4&gt;Spend less time on internet&lt;/h4&gt;
+&lt;p&gt;First I have to say I love the internet, without it I would be absolutely
+useless. But in the last few months, the amount of time I spent reading COVID-19
+related news is pretty much inversely proportional to my mood.&lt;/p&gt;
+&lt;p&gt;Back in 2003 when SARS was hitting Hong Kong, I remember everyone can’t stop
+watching the news, and it drives everyone into panic mode. And this time around,
+it started for me back in Jan-Feb, when my family and friends in Hong Kong are
+panicking on how they are gonna get enough masks, and pretty much my entire
+instagram feed is about how people are trying to keep themselves safe (from the
+virus or the police, or both). And when cases start to appear in Europe, I just
+can’t stop scrolling on Twitter and panic.&lt;/p&gt;
+&lt;p&gt;And even if you find the news about COVID-19 useful, there is still a huge
+problem of misinformation being share around, from random obfuscated screenshots
+on Instagram, to actual leaders of multiple countries (yes of course I am
+referring to Trump). One of the most vivid memory I have is that in the early
+days of the spread in Hong Kong, no one actually knows what the symptom should
+be, how they spread (WHO were saying “human to human transmission is unlikely”),
+and someone share a (later to be proven fake/taken out of context) video, of a
+men puking blood on some China subway/underground/U-Bahn/MTR, for like a full
+minute straight. That was really disturbing, not because of the visual, but the
+idea of “what if this happens to people I care about”. I was (and still am) not
+prepared for this. I just can’t stop thinking about it and focus at work for 2
+days straight.&lt;/p&gt;
+&lt;p&gt;I think it’s safe to say I should spend a lot less time on the internet.&lt;/p&gt;
+&lt;h4&gt;Take up some new hobbies/pick up some old hobbies&lt;/h4&gt;
+&lt;p&gt;Now that I promise to spend less time on the internet, I’d need some other form
+of distractions. Some of my recent hobby-building purchase (i.e. online shopping
+spree) includes buying a Nikon FM (i.e. an old-school film camera from the 70s?),
+some books (currently reading
+&lt;a href=&quot;https://www.goodreads.com/book/show/42086897-how-to&quot;&gt;how to by &lt;em&gt;Randall Monroe&lt;/em&gt;&lt;/a&gt;),
+and a decent speaker set (Creative T40 II to be exact. I am not an audiophile I
+just bought it because my work computer speaker starts cracking). Each of them
+should be enough distraction for quite a while.&lt;/p&gt;
+&lt;p&gt;There are also hobbies that does not involve extra spending, like writing,
+playing some instruments (A lot of people probably have an instrument laying
+around), or cooking (you have to eat everyday anyway, might as well make your
+food better).&lt;/p&gt;
+&lt;p&gt;We are all gonna be stuck here for a while, and by we I mean those who are
+privileged enough to work from home. The best we can do is to buy scientist
+and manufactures time to develop the vaccine and more effective cure, to help
+keep those who cannot work from home as safe as possible. In the day and age
+when both the physical world and digital world is plague with danger, it would
+be my first step to figure out how I can embrace remote working and get my
+sanity back on track.&lt;/p&gt;
+&lt;p&gt;Stay safe!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Mental Models of Jetpack Compose #4: Components and Hindsight]]></title><description><![CDATA[Photo by Jamie Street on Unsplash After months of procrastinating, I am finally getting to the last chapter of “Mental Models of Jetpack…]]></description><link>https://louistsaitszho.github.io/compose-4/</link><guid isPermaLink="false">https://louistsaitszho.github.io/compose-4/</guid><pubDate>Wed, 26 Feb 2020 23:36:58 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.94594594594594%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;direction&quot;
+        title=&quot;direction&quot;
+        src=&quot;/static/2d6a451ff0c22c6736ea93a51c126fbb/294ce/direction.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;figcaption&gt;Photo by &lt;a href=&quot;https://unsplash.com/@jamie452?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Jamie Street&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Unsplash&lt;/a&gt;&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;After months of procrastinating, I am finally getting to the last chapter of “Mental Models of Jetpack Compose”, at least for now. Today, we are gonna talk about components, and hindsight.&lt;/p&gt;
+&lt;h3&gt;Component&lt;/h3&gt;
+&lt;p&gt;If you just look at the basics structure of Component in React or Widget in Flutter, you will probably find it not too far off from android.view.View on the typical Android View API.&lt;/p&gt;
+&lt;p&gt;React:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2009910da164652dbaf1b4eb3269c380/0b34e/react-component.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 52.70270270270271%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;react component&quot;
+        title=&quot;react component&quot;
+        src=&quot;/static/2009910da164652dbaf1b4eb3269c380/294ce/react-component.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Flutter:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4393b4486a4163216e024e681cbd0aab/0b34e/flutter-widget.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 77.70270270270271%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;flutter widget&quot;
+        title=&quot;flutter widget&quot;
+        src=&quot;/static/4393b4486a4163216e024e681cbd0aab/294ce/flutter-widget.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Typical Android View:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/82e89e9225e4248cbe5d9ec7b547e022/0b34e/android-view.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.10810810810811%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;android view&quot;
+        title=&quot;android view&quot;
+        src=&quot;/static/82e89e9225e4248cbe5d9ec7b547e022/294ce/android-view.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;More specifically, they all have 1 method that ultimately determines what should be display. So what makes the concept of Component different? Well, the biggest distinction is that the render/build function defines an &lt;strong&gt;abstraction&lt;/strong&gt; on what the view should look like, while in onDraw function you are responsible for specifying every last detail. Basically it goes back to &lt;a href=&quot;https://dev.to/louis993546/mental-models-of-jetpack-compose-1-state-programming-models-20eh&quot;&gt;episode 1&lt;/a&gt;, which we talk about declarative programming vs imperative programming.&lt;/p&gt;
+&lt;p&gt;And that’s pretty much what the concept of component is! On it’s own component is nothing special, what makes it fun and powerful is that it only carries information, not instructions, which usually makes it more understandable, and also more lightweight. Speaking of fun, that brings us to a minor addition to the concept of component. But first, let’s take a look at this example from React:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b6e878e6ed71f855becdde7cd1dd93e8/0b34e/react-classes.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 84.45945945945947%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;react classes&quot;
+        title=&quot;react classes&quot;
+        src=&quot;/static/b6e878e6ed71f855becdde7cd1dd93e8/294ce/react-classes.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Sample from&lt;/em&gt; &lt;a href=&quot;https://reactjs.org/docs/hooks-overview.html&quot;&gt;&lt;em&gt;React documentation&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Even if you don’t know JSX, when you read render(), you probably still understand what it is trying to do: it will have a text, and a button, probably as a column, and each click will trigger some text to change. But why are there so many other stuff? OMG does the constructor in JavaScript looks like the one in Java!? And what the hell are componentDidMount() and componentDidUpdate() doing there when they do exactly the same thing?&lt;/p&gt;
+&lt;p&gt;And if we take a step back, and try to remember why React was created in the beginning, what they wanted to do is basically this:&lt;/p&gt;
+&lt;h3&gt;UI = f(state)&lt;/h3&gt;
+&lt;p&gt;(read: given a state, a function transforms it into a UI)&lt;/p&gt;
+&lt;p&gt;So what if we just take that &lt;strong&gt;literally&lt;/strong&gt;? That brings us to the concept of &lt;strong&gt;functional component&lt;/strong&gt;. The mental model of component is still there, but instead of representing it with a “class”, just directly represent it with the function, and it would look like this:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/74611383b20f3618ec5937d7a76ffd72/0b34e/react-hooks.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 89.86486486486487%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;react hooks&quot;
+        title=&quot;react hooks&quot;
+        src=&quot;/static/74611383b20f3618ec5937d7a76ffd72/294ce/react-hooks.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sample from &lt;a href=&quot;https://reactjs.org/docs/hooks-overview.html&quot;&gt;React documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Making function directly the star of the component encourages/forces us to embrace composition (since there is nothing to inherit from), and all it needs are a set of good API to expose the lifecycle and state management API back out.&lt;/p&gt;
+&lt;p&gt;React calls this “hooks”, named after all the API (i.e. hooks) it exposes for components to interact with the runtime, i.e. all the use___ functions. And after barely more than a year, it seems that React hooks have become the standard way of building components for them. And for Jetpack Compose, which is heavily inspired by React, it took it to the next level/extreme, by only having function components.&lt;/p&gt;
+&lt;h3&gt;Hindsight&lt;/h3&gt;
+&lt;p&gt;This is the last mental model I want to mention for this series, which is not actually a technical thing, but more of a mindset you should be aware of.&lt;/p&gt;
+&lt;p&gt;Often when we look at “legacy code”, we will say “ah they should have done X instead of Y”. But then 5 minutes later, you remember you are the one who wrote those code to begin with. Is that because you/that person was “young and dumb” back then? That’s possible, but the far more likely scenario is that things and people change in ways that were not participated. Who knew build time would be such a big issue 5 years ago? Who knew RxJava will be overuse 5 years ago? Who knew assuming there are only 2 genders is a bad idea 10 years ago? Probably not a lot of people.&lt;/p&gt;
+&lt;p&gt;And that’s what makes hindsight important: being able to learn from not just your own experiences, but also from others, is very important for your learning. And in the context of building a UI framework, knowing how annoying opinionated people can get, and what pattern people often use, are extremely useful information, even if we are not building for the same platform, or with the same language. (P.S. &lt;a href=&quot;https://reactjs.org/docs/hooks-intro.html#motivation&quot;&gt;hindsight from React on what motivates them to create hooks&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;So how does it apply to you? Well, even though there are not a lot of Jetpack Compose material (also half of those blog posts and videos out of date, since the API change so drastically), you can still learn from React, Flutter, and more other frameworks, see what other people have been doing, how they get used to it, what they have learned, and more. I promise a lot of the concepts are applicable to Jetpack Compose as well.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;This will be the end of the “Mental Model of Jetpack Compose” series, at least for now, mostly because now Android Studio 4.0 is available, you can actually go try it out yourself. And very soon I will try to pick some random ideas I have and document my experience of “turning theories into practices”.&lt;/p&gt;
+&lt;p&gt;And also it’s 0:24 and I really should go to sleep right now 😴&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How much am I really worth?]]></title><description><![CDATA[The beginning of #KnowYourWirth In the last 2 days, the tech community on Twitter blew up with the #KnowYourWorth movement. The TL;DR it is…]]></description><link>https://louistsaitszho.github.io/worth/</link><guid isPermaLink="false">https://louistsaitszho.github.io/worth/</guid><pubDate>Sun, 16 Feb 2020 21:32:51 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e39786e178b7a34456d0ff2529bc1f4b/0b34e/zac.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 91.8918918918919%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;zac&quot;
+        title=&quot;zac&quot;
+        src=&quot;/static/e39786e178b7a34456d0ff2529bc1f4b/294ce/zac.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;figcaption&gt;The beginning of #KnowYourWirth&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;In the last 2 days, the tech community on Twitter blew up with the &lt;a href=&quot;https://twitter.com/hashtag/KnowYourWorth&quot;&gt;#KnowYourWorth&lt;/a&gt; movement. The TL;DR it is to share your salary, so that minorities can have a better grasp of what the market rate is, instead of relying on anonymous sites that you never really know if they can be trusted.&lt;/p&gt;
+&lt;p&gt;And just like every movement on Twitter, immediately there are a lot of supporters, along with a lot of criticisms. And what I want to do today is to share my 2 cents of what I fell about #KnowYourWorth.&lt;/p&gt;
+&lt;p&gt;First, I would like to get a few facts straight, before jumping into my own train of thoughts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The tech industry lacks diversity (and has been like that for a very very long time). &lt;a href=&quot;https://insights.stackoverflow.com/survey/2019#developer-profile&quot;&gt;According to Stack Overflow 2019 Survey, 91.7% of the respondent identifies as male, and 70.8% identify as “White or of European descent” (!)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The gender pay gap is (sadly) still real. &lt;a href=&quot;https://www.harnham.com/2020-european-diversity-report&quot;&gt;According to Harnham European Diversity Report 2020, the gender pay gap is around 16%, while the gap in Germany being just 4% (so close!)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am sure there are a lot of peer-reviewed studies on these topics, just go to Wikipedia and go through all of the citations for &lt;a href=&quot;https://en.wikipedia.org/wiki/Gender_disparity_in_computing&quot;&gt;gender disputesarity&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Gender_pay_gap&quot;&gt;gender pay gap&lt;/a&gt;, not to mention race, sexuality, age, and more.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The TL;DR of what I think I am worth boils down to the following:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Honestly I think right now I am worth less than what my company is paying me&lt;/li&gt;
+&lt;li&gt;However, just 2 years ago, I am probably underpay (because I know nothing)&lt;/li&gt;
+&lt;li&gt;I wish the society has less stigma on compensation transparency&lt;/li&gt;
+&lt;li&gt;And hopefully with that, we can have a much better look at the inequality as a whole&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;What should be the criteria?&lt;/h4&gt;
+&lt;p&gt;One of the bigger group of discussion focuses on “should people with the same title have the same compensation, regardless of where they live”. Personally I am more in the camp of “pay people with same responsibility with same base compensation + compensation based on context”.&lt;/p&gt;
+&lt;p&gt;The reason why I am against same salary for everyone is because it is kinda unrealistic. Some people are gonna like to live in expensive places (SF, Norway, etc.) for a wide range of reasons. And unless you pay everyone that high level of compensations, you are excluding them based on something that they may have no power to change. There are also a lot of other reasons why you might want to pay people differently, like appreciation of loyalty, compensation in salary vs days off, and not to mention bonus on performance of individuals.&lt;/p&gt;
+&lt;h4&gt;Ok, so what are you really worth?&lt;/h4&gt;
+&lt;p&gt;And based on this criteria, I honestly think I am very lucky and maybe &lt;a href=&quot;https://twitter.com/louis993546/status/1228570372771123201&quot;&gt;even overpay&lt;/a&gt;. I did not ask my teammates what their compensations are (since this blow up during the weekend), but from what I understand about our company’s pay structure, they probably get paid less than I do, while doing the same or even more than what I do. I fucked things up on such a regular basis, that I am still wondering if I am gonna pass the probation period 🤞&lt;/p&gt;
+&lt;p&gt;And in terms of the context, we more or less joined at the same time, with more or less the same amount of expertise of what we do (more then I do to be honest), and surprisingly similar backgrounds, and we are all living in Berlin now, so I think from that perspective we should more or less score the same as well.&lt;/p&gt;
+&lt;h4&gt;Umm, so are you gonna do anything about it?&lt;/h4&gt;
+&lt;p&gt;This is something I have been thinking about for the last 48 hours (i.e. not that much time), and here’s my train of thoughts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I should ask my leads on criteria of judging our pay grade&lt;/li&gt;
+&lt;li&gt;I should find out what’s the law on “keeping salary a secret” in Germany&lt;/li&gt;
+&lt;li&gt;Try to remember and write down how I got this offer (which is more than 5 months ago), and hopefully some of it can be useful to others&lt;/li&gt;
+&lt;li&gt;Spread the message to border audiences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Wait that it?&lt;/h4&gt;
+&lt;p&gt;For now that’s the list of things that I can come up with, and that brings up to a topic that I am no an expert in, but after watching this video, makes me appreciate this whole movement a lot more:&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/RSgXcFdHxFI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;p&gt;While it is not about salary or compensation or money, it does bring up a quite interesting topic on how much an individual can do, when facing a deep-rooted mental model that the society held. And from this video, this reminds me of this somewhat exaggerate &amp;#x26; American-focus snippet of Adam Ruins Everything:&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/7xH7eGFuSYI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;p&gt;The more I think about it, the more I agree that currently the common practices for companies are the biggest bottleneck for achieving fair compensation regardless of age, gender, sexuality, race, and more. How can people have an open discussion on how to tackle pay gap, when people are still arguing that pay gap is not real (although to be fair, there are also people who think the earth is flat, so I guess data and statistics are not as powerful as I think they are 🤷‍♀️).&lt;/p&gt;
+&lt;p&gt;Hopefully one day, we can all sit down, have detailed and meaningful analysis and discussion on the inequality in the tech industry, and how we can tack the issue as a whole.&lt;/p&gt;
+&lt;h4&gt;Closing thoughts: some criticisms of #KnowYourWorth&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Intentional or not, some of the tweets gonna feel more like &lt;a href=&quot;https://www.urbandictionary.com/define.php?term=Humble%20Brag&quot;&gt;humble-brag&lt;/a&gt; (“Oh I make 1000k in SF and you should too!”).&lt;/li&gt;
+&lt;li&gt;Privacy is absolutely a big issue here. I get the point here is “This is my name, this is my compensation, and you can trust this info”, but judging by the amount of people who &lt;a href=&quot;https://twitter.com/HeatherDoshay/status/1228743317300510726&quot;&gt;backtracking their decisions&lt;/a&gt;, and amount of things people can extract from &lt;a href=&quot;https://twitter.com/newsycombinator/status/1228665735632822273&quot;&gt;these data&lt;/a&gt;, I guess it is safe to say this is not a scalable solution to raise awareness.&lt;/li&gt;
+&lt;li&gt;Context is absolutely still a very big problem. Does earning 200k in SF means the same thing as 100k in Berlin? And what about things that money cannot buy, like public health care that does not cost an arm and a leg, or nicer weather, or friends and family?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I hope that it could be the beginning of a much bigger movement towards eliminating inequality, and I swear to god I will do my best to make that happen!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[From Android zero to kinda-middle: Basic shell script for Android dev]]></title><description><![CDATA[A bunch of random stuff you can do with shell script It has been a while since I did my last “From Android zero to kinda-middle” series, and…]]></description><link>https://louistsaitszho.github.io/basic-shell-script/</link><guid isPermaLink="false">https://louistsaitszho.github.io/basic-shell-script/</guid><pubDate>Sun, 12 Jan 2020 15:57:28 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a0d5791bc8e1fd541aa60b5586a667bc/0b34e/script-example.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.810810810810814%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;script example&quot;
+        title=&quot;script example&quot;
+        src=&quot;/static/a0d5791bc8e1fd541aa60b5586a667bc/294ce/script-example.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;figcaption&gt;A bunch of random stuff you can do with shell script&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;It has been a while since I did my last “From Android zero to kinda-middle” series, and today I’d like to talk about shell script.&lt;/p&gt;
+&lt;h3&gt;WTF is shell script&lt;/h3&gt;
+&lt;p&gt;You can think of it as a scripting language + the program that interprets it.&lt;/p&gt;
+&lt;h3&gt;Why you should know shell script?&lt;/h3&gt;
+&lt;p&gt;All the buttons in Android Studio will ended up executing some shell script in one way or another. For example,&lt;/p&gt;
+&lt;p&gt;“Run” 👉 ./gradlew assemble${flavor} + adb install&lt;/p&gt;
+&lt;p&gt;Install newer version of Android SDK 👉 sdkmanager “platforms;android${versionCode}”&lt;/p&gt;
+&lt;p&gt;Commit 👉 git commit -m ”${message}”&lt;/p&gt;
+&lt;p&gt;But if all of the task can be done with buttons, why would anyone want to type all the steps out instead? Well, if you have a series of events you want to run repetitively, having a script will often makes it a lot easier to deal with, esp. when comparing to reading documentation and do it step-by-step. And those automated task can also be done by computers more accurately, for example, have a computer that builds and ship the app every time master branch is updated. And that is basically what “Continuous Integration” or “Continuous Delivery” (also known as CI/CD) are.&lt;/p&gt;
+&lt;p&gt;But this only explains half of the question. What makes shell script different than, let say JavaScript? Well, it’s all about the history. Shell script is very much tied to Unix, i.e. the foundation of Linux and macOS, and the popularity of the 2 (among developers and servers) makes it pretty much the universal way to tell a computer how to do something. Not only that, being super close to the operating system, it allows a multitude of tools to do whatever they want to do, from transforming video between formats, frame rate, resolutions, and more with ffmpeg, to compiling Java/Kotlin code with javac/kotlinc, to tools that communicate with external sources or devices like curl or adb.&lt;/p&gt;
+&lt;h3&gt;What can shell script do&lt;/h3&gt;
+&lt;p&gt;In general&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Travel in the file system (cd) 🚙&lt;/li&gt;
+&lt;li&gt;See where you are (pwd) 🗺&lt;/li&gt;
+&lt;li&gt;Create folder(s) (mkdir) 📁&lt;/li&gt;
+&lt;li&gt;See what files are there (ls) 🗂&lt;/li&gt;
+&lt;li&gt;Modify files (vi/nano) 📝&lt;/li&gt;
+&lt;li&gt;Open files and programmes (open on macOS) 👀&lt;/li&gt;
+&lt;li&gt;Read files (cat/less) 🖨&lt;/li&gt;
+&lt;li&gt;Install other softwares (brew) ⬇️&lt;/li&gt;
+&lt;li&gt;Version control with Git (git, dah) 📚&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Android-specific&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Talk to Android devices (adb and fastboot) 📱&lt;/li&gt;
+&lt;li&gt;Update tools to build Android app (sdkmanager) 📲&lt;/li&gt;
+&lt;li&gt;Contribute to AOSP (repo) 💪&lt;/li&gt;
+&lt;li&gt;Use dependencies (gradle) 😯&lt;/li&gt;
+&lt;li&gt;Build the app (still gradle) 😮&lt;/li&gt;
+&lt;li&gt;Test the app (also gradle) 😲&lt;/li&gt;
+&lt;li&gt;Install a specific version of gradle (yes the answer is gradle, and then you can use gradlew) 🤯&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How to run shell script&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you are on Windows, I’m sorry but 50% of this article is not for you. While the concept is the same, they are so fundamentally different, that you should be using something call “Command Line” or “PowerShell”. These are 2 different program + scripting language that runs on Windows, and I have little to no knowledge about them. A quick Google will help you a lot more. And if you are brave enough, you can also try out WSL (and WSL2) to run the following steps. Not everything will work.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now that Windows users are out of the way, let see some basic commands on Linux or macOS!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open “Terminal” on your computer&lt;/li&gt;
+&lt;li&gt;Use pwd to see where you are in the file system&lt;/li&gt;
+&lt;li&gt;Use cd ${folder name} to move into a folder&lt;/li&gt;
+&lt;li&gt;Use cd .. to move to out of a folder&lt;/li&gt;
+&lt;li&gt;If you are not sure where you are, just type cd will take you back home.&lt;/li&gt;
+&lt;li&gt;Use mkdir ${folder name} to create a new folder&lt;/li&gt;
+&lt;li&gt;Use touch ${file name} to create a new file&lt;/li&gt;
+&lt;li&gt;(macOS only) Open a file with it’s default program with open ${file name}&lt;/li&gt;
+&lt;li&gt;(macOS only) Open a folder with open .&lt;/li&gt;
+&lt;li&gt;. means the folder you are currently in&lt;/li&gt;
+&lt;li&gt;man ${command}(e.g. man git) shows a manuel of the command&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And now, let’s try to create a new git repository, and then delete it&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Create a folder
+mkdir newProject
+​
+# Move into that folder
+cd newProject
+​
+# Tell git this is a new repository
+git init
+​
+# Create an empty README
+touch README.md
+​
+# Enter some text into README
+echo &amp;quot;# Hello, World!&amp;quot; &amp;gt; README.md
+​
+# Tell git to stage everything
+git add .
+​
+# Commit with message
+git commit -m &amp;quot;Initial commit&amp;quot;
+​
+# Show commit history
+git log
+​
+## Go back out
+cd ..
+​
+## Delete folder (the -r is needed to remove folder. It stands for recursive)
+rm -r newProject&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;All the line starts with # are short comments that explains what the command does. And feel free to mix and match all of these, or just randomly roll around and try things out. But be careful, you don’t want to mess up your computer.&lt;/p&gt;
+&lt;h3&gt;Practical shell script examples&lt;/h3&gt;
+&lt;h4&gt;Install &lt;a href=&quot;https://httpie.org/&quot;&gt;httpie&lt;/a&gt;, a pretty user-friendly way to call REST API form terminal&lt;/h4&gt;
+&lt;p&gt;On &lt;strong&gt;Linux&lt;/strong&gt; , there are a lot of “Package Manager”, and in this case we will use Debian/Ubuntu as an example, which uses apt-get, and that is includes when you install the OS.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt-get update
+# Then type your password for the computer
+
+sudo apt-get install httpie
+# Then you will have to accept it
+
+http --version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And on &lt;strong&gt;macOS&lt;/strong&gt; , the most popular package manager is call “&lt;a href=&quot;https://brew.sh/&quot;&gt;homebrew&lt;/a&gt;”, and first, you will need to install it. At the time of writing (Jan 2020), you just need to run&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# This is from Jan 2020. Please check the website for the most up-to-date install instruction
+/usr/bin/ruby -e &amp;quot;$(curl -fsSL [https://raw.githubusercontent.com/Homebrew/install/master/install](https://raw.githubusercontent.com/Homebrew/install/master/install))&amp;quot;
+
+# Install httpie. This will usually take quite a while
+brew install httpie
+
+http --version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Run unit tests for the entire project&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Assuming you are already in the folder of your project
+./gradlew test&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Verify code style with pre-commit hook&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/pinterest/ktlint&quot;&gt;ktlint&lt;/a&gt; is a tool that verifies and fixes kotlin code. And git hook is basically a script that runs in specific time in the git process, in this case, pre-commit will run when you are trying to commit, and if it failes, the commit also fails, which makes it a great place for enforce coding style in a team.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Install the latest version (0.36.0)
+curl -sSLO [https://github.com/pinterest/ktlint/releases/download/0.36.0/ktlint](https://github.com/pinterest/ktlint/releases/download/0.36.0/ktlint) &amp;amp;&amp;amp;
+  chmod a+x ktlint &amp;amp;&amp;amp;
+  sudo mv ktlint /usr/local/bin/
+
+# Ask ktlint to install itself as pre-commit git hook
+ktlint installGitPreCommitHook
+
+# Imagine you have typed some kotlin code that&amp;#39;s not perfectly format
+
+# Commit and this will fail
+git commit -m &amp;quot;Bad commit&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Build &amp;#x26; Publish app automatically with Gradle and fastlane&lt;/h4&gt;
+&lt;p&gt;You probably already know the existance of Gradle (via build.gradle), and fastlane is a tool that can automate a lot of stuff for Android and iOS developers. Instead of writing all the steps here, please checkout the official documentation on how to &lt;a href=&quot;https://docs.fastlane.tools/getting-started/android/setup/&quot;&gt;install&lt;/a&gt; and &lt;a href=&quot;https://docs.fastlane.tools/getting-started/android/release-deployment/&quot;&gt;publish to Play Store&lt;/a&gt;, and &lt;a href=&quot;https://about.gitlab.com/blog/2019/01/28/android-publishing-with-gitlab-and-fastlane/&quot;&gt;this article from GitLab&lt;/a&gt; on how to compile and run fastlane on Linux.&lt;/p&gt;
+&lt;h3&gt;Closing words&lt;/h3&gt;
+&lt;p&gt;I still remember when I start learning/using shell script from about a year ago, and I was like “Ugh really? It’s 2019 and I am going back to using computer like the 70s?”. But after a while, I realised the flexibility of it opens a lot of doors. It did took a while for me to understand some basic shell script syntax, but I promise you at some point you will file some usecases that shell script will make you life as an Android developer a lot easier to deal with! Thank you for reading, and I will see you next time!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A Quick Review of Project Hoverboard]]></title><description><![CDATA[I made* this So for the last few weeks, I have been helping out with DevFest Berlin 2019, which just happened last Saturday. From what I can…]]></description><link>https://louistsaitszho.github.io/hoverboard/</link><guid isPermaLink="false">https://louistsaitszho.github.io/hoverboard/</guid><pubDate>Wed, 13 Nov 2019 09:19:52 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1b5ace563e91c36a582e24d423d4a25c/0b34e/hoverboard.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;hoverboard&quot;
+        title=&quot;hoverboard&quot;
+        src=&quot;/static/1b5ace563e91c36a582e24d423d4a25c/294ce/hoverboard.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;figcaption&gt;I made* this&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;So for the last few weeks, I have been helping out with &lt;a href=&quot;https://2019.devfest-berlin.de/&quot;&gt;DevFest Berlin 2019&lt;/a&gt;, which just happened last Saturday. From &lt;a href=&quot;https://twitter.com/search?q=%23DevFest19%20%23devfestBerlin&amp;#x26;src=typed_query&quot;&gt;what I can tell&lt;/a&gt;, people really enjoyed the event, which is definitely the most important thing. For that, I have to &lt;strong&gt;thank everyone who attended, all the speakers who share their knowledge, and, and most importantly the other volunteers and organizers for making this possible!&lt;/strong&gt; And as a volunteer, one of my biggest contributions would be “building” and maintaining the website. The reason why I put double quotes around the word &lt;em&gt;building&lt;/em&gt; is because instead of making a website from scratch, I use another project as the template, and that would be &lt;a href=&quot;https://github.com/gdg-x/hoverboard&quot;&gt;Project Hoverboard&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The first thing I want to say is &lt;strong&gt;Thank you to the amazing people from GDG Lviv for making this!!!&lt;/strong&gt; 😘😘😘. It allows us to quickly serve up a beautiful, offline-compatible, accessible, and effective website. I cannot stress that enough! Now that the compliments are out of the way, let’s jump into what I think about it, who is a (terrible) Android developer that is constantly trying to learn new things 🤷‍♀️&lt;/p&gt;
+&lt;h3&gt;Pros&lt;/h3&gt;
+&lt;h4&gt;Amazing demo&lt;/h4&gt;
+&lt;p&gt;So what’s the best way to let people know what your template is about? Well, a fully functional, fill to the brim, performant, and beautiful “demo” site is definitely gonna do the trick 🤯&lt;/p&gt;
+&lt;h4&gt;Amazing Documentations&lt;/h4&gt;
+&lt;p&gt;Like seriously just look at the README! It’s so detailed, and I got something started in a matter of minutes!!!&lt;/p&gt;
+&lt;h4&gt;Accessibility 👍&lt;/h4&gt;
+&lt;p&gt;While I never really tested the accessibility part, it’s really nice that they have it in mind, especially when inclusivity is a big part of DevFest Berlin this year. Special shout out to the organizers and selection committee for having such a diverse panel, which include &lt;a href=&quot;https://twitter.com/_francied/status/1193240010780299265&quot;&gt;this amazing talk from Franziska Hauck&lt;/a&gt;!&lt;/p&gt;
+&lt;h4&gt;PWA 👍&lt;/h4&gt;
+&lt;p&gt;This is particularly useful when the venue Wi-Fi is overwhelmed……&lt;/p&gt;
+&lt;h4&gt;Secure 🔒 👍&lt;/h4&gt;
+&lt;p&gt;The last thing you want is to have a tech(-ish) conference website to leak a bunch of info, or have loopholes that allow bad players to inject malicious data. From my very limited knowledge of the npm ecosystem, it looks like the project is pretty secure. Not perfect, but more than enough.&lt;/p&gt;
+&lt;h3&gt;Cons (mostly nitpicking)&lt;/h3&gt;
+&lt;h4&gt;Firebase functions errors are not obvious&lt;/h4&gt;
+&lt;p&gt;One of the “bug” that takes me forever to figure out is that apparently, you should not pass an empty array to the socials of speakers (if I remember correctly), and if you do that, the firebase function that transforms speakers JSON will fail. And since it’s happening on the cloud, it took me forever to realize how to find out the “Health” of those functions, and slowly figure out what I have done wrong. It’s particularly bad because of the strict pre-commit hook, that gave me the impression “oh it pass lint locally, so the formatting must have been fine”&lt;/p&gt;
+&lt;h4&gt;Import script is somewhat basic&lt;/h4&gt;
+&lt;p&gt;Another issue I faced is how to import everything once the schedule is done. Before it’s ready, I added a bunch of dummy schedule &amp;#x26; speaker placeholder, so that people can understand “oh the schedule is not ready yet”. And once the info starts flowing in, I run the import script, and realized that “oh, all those dummy sessions are still on firebase, because the firebase function does not do removal”. It’s not a deal-breaker, I can just remove everything from firebase database, and let it import everything again.&lt;/p&gt;
+&lt;h4&gt;No easy way to integrate with CfP platforms&lt;/h4&gt;
+&lt;p&gt;Continuing on the data import topic: for the first batch of import, it will probably come from some CfP platform like Sessionize or PaperCall, and currently, there is no easy way to transform the output from those platforms to the input of Project Hoverboard. I ended up botch a &lt;a href=&quot;https://github.com/louistsaitszho/PaperCall-to-Hoverboard&quot;&gt;simple script&lt;/a&gt; to handle the conversion, but it feels like it should have been part of the documentation to say the least 🤷‍♀&lt;/p&gt;
+&lt;h4&gt;➡️ Missing CMS part of the project&lt;/h4&gt;
+&lt;p&gt;All the previous points can kinda be summarized as “not having a CMS”. Like it or not, event organization is often chaotic: last-minute speaker change, ticket sales open and close, people request to have their info change, missing pictures, the list can go on forever. And having some type of CMS, or at the very least, centralize all content into 1 place, would make it a lot easier for us to maintain.&lt;/p&gt;
+&lt;h4&gt;Somewhat obscure tech stack&lt;/h4&gt;
+&lt;p&gt;From what I understand, the world of websites is either build with PHP, or with React. And for this project, the use of Polymer (or web component I suppose?) and “50% data static + 50% data on firebase” is unconventional to say the least. And as someone who wants to learn more about frontend development, I wish I could have learned something more popular/hyped, like using JAM stack + static website generator.&lt;/p&gt;
+&lt;h4&gt;Overkill architecture &amp;#x26; features&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;This is quite specific to this particular event&lt;/strong&gt; : the architecture is a bit too complicated. Having data split in 2 places makes it hard to maintain, and easy to forgot to deploy something, or worse, deploy something that shouldn’t have been.&lt;/p&gt;
+&lt;p&gt;And similarly, there are also a few features that’re quite unnecessary for events in this scale, like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSO with facebook, twitter, or Google for push notification. There are only 2 tracks, you don’t need notification to tell you “hey everyone is moving”&lt;/li&gt;
+&lt;li&gt;Link to previous speakers. It would probably be more useful to just link to the site from the past, so that users can have a bit more context on what it was about.&lt;/li&gt;
+&lt;li&gt;Analytics. For 250-ish attendee events, this is not necessary. I ended up manually removing all references to analytics from the codebase. It’s not hard, but it is probably not necessary for most events.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So what have we learned today?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The people from GDG Lviv is amazing!&lt;/li&gt;
+&lt;li&gt;Everyone attended/spoke/organized/helped DevFest Berlin 2019 is also amazing!&lt;/li&gt;
+&lt;li&gt;Project Hoverboard saves me so much time&lt;/li&gt;
+&lt;li&gt;DevFest can range from “having dozens of people” to “multi-day multi-track extravaganza”, and that translates to very different needs for the website&lt;/li&gt;
+&lt;li&gt;“Ease of use” is important for both attendees and website maintainer&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And this is my quick review of Project Hoverboard, and now that I have written things down, I started to get motivated to build my own version of “a small-ish conference website”. Let see how it goes……&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Group photo of DevFest Berlin 2019&quot;
+        title=&quot;Group photo of DevFest Berlin 2019&quot;
+        src=&quot;/static/cd7b2521a567371318f5d0a8786df024/294ce/devfest-berlin-2019.jpg&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;figcaption&gt;🙌 It shouldn’t be hard to spot me 😝 (Credit: &lt;a href=&quot;https://www.kimlahav.com/&quot;&gt;kimlahav.com&lt;/a&gt;)&lt;/figcaption&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Mental Models of Jetpack Compose #3: Inheritance, Composition, and why they matter]]></title><description><![CDATA[Mental Models of Jetpack Compose #3: Inheritance & Composition  Previously, on MMoJC: We talked about what even is mental model We talked…]]></description><link>https://louistsaitszho.github.io/compose-3/</link><guid isPermaLink="false">https://louistsaitszho.github.io/compose-3/</guid><pubDate>Tue, 22 Oct 2019 06:42:53 GMT</pubDate><content:encoded>&lt;h3&gt;Mental Models of Jetpack Compose #3: Inheritance &amp;#x26; Composition&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1024/1*_2BwC6xlUiSt5VHeMTFrIA.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Previously, on MMoJC:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;We talked about what even is mental model&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;We talked about what is state&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;We talked about what is Programming Model&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;We talked about Declarative UI&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;We talked about separation of concerns&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And for today, I’d like to talk about Inheritance &amp;#x26; Composition in the context (&lt;a href=&quot;https://twitter.com/ataulm/status/1185637270730268672&quot;&gt;no not that Context😂&lt;/a&gt;) of Android.&lt;/p&gt;
+&lt;h3&gt;Inheritance&lt;/h3&gt;
+&lt;p&gt;Android was born (officially) in 2008: Java 1.6, JavaScript is just some things you use to animate stuff, not build a full blown web app, not even the word “app” is a thing just yet. And when it comes time to build all the basic view components, there are probably quite a lot of restrictions on what they can build in a limited amount of time (esp. since iPhone just got released, the pressure is on!). So in order to encourage code-reuse (i.e. DRY), they made a View class that every classes extend from, and then they can add extra functionality, and it just keep growing like that, &lt;a href=&quot;https://www.reddit.com/r/ProgrammerHumor/comments/8ek3ot/shots_were_fired_in_my_discrete_math_textbook/&quot;&gt;just like a tree&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1024/1*Fdawx1uv8swSvhgsg14Cdg.png&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;What’s wrong with inheritance&lt;/h3&gt;
+&lt;p&gt;While it definitely helps everyone to reuse UI code, like “Button don’t have to implement their own text rendering logic”, it is also very limiting on building complex things, which turns out to be the case, when Android become the most popular OS in the world.&lt;/p&gt;
+&lt;p&gt;For example: Button with an image instead of text. When I first start learning Android, at some point I was trying to use an image instead of text for a button, so when I find ImageButton, I was like “jackpot”, and just converted it in the XML. but then 20 seconds later, everything broke, and I got a bunch of compile error. Turns out a lot of the functions that I was calling from the Java side don’t work anymore, and it’s because Button and ImageButton, although share a very similar name, has almost nothing in common 😐&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1024/1*MQN1tnnnJDIxPqh7Gj3lHg.png&quot;&gt;&lt;figcaption&gt;ImageButton and Button are both View, so that’s something I guess 🙆‍♀️&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;Maybe the Android team could have design these 2 views the other way around? But in general I hope you got the point of “how difficult it is to predict how people mutate their UI, and what would be the best hierarchy to ensure high level of compatibility”.&lt;/p&gt;
+&lt;p&gt;There is another way people discover this to be an issue over time, and it’s when people try to update existing UI: we get some ticket on what new feature we needs to implement in the UI, we updated that View, and make sure it’s covered with test. What could possibly go wrong? Well, if you are building a library of views that thousands if not millions of other classes inherent from, too bad! Since there is no clear mechanism to warn every single places that extends from you to double check if the change in behaviour is acceptable, you kinda just have to prey nothing went wrong. One example that the Google team pointed out is the “selectable text in Button”, which maybe 3 apps in the world needs it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1024/1*ugomrHFMusnZRLkbt0gEwg.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR: Building UI with inheritance does not scale over space and time&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(BTW inheritance is not the only thing that didn’t aged well with View, but that’s story for another day)&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Composition: Is it the answer we are looking for?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;So how else can we build reuseable View? For that, let see if composition helps: Instead of saying “Button = modify view to show text, and modify text to have a specific style”, just say “Button = Whatever hint you want + some background + click callback”. And an example for that can be seen in Flutter, like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 46.875%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fcarbon.now.sh%2Fembed%3Fbg%3Drgba%28247%252C247%252C247%252C1%29%26t%3Dseti%26wt%3Dnone%26l%3Dauto%26ds%3Dtrue%26dsyoff%3D20px%26dsblur%3D68px%26wc%3Dtrue%26wa%3Dtrue%26pv%3D56px%26ph%3D56px%26ln%3Dfalse%26fl%3D1%26fm%3DHack%26fs%3D14px%26lh%3D133%2525%26si%3Dfalse%26es%3D2x%26wm%3Dfalse%26code%3D%25252F%25252F...%25250AFloatingActionButton%28%25250A%252520%252520onPressed%25253A%252520%28%29%252520%25257B%25250A%252520%252520%252520%252520%25252F%25252F%252520Add%252520your%252520onPressed%252520code%252520here%21%25250A%252520%252520%25257D%25252C%25250A%252520%252520child%25253A%252520Icon%28Icons.navigation%29%25252C%25250A%252520%252520backgroundColor%25253A%252520Colors.green%25252C%25250A%29%25252C%25250A%25252F%25252F...%25250A&amp;amp;url=https%3A%2F%2Fcarbon.now.sh%2F%3Fbg%3Drgba%28247%25252C247%25252C247%25252C1%29%26t%3Dseti%26wt%3Dnone%26l%3Dauto%26ds%3Dtrue%26dsyoff%3D20px%26dsblur%3D68px%26wc%3Dtrue%26wa%3Dtrue%26pv%3D56px%26ph%3D56px%26ln%3Dfalse%26fl%3D1%26fm%3DHack%26fs%3D14px%26lh%3D133%252525%26si%3Dfalse%26es%3D2x%26wm%3Dfalse%26code%3D%2525252F%2525252F...%2525250AFloatingActionButton%28%2525250A%25252520%25252520onPressed%2525253A%25252520%28%29%25252520%2525257B%2525250A%25252520%25252520%25252520%25252520%2525252F%2525252F%25252520Add%25252520your%25252520onPressed%25252520code%25252520here%21%2525250A%25252520%25252520%2525257D%2525252C%2525250A%25252520%25252520child%2525253A%25252520Icon%28Icons.navigation%29%2525252C%2525250A%25252520%25252520backgroundColor%2525253A%25252520Colors.green%2525252C%2525250A%29%2525252C%2525250A%2525252F%2525252F...%2525250A&amp;amp;image=https%3A%2F%2Fcarbon.now.sh%2Fstatic%2Fbrand%2Fbanner.png&amp;amp;key=a19fcc184b9711e1b4764040d3dc5c07&amp;amp;type=text%2Fhtml&amp;amp;scroll=auto&amp;amp;schema=carbon&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;a href=&quot;https://medium.com/media/b954722363f4154bff5eeb209c18658a/href&quot;&gt;https://medium.com/media/b954722363f4154bff5eeb209c18658a/href&lt;/a&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;p&gt;And all of these are technically possible in the past, but the developer experience/ergonomics will be so bad, no one will like to develop for the platform to begin with! With much better tooling like IDE with crazy-good autocomplete support, build system that can process a huge amount of dependencies, and stack traces that gets more and more human-friendly over time, we are start to utilize composition to our advantage!&lt;/p&gt;
+&lt;p&gt;So is it the “ultimate” solution to UI building? It’s closer, but there are still some gaps to fill, and with the each of the composition-based UI framework, there are different trade-offs they’ve made, and that’s what we will cover in the next chapter!&lt;/p&gt;
+&lt;p&gt;Hope you like what I have wrote, and if you have any feedback or anything, feel free to leave a comments down below! Thanks!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Mental Models of Jetpack Compose #bonus: I gave a talk!?]]></title><description><![CDATA[So yeah, that just happened. Last week in Berlindroid, I gave a talk on this exact same topic. For those who came, thank you very much…]]></description><link>https://louistsaitszho.github.io/compose-talk/</link><guid isPermaLink="false">https://louistsaitszho.github.io/compose-talk/</guid><pubDate>Thu, 03 Oct 2019 18:59:09 GMT</pubDate><content:encoded>&lt;p&gt;So yeah, that just happened. &lt;a href=&quot;https://www.meetup.com/berlindroid/events/ktlzcryzmbhc/&quot;&gt;Last week in Berlindroid&lt;/a&gt;, I gave a talk on this exact same topic. For those who came, thank you very much 🤗 and for those who can’t come, here’s the slides 💁‍♀️&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.19718309859155%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fspeakerdeck.com%2Fplayer%2F1a0074a0cf844415bb9d0bc33c020b37&amp;amp;url=https%3A%2F%2Fspeakerdeck.com%2Flouistsaitszho%2Fmental-modles-of-jetpack-compose&amp;amp;image=https%3A%2F%2Fspeakerd.s3.amazonaws.com%2Fpresentations%2F1a0074a0cf844415bb9d0bc33c020b37%2Fslide_0.jpg%3F555164&amp;amp;key=a19fcc184b9711e1b4764040d3dc5c07&amp;amp;type=text%2Fhtml&amp;amp;schema=speakerdeck&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;a href=&quot;https://medium.com/media/68960ee3e79291bd18f26e9a3fc273d2/href&quot;&gt;https://medium.com/media/68960ee3e79291bd18f26e9a3fc273d2/href&lt;/a&gt;&lt;/iframe&gt; &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Gear review: Timbuk2 Classic Messenger bag]]></title><description><![CDATA[Back in Nov 2018, I got this bag as a (late but still better than nothing) birthday gift from my sister (Thanks sis 😘), and after 9 months…]]></description><link>https://louistsaitszho.github.io/timbuk2/</link><guid isPermaLink="false">https://louistsaitszho.github.io/timbuk2/</guid><pubDate>Sun, 25 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1024/1*m0qQU5GUrSOd8qG0kWBDOw@2x.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Back in Nov 2018, I got this bag as a (late but still better than nothing) birthday gift from my sister (Thanks sis 😘), and after 9 months of abuse, here’s a quick list of what I like and don’t like about it.&lt;/p&gt;
+&lt;h4&gt;👍 Organizations&lt;/h4&gt;
+&lt;p&gt;It’s really nice to have proper compartments to keep things separate &amp;#x26; stay in place&lt;/p&gt;
+&lt;h4&gt;👎 Downward-facing compartment&lt;/h4&gt;
+&lt;p&gt;However, one of the “easy-access” compartment just so happens to face down, and it’s not too difficult to forgot to zip it up. That’s how I lost the case to my wireless earbuds 😭&lt;/p&gt;
+&lt;h4&gt;👍 Capacity&lt;/h4&gt;
+&lt;p&gt;It’s really nice to be able to put a laptop, tablet, mouse, charger, wallet, keys, a down jacket, and more, and still being able to shove a few nicknacks in there.&lt;/p&gt;
+&lt;h4&gt;👎 Weight&lt;/h4&gt;
+&lt;p&gt;However, as a weakling, it’s not really comfortable to carry so many stuff on a messenger bag. It press against my chest, and not to mention how tiresome it can be for my shoulder.&lt;/p&gt;
+&lt;h4&gt;👍 Looks&lt;/h4&gt;
+&lt;p&gt;Would you just look at that 🤩&lt;/p&gt;
+&lt;h4&gt;👎 Materials&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1024/1*7CxRl2ntYZw9CCEV5Vivqg@2x.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1024/1*vpLUInUiyiKPL3h38LyQ4Q@2x.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;While the material is not terrible, There are quite a few things left to be desire. The Velcro is biggest gripe: it’s noisy, it wears out relatively quickly, and it also take a few other things down with it (e.g. the part that holds the clips up).&lt;/p&gt;
+&lt;p&gt;And for the cordura nylon body, it mostly keep rain &amp;#x26; moisture out, it mostly stay intact, and it’s also doing a decent job on “not making dusts looks very visible”. However, I have found 1 hole, locations in where the corner of my laptop sits. And it’s not even after a year, so that’s kinda disappointing. I probably should see if it’s cover under any warranty……&lt;/p&gt;
+&lt;h4&gt;👎 Key chain&lt;/h4&gt;
+&lt;p&gt;This is less of a thumbs down, more of an “ehhhhhhhhh”: the keychain is good in theory, but it’s kinda too short to be useful in enough situations. Also the release mechanism is not exactly convenient, and it’s now easier to just store the keys in that compartment without using the key chain 🤷‍♀️&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;7.5/10 good enough for 90 euros.&lt;/p&gt;</content:encoded></item></channel></rss>
