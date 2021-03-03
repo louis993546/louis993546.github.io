@@ -20,7 +20,7 @@ For all the reasons and context of why I do this, you can read it from [the last
 
 One of the key problem that I was trying to solve is to avoid having more and more unstructured documentation, and so far I am very impressed with what Confluence. I can actually use it to get into a flow, and start writing down things, and most importantly, this actually helps/forces me to clear my brain, and see all the random thoughts I have as a bigger picture.
 
-And that's what I am want from any documentation tool. It has the right set of tools, plus a good enough user experience to help me solve real world problems. It's definitely not the fastest/smoothest/prettiest website, and it does have a fair share of quirks. But overall it's pros definitely beats it's cons :thumbsup:
+And that's what I am want from any documentation tool. It has the right set of tools, plus a good enough user experience to help me solve real world problems. It's definitely not the fastest/smoothest/prettiest website, and it does have a fair share of quirks. But overall it's pros definitely beats it's cons 👍
 
 ### Epics forces me to pick and choose 🎯
 
@@ -54,11 +54,11 @@ One thing I want to clarify is that this is what works for **me**. Maybe your br
 
 ### Jira is not for managing small tasks 😡
 
-It all broke down the first time I try to use Jira to manage my grocery list. It is just not design for simple "check-and-forget" type of task management. And to be fair that's not they are trying to be anyway, so that is perfectly fine. All I have to do it to replace it with something much simplier, and for now I am using the build-in Reminder app on my iPhone. It is good enough to keep track of grocery list, as the integration with Siri is kinda useful.
+It all broke down the first time I try to use Jira to manage my grocery list. It is just not design for simple "check-and-forget" type of task management. And to be fair that's not they are trying to be anyway, so that is perfectly fine. All I have to do it to replace it with something much simpler, and for now I am using the build-in Reminder app on my iPhone. It is good enough to keep track of grocery list, as the integration with Siri is kinda useful.
 
 ### Next-gen project is master of none
 
-So in the original article, I cite the existance of the next-gen project as one of the main reason I want to give it a shot. And after 3 months, I have come to the conclusion that it is not good (yet). In cantonese there is a idiom "兩頭唔到岸", which literally translates to "both sides not touching the shore", figuratively translates to "you try 2 different options but neither of them work (probably because you try both at the same time)". And to me that feels like the state the next-gen project is in right not.
+So in the original article, I cite the existence of the next-gen project as one of the main reason I want to give it a shot. And after 3 months, I have come to the conclusion that it is not good (yet). In Cantonese there is a idiom "兩頭唔到岸", which literally translates to "both sides not touching the shore", figuratively translates to "you try 2 different options but neither of them work (probably because you try both at the same time)". And to me that feels like the state the next-gen project is in right not.
 
 On one hand, it sit somewhere in the middle of configurability; on the other hand, it is not flexible enough to get it to work exactly the way I want it, while on the other hand, it also try give people some choices by putting way too many feature toggles. I understand that why Jira is taking this approach to build the future of their product, but at this point in time, it's not that fun to actually use it.
 
@@ -82,28 +82,28 @@ The results are in, and they are:
 
 When I look back, it's very obvious that Jira is not actually helping me to actually get things done. However, it is very good at making me feel productive when I am playing with it, which IMO is exactly the worst part of Jira. Even with next-gen project, Jira is still a very complex product, and that's why we ended up spending so much time and effort just to use it. For me, task management is just a means to an end. I don't need to feel productive using Jira, I need to feel productive working on things I listed on Jira.
 
-And for the time being, I have move all the tasks to another task manager. Once I got more ideas of what exactly I am looking for, I might write another follow-up for that :woman_shrugging:
+And for the time being, I have move all the tasks to another task manager. Once I got more ideas of what exactly I am looking for, I might write another follow-up for that 🤷‍♀️
 
 #### 🤔 Confluence
 
 On one hand, the experience of using Confluence is good enough that I am actually using it to clear my head. On the other hand, without Jira, it loses the biggest reason why I picked it in the first place: easy of connection with Jira.
 
-For the time being, I am keeping most of the documents there. Some types of document with specific purposes (e.g. journal/blog post) is being moved to other places. I can slowly start looking for some documentation workflow that fits what I have, hopefully I will find something by the time everything falls apart :crossed_fingers:
+For the time being, I am keeping most of the documents there. Some types of document with specific purposes (e.g. journal/blog post) is being moved to other places. I can slowly start looking for some documentation workflow that fits what I have, hopefully I will find something by the time everything falls apart 🤞
 
 #### ✅ Google Calendar
 
-Given it's one of the high-light of this experiment, of course I am going to keep it. As I mentioned above, this is a lot less about the tools itself, but more about having a workflow that works for me. So I will just keep an eye to make sure I adhere to my time block schedule :thumbsup:
+Given it's one of the high-light of this experiment, of course I am going to keep it. As I mentioned above, this is a lot less about the tools itself, but more about having a workflow that works for me. So I will just keep an eye to make sure I adhere to my time block schedule 👍
 
 ---
 
 ## So what's the plan?
 
-Apart from those 3, there are also other things that I am trying out to improve my productivies.
+Apart from those 3, there are also other things that I am trying out to improve my productivity.
 
 - Keep track of how much time I spent (wasted) using Toggl Track
 - Note taking and reading with reMarkable 2
 - How to use Pomodoro in moderation to keep free-flow focus time running smoothly
 - How does the physical environment (i.e. my apartment) affects my motivation
-- How does the equipements (i.e. my computer) affects my focus and effeciency
+- How does the equipment (e.g. my computer) affects my focus and efficiency
 
 If any of them start getting interesting, I will just write another post. But at this point it's still too early to tell 🧐
