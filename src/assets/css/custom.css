@@ -1,0 +1,18 @@
+/* Custom Blog Overrides */
+
+.site-card-excerpt {
+  color: var(--color-secondary-text);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 1.2rem;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-secondary-text-dark: rgba(0, 0, 0, 0.6);
+  --color-secondary-text: rgba(0, 0, 0, 0.6);
+}

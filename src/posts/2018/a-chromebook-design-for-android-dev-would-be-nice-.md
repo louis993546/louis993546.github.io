@@ -1,0 +1,10 @@
+---
+title: "A Chromebook design for Android dev would be nice…"
+date: 2018-06-14
+length: "2 min read"
+excerpt: "With the recent announcement of Linux container in Chrome OS, which begins to bring Android Studio to Chrome OS, I can’t stop to wonder…"
+---
+
+<p>With the recent announcement of Linux container in Chrome OS, which begins to bring Android Studio to Chrome OS, I can’t stop to wonder what could a Android developer friendly Chromebook could be. So here it is, my spit take on what I would like to have in a Chromebook for Android dev by Android dev:</p><p>Basic specs:</p><ul><li>Intel Core 8th Gen 45W TDP CPUs (i5–8400H, i7–8850H, i9–8950HK)</li><li>16GB+ RAM</li><li>256GB+ Samsung NVMe SSD</li><li>15(-ish)" 3840 * 2560 3:2 4k+ IPS Touch LCD</li><li>2 Thunderbolt 3 ports (for charging as well)</li><li>1 USB A port</li><li>1 HDMI port</li><li>Headphone jack</li><li>SD Card slot</li><li>99Wh Battery</li></ul><p>And these are the reason why I choose those components</p><ul><li>45W TDP quad/hex core CPU to keep the sustain performance up + make sure everything runs smoothly concurrently + a clearer separation from Pixelbook</li><li>15(-ish)” because more screen real estate just feels good + bazzles are getting smaller, now even 15" can be considered somewhat portable</li><li>4k+ because non-retina screen in 2018 is just bad. Also 4k on laptop is getting more and more popular.</li><li>3:2 display aspect ratio for the productivity</li><li>USB-C port for charging, 1 port + 1 standard (USB-PD)to rule them all!</li><li>USB-A for the occasional debug with real devices (e.g. try it out on low end phone)</li><li>Touch screen so that you can get the more authentic sense of using your app on a touch screen</li><li>HDMI is still probably one of the more common display connection in every office</li><li>99Wh battery because otherwise this laptop will die in just a few hours</li></ul><p>TL;DR: I want the new <a href="https://www.notebookcheck.net/Razer-Blade-15-2018-Laptop-Preview.305426.0.html">Razer Blade 15</a> but with no discrete graphics, slightly bigger battery, and a 3:2 display.
+
+</p>

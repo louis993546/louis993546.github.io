@@ -1,0 +1,64 @@
+---
+layout: base.njk
+bodyClass: "tag-template is-head-left-logo has-classic-feed"
+pagination:
+  data: tagsData
+  size: 1
+  alias: tag
+tagsData:
+  - name: coding
+    title: "🧑‍💻 Coding"
+    emoji: "🧑‍💻"
+    description: "Coding notes, reviews, and developer learnings."
+  - name: gadget
+    title: "💸 Gadget"
+    emoji: "💸"
+    description: "Reviews, notes, and experiences with gadgets and tech items."
+permalink: /tag/{{ tag.name }}/
+eleventyComputed:
+  title: "{{ tag.title }}"
+---
+
+<section class="site-about site-outer">
+    <div class="site-about-inner site-inner">
+        <div class="site-about-content">
+            <div class="site-about-content-inner">
+                <h1 class="site-about-primary">{{ tag.emoji }}</h1>
+                <p class="site-about-secondary">{{ tag.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main id="site-main" class="site-main site-outer">
+    <div class="site-feed site-inner">
+        {%- for post in collections[tag.name] | reverse -%}
+        <article class="site-card post{% if not post.data.image %} no-image{% endif %}{% if post.data.featured %} featured{% endif %}" {% if post.data.tags %}style="--tag-color: #0d1117;"{% endif %}>
+            <a class="site-card-link" href="{{ post.url }}">
+                {% if post.data.image %}
+                <figure class="site-card-image">
+                    <img
+                        src="{{ post.data.image }}"
+                        alt="{{ post.data.imageAlt or post.data.title }}"
+                        loading="lazy"
+                    >
+                </figure>
+                {% endif %}
+
+                <div class="site-card-wrapper">
+                    <h2 class="site-card-title">{{ post.data.title }}</h2>
+                    {% if post.data.excerpt %}
+                    <p class="site-card-excerpt">{{ post.data.excerpt }}</p>
+                    {% endif %}
+                    <footer class="site-card-meta">
+                        <time class="site-card-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                        {% if post.data.length %}
+                        <span class="site-card-length">{{ post.data.length }}</span>
+                        {% endif %}
+                    </footer>
+                </div>
+            </a>
+        </article>
+        {%- endfor -%}
+    </div>
+</main>

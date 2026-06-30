@@ -1,0 +1,28 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Eleventy static output
+_site/
+
+# Local cache/metadata
+.11ty-metadata/
+.sass-cache/
+
+# Editor/OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+
+# Local debug outputs
+lighthouse.json
+louis-tsai.ghost.2026-06-30-20-52-50.json
+*.log

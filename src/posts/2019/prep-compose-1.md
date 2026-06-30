@@ -1,0 +1,14 @@
+---
+title: "Prepare a Jetpack Compose talk with me #1: Where do I even start?"
+date: 2019-06-10
+length: "2 min read"
+excerpt: "TL;DR: just a bunch of links"
+tags:
+  - android
+  - coding
+  - jetpack-compose
+---
+
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/assets/images/downloaded_images/downloaded_images/Prepare-a-Jetpack-Compose-talk-with-me--1--Where-do-I-even-start-/1-lvQ3DUVaYeGZM699r2bf-g.png" class="kg-image" alt loading="lazy"><figcaption>It starts with excitement, but 30s later, the horror starts to set in……</figcaption></figure><blockquote>So, for some stupid reason, I submitted a session to droidcon Berlin, saying that I will spend 15-ish minutes to present the inner workings of Jetpack Compose. And in July 2nd, I will need to go on stage and present it. Join me on the journey to either the ultimate humiliation, or the beginning of giving something back to the Android dev community!</blockquote><hr><p>Where do I start? Turns out you just keep Google-ing and Google-ing, and once you hit the right slack channel, everything just went crazy from there 🤷</p><ul><li><a href="https://www.youtube.com/watch?v=VsStyq4Lzxo"><strong>The original Google I/O talk</strong></a></li><li><a href="http://intelligiblebabble.com/content-on-declarative-ui/">Aggregation of Declarative UI content, mostly React</a></li><li><a href="http://intelligiblebabble.com/compose-from-first-principles/"><strong>Googler explains a simplify version of how it work internally</strong></a></li><li><strong>The </strong><strong>#compose</strong><strong> channel at </strong><a href="http://kotlinlang.slack.com"><strong>kotlinlang.slack.com</strong></a><strong>. Seriously, just binge the whole channel, it’s pretty much a great read from top to bottom 👍</strong></li><li><a href="https://medium.com/q42-engineering/android-jetpack-compose-895b7fd04bf4">This guy from Q42 engineering on some basics</a></li><li><a href="https://medium.com/q42-engineering/try-jetpack-compose-today-a12bda50aed2"><strong>The same guy describes how to clone and try it</strong></a></li><li><a href="https://source.android.com/setup/build/downloading">AOSP documentation on how to clone the whole thing (i.e. the </a><a href="https://source.android.com/setup/build/downloading">repo</a><a href="https://source.android.com/setup/build/downloading"> tool)</a></li><li><a href="https://android.googlesource.com/platform/frameworks/support/+/refs/heads/androidx-master-dev/ui/">Jetpack Compose source code</a></li><li><a href="https://developer.android.com/jetpack/compose">Jetpack Compose homepage</a></li></ul><hr><p>Next time, we will take a very quick look at some essentials but non-so-important stuff that makes JC possible 👋</p><hr><p>Update: <a href="https://medium.com/@louis993546/prepare-a-jetpack-compose-talk-with-me-2-saying-no-firmly-but-politely-to-the-following-topics-4bac14a00ebc?postPublishedType=initial">#2 is up</a>
+
+</p>
