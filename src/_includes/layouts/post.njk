@@ -1,0 +1,40 @@
+---
+layout: base.njk
+bodyClass: "post-template is-head-left-logo"
+---
+
+<main id="site-main" class="site-main site-outer">
+    <article class="site-article site-inner">
+        <header class="site-article-header">
+            {% if tags and tags[0] != 'posts' %}
+            <span class="site-article-tag">{{ tags[0] }}</span>
+            {% endif %}
+            <h1 class="site-article-title">{{ title }}</h1>
+            {% if excerpt %}
+            <p class="site-article-excerpt">{{ excerpt }}</p>
+            {% endif %}
+            
+            <div class="site-article-meta">
+                <div class="site-article-meta-inner">
+                    <div class="site-article-meta-wrapper">
+                        <span class="site-author-name">Louis Tsai</span>
+                        <time class="site-article-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+                        {% if length %}
+                        <span class="site-card-length">• {{ length }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            
+            {% if image %}
+            <figure class="site-article-image">
+                <img src="{{ image }}" alt="{{ imageAlt or title }}">
+            </figure>
+            {% endif %}
+        </header>
+
+        <section class="site-content site-canvas">
+            {{ content | safe }}
+        </section>
+    </article>
+</main>

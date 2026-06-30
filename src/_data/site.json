@@ -1,0 +1,25 @@
+{
+  "title": "Louis Tsai",
+  "description": "Louis Tsai is Hong Kong born, Berlin based Developer, GDG (Google Developer Group) organisers, Hobbyist Street Photographer, and occasionally gamer.",
+  "url": "https://louis993546.github.io",
+  "accentColor": "#ffffff",
+  "navigation": [
+    { "label": "🧑‍💻", "url": "/tag/coding/" },
+    { "label": "💸", "url": "/tag/gadget/" },
+    { "label": "📸", "url": "/photography/" },
+    { "label": "🇺🇦", "url": "https://savelife.in.ua/en/donate/" }
+  ],
+  "footerNavigation": [
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/tsaitszho/" },
+    { "label": "Unsplash", "url": "https://unsplash.com/@louis993546" },
+    { "label": "BlueSky", "url": "https://bsky.app/profile/louis993546.com" },
+    { "label": "GitHub", "url": "https://github.com/louis993546/" },
+    { "label": "Berlindroid", "url": "https://www.meetup.com/berlindroid/" },
+    { "label": "GDG Berlin", "url": "https://gdg.community.dev/gdg-berlin/" }
+  ],
+  "about": {
+    "image": "/assets/images/profile.jpg",
+    "primary": "He Codes 👨‍💻. He Plays 🎮. He Snap Things 📸.",
+    "secondary": "And he sometimes write some things."
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="has-dark-text">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/screen.css">
+    {% if page.url == "/" and site.about.image %}
+    <link rel="preload" as="image" href="{{ site.about.image }}">
+    {% endif %}
+    
+    <style>
+        :root {
+            --background-color: {{ site.accentColor }};
+        }
+    </style>
+    
+    <meta name="description" content="{{ description or site.description }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title or site.title }}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title or site.title }}">
+    <meta name="twitter:description" content="{{ description or site.description }}">
+</head>
+<body class="{% if bodyClass %}{{ bodyClass }}{% else %}home-template has-side-about is-head-left-logo has-classic-feed{% endif %} is-dropdown-loaded">
+
+<div class="site-site">
+    <header id="site-head" class="site-head site-outer">
+        <div class="site-head-inner site-inner">
+            <div class="site-head-brand">
+                <div class="site-head-brand-wrapper">
+                    <a class="site-head-logo" href="/">
+                        {{ site.title }}
+                    </a>
+                </div>
+                <button class="site-burger" aria-label="Toggle Navigation" aria-expanded="false"></button>
+            </div>
+
+            <nav class="site-head-menu">
+                <ul class="nav">
+                    {%- for item in site.navigation -%}
+                    <li class="nav-"><a href="{{ item.url }}">{{ item.label }}</a></li>
+                    {%- endfor -%}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    {{ content | safe }}
+
+    <footer class="site-foot site-outer">
+        <div class="site-foot-inner site-inner">
+            <nav class="site-foot-menu">
+                <ul class="nav">
+                    {%- for item in site.footerNavigation -%}
+                    <li class="nav-{{ item.label | lower }}"><a href="{{ item.url }}">{{ item.label }}</a></li>
+                    {%- endfor -%}
+                </ul>
+            </nav>
+
+            <div class="site-copyright">
+                {{ site.title }} © {% year %}. Powered by <a href="https://11ty.dev/" target="_blank" rel="noopener">11ty</a>. Design adapted from <a href="https://github.com/TryGhost/Solo" target="_blank" rel="noopener">Solo</a>.
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var burger = document.querySelector('.site-burger');
+        if (burger) {
+            burger.addEventListener('click', function() {
+                var isOpen = document.body.classList.toggle('is-head-open');
+                burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
