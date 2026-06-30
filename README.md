@@ -49,3 +49,21 @@ Deployments are managed automatically via GitHub Actions:
 
 This repository is licensed under the [MIT License](LICENSE).
 Design patterns and layout templates are adapted from [TryGhost/Solo](https://github.com/TryGhost/Solo) (Copyright (c) 2013-2026 Ghost Foundation).
+
+## 🌐 Custom Domain Setup (via Cloudflare DNS)
+
+To route your custom domain (`louis993546.com`) to this GitHub Pages site using Cloudflare for caching, SSL, and security:
+
+### Step 1: Configure Cloudflare DNS
+1. Sign up for a free account at [Cloudflare](https://dash.cloudflare.com/).
+2. Add your domain `louis993546.com` and point your domain registrar's Nameservers (NS) to the ones provided by Cloudflare.
+3. In the Cloudflare DNS dashboard, add the following records:
+   * **CNAME** | `@` (root) | `louis993546.github.io` | 🟠 Proxied (enabled)
+   * **CNAME** | `www` | `louis993546.github.io` | 🟠 Proxied (enabled)
+
+### Step 2: Configure GitHub Pages Custom Domain
+1. In your GitHub repository, go to **Settings** -> **Pages** (under Code and automation).
+2. Under **Custom domain**, enter your custom domain: `louis993546.com`.
+3. Click **Save**. GitHub will automatically verify your DNS setup and issue an SSL certificate.
+4. Check **Enforce HTTPS** once the SSL certificate is generated (usually takes a few minutes).
+
