@@ -30,7 +30,7 @@ body {
 }
 figcaption {
   font-size: 1.3rem;
-  text-align: right;
+  text-align: center;
 }
 .kg-width-full figcaption {
   padding: 0;

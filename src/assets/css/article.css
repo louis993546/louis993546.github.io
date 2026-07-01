@@ -164,19 +164,11 @@
   .site-foot {
     padding-bottom: 12rem;
     padding-top: 6.4rem;
+    white-space: normal;
   }
   .site-foot-inner {
     grid-template-columns: 1fr;
     text-align: center;
-  }
-  .site-foot-menu .nav {
-    flex-direction: column;
-  }
-  .site-foot-menu .nav li + li {
-    margin-top: 0.4rem;
-  }
-  .site-foot-menu .nav li + li:before {
-    display: none;
   }
   .site-powered-by {
     text-align: center;

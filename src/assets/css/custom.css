@@ -16,3 +16,7 @@ html {
   --color-secondary-text-dark: rgba(0, 0, 0, 0.6);
   --color-secondary-text: rgba(0, 0, 0, 0.6);
 }
+
+.nowrap {
+  white-space: nowrap;
+}
