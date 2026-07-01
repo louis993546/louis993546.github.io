@@ -1,69 +1,69 @@
 .kg-image {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .kg-embed-card {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 .kg-gallery-image,
 .kg-image[width][height] {
-  cursor: pointer;
+    cursor: pointer;
 }
 .kg-gallery-image a:hover,
 .kg-image-card a:hover {
-  opacity: 1 !important;
+    opacity: 1 !important;
 }
 .kg-card.kg-toggle-card .kg-toggle-heading-text {
-  font-size: 2rem;
-  font-weight: 700;
+    font-size: 2rem;
+    font-weight: 700;
 }
 .has-serif-title .kg-toggle-card .kg-toggle-heading-text {
-  font-family: var(--font-serif);
+    font-family: var(--font-serif);
 }
 .kg-callout-card.kg-card {
-  border-radius: 0.25em;
+    border-radius: 0.25em;
 }
 .kg-callout-card-accent a {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 blockquote.kg-blockquote-alt {
-  color: var(--color-secondary-text);
-  font-style: normal;
-  font-weight: 400;
+    color: var(--color-secondary-text);
+    font-style: normal;
+    font-weight: 400;
 }
 .kg-card.kg-button-card .kg-btn {
-  font-size: 1em;
+    font-size: 1em;
 }
 .has-serif-body .kg-header-card h3.kg-header-card-subheader,
 .has-serif-title .kg-card.kg-header-card h2.kg-header-card-header {
-  font-family: var(--font-serif);
+    font-family: var(--font-serif);
 }
 .kg-bookmark-card .kg-bookmark-container {
-  border-radius: 0.25em !important;
+    border-radius: 0.25em !important;
 }
 .kg-bookmark-card .kg-bookmark-content {
-  padding: 1.15em;
+    padding: 1.15em;
 }
 .kg-bookmark-card .kg-bookmark-title {
-  font-size: 0.9em;
+    font-size: 0.9em;
 }
 .kg-bookmark-card .kg-bookmark-description {
-  font-size: 0.8em;
-  margin-top: 0.3em;
-  max-height: none;
+    font-size: 0.8em;
+    margin-top: 0.3em;
+    max-height: none;
 }
 .kg-bookmark-card .kg-bookmark-metadata {
-  font-size: 0.8em;
+    font-size: 0.8em;
 }
 .kg-bookmark-card .kg-bookmark-thumbnail img {
-  border-radius: 0 0.2em 0.2em 0;
+    border-radius: 0 0.2em 0.2em 0;
 }
 .has-light-text .kg-audio-card button {
-  color: #fff;
+    color: #fff;
 }
 .has-light-text .kg-audio-card .kg-audio-volume-slider {
-  color: hsla(0, 0%, 100%, 0.3);
+    color: hsla(0, 0%, 100%, 0.3);
 }
