@@ -14,17 +14,7 @@ bodyClass: "post-template is-head-left-logo"
             <p class="site-article-excerpt">{{ excerpt }}</p>
             {% endif %}
             
-            <div class="site-article-meta">
-                <div class="site-article-meta-inner">
-                    <div class="site-article-meta-wrapper">
-                        <span class="site-author-name">Louis Tsai</span>
-                        <time class="site-article-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
-                        {% if length %}
-                        <span class="site-card-length">• {{ length }}</span>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
+            <p class="site-article-meta-text">{{ date | readableDate }}{% if length %} • {{ length }}{% endif %}</p>
             
             {% if image %}
             <figure class="site-article-image">
