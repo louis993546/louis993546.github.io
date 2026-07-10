@@ -15,7 +15,8 @@
     { "label": "BlueSky", "url": "https://bsky.app/profile/louis993546.com" },
     { "label": "GitHub", "url": "https://github.com/louis993546/" },
     { "label": "Berlindroid", "url": "https://www.meetup.com/berlindroid/" },
-    { "label": "GDG Berlin", "url": "https://gdg.community.dev/gdg-berlin/" }
+    { "label": "GDG Berlin", "url": "https://gdg.community.dev/gdg-berlin/" },
+    { "label": "RSS Feed", "url": "/feed.xml" }
   ],
   "about": {
     "image": "/assets/images/profile.jpg",
