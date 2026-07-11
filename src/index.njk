@@ -16,7 +16,7 @@ permalink: "/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber }}/
         {% endif %}
         <div class="site-about-content">
             <div class="site-about-content-inner">
-                <h1 class="site-about-primary">{{ site.about.primary }}</h1>
+                <h1 class="site-about-primary">{{ site.about.primary | safe }}</h1>
                 <p class="site-about-secondary">{{ site.about.secondary }}</p>
             </div>
         </div>
@@ -45,9 +45,7 @@ permalink: "/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber }}/
                     {% endif %}
                     <footer class="site-card-meta">
                         <time class="site-card-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-                        {% if post.data.length %}
-                        <span class="site-card-length">{{ post.data.length }}</span>
-                        {% endif %}
+                        <span class="site-card-length">{{ post.data.length or (post.templateContent | readingTime) }}</span>
                     </footer>
                 </div>
             </a>

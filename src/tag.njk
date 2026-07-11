@@ -52,9 +52,7 @@ eleventyComputed:
                     {% endif %}
                     <footer class="site-card-meta">
                         <time class="site-card-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-                        {% if post.data.length %}
-                        <span class="site-card-length">{{ post.data.length }}</span>
-                        {% endif %}
+                        <span class="site-card-length">{{ post.data.length or (post.templateContent | readingTime) }}</span>
                     </footer>
                 </div>
             </a>

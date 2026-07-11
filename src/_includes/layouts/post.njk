@@ -14,7 +14,7 @@ bodyClass: "post-template is-head-left-logo"
             <p class="site-article-excerpt">{{ excerpt }}</p>
             {% endif %}
             
-            <p class="site-article-meta-text">{{ date | readableDate }}{% if length %} • {{ length }}{% endif %}</p>
+            <p class="site-article-meta-text">{{ date | readableDate }} • {{ length or (content | readingTime) }}</p>
             
             {% if image %}
             <figure class="site-article-image">
