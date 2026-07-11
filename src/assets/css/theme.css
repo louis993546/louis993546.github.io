@@ -336,7 +336,7 @@ hr {
 .has-classic-feed .site-card-image:before {
     content: "";
     display: block;
-    padding-bottom: 56.25%;
+    padding-bottom: 66.6667%;
 }
 .has-classic-feed .no-image .site-card-image {
     display: none;
@@ -346,6 +346,7 @@ hr {
     inset: 0;
     -o-object-fit: cover;
     object-fit: cover;
+    object-position: center;
     position: absolute;
     width: 100%;
 }
@@ -740,7 +741,7 @@ hr {
 }
 .site-foot-menu {
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 .site-copyright {
     font-size: 1.4rem;

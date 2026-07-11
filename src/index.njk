@@ -16,7 +16,7 @@ permalink: "/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber }}/
         {% endif %}
         <div class="site-about-content">
             <div class="site-about-content-inner">
-                <h1 class="site-about-primary">{{ site.about.primary }}</h1>
+                <h1 class="site-about-primary">{{ site.about.primary | safe }}</h1>
                 <p class="site-about-secondary">{{ site.about.secondary }}</p>
             </div>
         </div>
