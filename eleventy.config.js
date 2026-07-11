@@ -37,6 +37,15 @@ export default function(eleventyConfig) {
     return new Date(dateObj).toISOString().split('T')[0];
   });
 
+  eleventyConfig.addFilter("readingTime", (content) => {
+    if (!content) return "1 min read";
+    const clean = content.replace(/<\/?[^>]+(>|$)/g, " ");
+    const words = clean.trim().split(/\s+/).filter(w => w.length > 0).length;
+    const wordsPerMinute = 200;
+    const minutes = Math.ceil(words / wordsPerMinute) || 1;
+    return `${minutes} min read`;
+  });
+
   // Shortcode for dynamic year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
