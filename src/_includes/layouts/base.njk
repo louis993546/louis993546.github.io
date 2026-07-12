@@ -26,11 +26,18 @@
     <meta property="og:title" content="{{ title or site.title }}">
     <meta property="og:description" content="{{ description or site.description }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    {% set metaImage = image or site.about.image %}
+    {% if metaImage %}
+    <meta property="og:image" content="{{ site.url }}{{ metaImage }}">
+    {% endif %}
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ title or site.title }}">
     <meta name="twitter:description" content="{{ description or site.description }}">
+    {% if metaImage %}
+    <meta name="twitter:image" content="{{ site.url }}{{ metaImage }}">
+    {% endif %}
 </head>
 <body class="{% if bodyClass %}{{ bodyClass }}{% else %}home-template has-side-about is-head-left-logo has-classic-feed{% endif %} is-dropdown-loaded">
 
