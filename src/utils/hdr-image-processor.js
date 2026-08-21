@@ -3,72 +3,96 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 
-// MPF APP2 segment generator for 2-image Apple HDR JPEGs
-function createMpfApp2Segment(primaryTotalLen, secondaryTotalLen, mpfTiffOffsetInPrimary) {
-  const mpfBuf = Buffer.alloc(88);
-  mpfBuf.writeUInt16BE(0xFFE2, 0); // APP2 marker
-  mpfBuf.writeUInt16BE(86, 2);     // Segment length excluding 2-byte marker
-  mpfBuf.write('MPF\0', 4, 'ascii');
+// MPF APP2 segment generator for 2-image Apple/ISO HDR JPEGs
+function createExactMpfSegment(primaryLen, secondaryLen, mpfTiffOffset) {
+  const mpf = Buffer.alloc(88);
+  // Marker & Length (Photomator and Apple use 0x0058 = 88)
+  mpf.writeUInt16BE(0xFFE2, 0);
+  mpf.writeUInt16BE(88, 2);
+  mpf.write('MPF\0', 4, 'ascii');
   
-  // TIFF Header: Big Endian MM, Tag 0x002A, IFD0 offset = 8
-  mpfBuf.write('MM\0\x2A', 8, 'binary');
-  mpfBuf.writeUInt32BE(8, 12);
-  
-  // IFD0 count = 3 tags
-  mpfBuf.writeUInt16BE(3, 16);
-  
-  // Tag 1: MPFVersion (0xB000, UNDEFINED, 4 bytes, '0100')
-  mpfBuf.writeUInt16BE(0xB000, 18);
-  mpfBuf.writeUInt16BE(7, 20);
-  mpfBuf.writeUInt32BE(4, 22);
-  mpfBuf.write('0100', 26, 'ascii');
+  // TIFF Header: MM (Big Endian)
+  mpf.write('MM\0\x2A', 8, 'binary');
+  mpf.writeUInt32BE(8, 12); // IFD0 offset from TIFF header
 
-  // Tag 2: NumberOfImages (0xB001, LONG, 1 count, 2 images)
-  mpfBuf.writeUInt16BE(0xB001, 30);
-  mpfBuf.writeUInt16BE(4, 32);
-  mpfBuf.writeUInt32BE(1, 34);
-  mpfBuf.writeUInt32BE(2, 38);
+  // IFD0: 3 tags
+  mpf.writeUInt16BE(3, 16);
 
-  // Tag 3: MPEntry (0xB002, UNDEFINED, 32 bytes, value offset 50)
-  mpfBuf.writeUInt16BE(0xB002, 42);
-  mpfBuf.writeUInt16BE(7, 44);
-  mpfBuf.writeUInt32BE(32, 46);
-  mpfBuf.writeUInt32BE(50, 50);
+  // Tag 1: MPFVersion (0xB000, UNDEFINED, count 4, '0100')
+  mpf.writeUInt16BE(0xB000, 18);
+  mpf.writeUInt16BE(7, 20);
+  mpf.writeUInt32BE(4, 22);
+  mpf.write('0100', 26, 'ascii');
+
+  // Tag 2: NumberOfImages (0xB001, LONG, count 1, value 2)
+  mpf.writeUInt16BE(0xB001, 30);
+  mpf.writeUInt16BE(4, 32);
+  mpf.writeUInt32BE(1, 34);
+  mpf.writeUInt32BE(2, 38);
+
+  // Tag 3: MPEntry (0xB002, UNDEFINED, count 32, value offset 50)
+  mpf.writeUInt16BE(0xB002, 42);
+  mpf.writeUInt16BE(7, 44);
+  mpf.writeUInt32BE(32, 46);
+  mpf.writeUInt32BE(50, 50);
 
   // Next IFD = 0
-  mpfBuf.writeUInt32BE(0, 54);
+  mpf.writeUInt32BE(0, 54);
 
-  // Primary image entry
-  mpfBuf.writeUInt32BE(0x030000, 58);
-  mpfBuf.writeUInt32BE(primaryTotalLen, 62);
-  mpfBuf.writeUInt32BE(0, 66);
-  mpfBuf.writeUInt16BE(0, 70);
+  // Entry 1 (Primary Image) - 16 bytes at offset 58
+  mpf.writeUInt32BE(0x030000, 58);  // Attribute: First Individual Image
+  mpf.writeUInt32BE(primaryLen, 62); // Primary image size
+  mpf.writeUInt32BE(0, 66);          // Offset = 0
+  mpf.writeUInt16BE(0, 70);          // Dep 1
+  mpf.writeUInt16BE(0, 72);          // Dep 2
 
-  // Secondary image (Gain Map) entry
-  mpfBuf.writeUInt32BE(0x000000, 74);
-  mpfBuf.writeUInt32BE(secondaryTotalLen, 78);
-  // Offset relative to TIFF header in primary JPEG
-  const secOffsetFromTiff = primaryTotalLen - mpfTiffOffsetInPrimary;
-  mpfBuf.writeUInt32BE(secOffsetFromTiff, 82);
-  mpfBuf.writeUInt16BE(0, 86);
+  // Entry 2 (Secondary Gain Map) - 16 bytes at offset 74
+  mpf.writeUInt32BE(0x000000, 74);   // Attribute: Undefined
+  mpf.writeUInt32BE(secondaryLen, 78); // Secondary image size
+  const secOffsetFromTiff = primaryLen - mpfTiffOffset;
+  mpf.writeUInt32BE(secOffsetFromTiff, 82); // Offset from TIFF header
+  mpf.writeUInt16BE(0, 86);          // Dep 1
 
-  return mpfBuf;
+  return mpf;
 }
 
-// Find secondary JPEG offset from MPF tag or fallback search
+// Extract all APP segments from JPEG buffer
+function extractAllAppSegments(buf) {
+  const segments = [];
+  let offset = 2;
+  while (offset < buf.length - 1) {
+    if (buf[offset] !== 0xFF) {
+      offset++;
+      continue;
+    }
+    const marker = buf[offset + 1];
+    if (marker === 0xDA || marker === 0xD9) break;
+    if (marker >= 0xE0 && marker <= 0xEF) {
+      const len = buf.readUInt16BE(offset + 2);
+      const appNum = marker - 0xE0;
+      const data = buf.subarray(offset, offset + 2 + len);
+      segments.push({ marker, appNum, len, data, offset });
+      offset += 2 + len;
+    } else {
+      offset += 2;
+    }
+  }
+  return segments;
+}
+
+// Find secondary JPEG offset using MPF header or SOI scan
 function findSecondaryJpegOffset(buf) {
   const mpfIdx = buf.indexOf(Buffer.from('MPF\0'));
-  if (mpfIdx !== -1 && mpfIdx + 78 <= buf.length) {
-    const tiffOffset = mpfIdx + 4; // 'MM\0\x2A' starts 4 bytes after 'MPF\0'
-    const entry2Offset = buf.readUInt32BE(mpfIdx + 74); // offset of entry 2 from TIFF header
+  if (mpfIdx !== -1 && mpfIdx + 80 <= buf.length) {
+    const tiffOffset = mpfIdx + 4;
+    const entry2Offset = buf.readUInt32BE(mpfIdx + 74);
     const candidateOffset = tiffOffset + entry2Offset;
     if (candidateOffset < buf.length && buf[candidateOffset] === 0xFF && buf[candidateOffset + 1] === 0xD8) {
       return candidateOffset;
     }
   }
 
-  // Fallback: scan for SOI after offset 50000
-  let searchPos = 50000;
+  let searchPos = 10000;
   while (searchPos < buf.length - 2) {
     const idx = buf.indexOf(Buffer.from([0xFF, 0xD8]), searchPos);
     if (idx === -1) break;
@@ -80,28 +104,15 @@ function findSecondaryJpegOffset(buf) {
   return -1;
 }
 
-// Extract APP segment by marker from buffer (e.g. 0xEA for APP10)
-function extractAppSegment(buf, appMarker) {
-  let offset = 2;
-  while (offset < buf.length - 1) {
-    if (buf[offset] !== 0xFF) {
-      offset++;
-      continue;
-    }
-    const marker = buf[offset + 1];
-    if (marker === 0xDA || marker === 0xD9) break;
-    if (marker === appMarker) {
-      const len = buf.readUInt16BE(offset + 2);
-      return buf.subarray(offset, offset + 2 + len);
-    }
-    if (marker >= 0xE0 && marker <= 0xEF) {
-      const len = buf.readUInt16BE(offset + 2);
-      offset += 2 + len;
-    } else {
-      offset += 2;
-    }
-  }
-  return null;
+// Create Universal Gain Map XMP segment (Apple + ISO 21496-1 compliant)
+function createGainMapXmpSegment(width, height) {
+  const xmpString = `http://ns.adobe.com/xap/1.0/\0<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="XMP Core 6.0.0"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:apdi="http://ns.apple.com/pixeldatainfo/1.0/" xmlns:HDRGainMap="http://ns.apple.com/HDRGainMap/1.0/" xmlns:hdrgm="http://ns.adobe.com/hdr-gain-map/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/"><exif:PixelYDimension>${height}</exif:PixelYDimension><exif:PixelXDimension>${width}</exif:PixelXDimension><apdi:NativeFormat>1278226488</apdi:NativeFormat><apdi:AuxiliaryImageType>urn:com:apple:photo:2020:aux:hdrgainmap</apdi:AuxiliaryImageType><apdi:StoredFormat>1278226488</apdi:StoredFormat><HDRGainMap:HDRGainMapVersion>65536</HDRGainMap:HDRGainMapVersion><hdrgm:Version>1.0</hdrgm:Version><hdrgm:GainMapMin>0.0</hdrgm:GainMapMin><hdrgm:GainMapMax>1.0</hdrgm:GainMapMax><hdrgm:Gamma>1.0</hdrgm:Gamma><hdrgm:OffsetSDR>0.0</hdrgm:OffsetSDR><hdrgm:OffsetHDR>0.0</hdrgm:OffsetHDR><hdrgm:HDRCapacityMin>0.0</hdrgm:HDRCapacityMin><hdrgm:HDRCapacityMax>1.0</hdrgm:HDRCapacityMax><hdrgm:BaseRenditionIsHDR>False</hdrgm:BaseRenditionIsHDR></rdf:Description></rdf:RDF></x:xmpmeta>`;
+  const payload = Buffer.from(xmpString, 'utf8');
+  const segment = Buffer.alloc(4 + payload.length);
+  segment.writeUInt16BE(0xFFE1, 0);
+  segment.writeUInt16BE(2 + payload.length, 2);
+  payload.copy(segment, 4);
+  return segment;
 }
 
 export async function processHdrImage(inputPath, outputDir = '_site/assets/images/processed') {
@@ -139,69 +150,75 @@ export async function processHdrImage(inputPath, outputDir = '_site/assets/image
     const primaryBuf = isAppleHdr ? fileBuf.subarray(0, secOffset) : fileBuf;
     const secondaryBuf = isAppleHdr ? fileBuf.subarray(secOffset) : null;
 
-    // Extract original Apple APP segments
-    const primaryApp10 = isAppleHdr ? extractAppSegment(primaryBuf, 0xEA) : null;
-    const secXmp = isAppleHdr && secondaryBuf ? extractAppSegment(secondaryBuf, 0xE1) : null;
-    const secApp10 = isAppleHdr && secondaryBuf ? extractAppSegment(secondaryBuf, 0xEA) : null;
+    const primSegments = isAppleHdr ? extractAllAppSegments(primaryBuf) : [];
+    const secSegments = isAppleHdr && secondaryBuf ? extractAllAppSegments(secondaryBuf) : [];
+
+    const primApp10 = primSegments.find(s => s.appNum === 10);
+    const secApp10 = secSegments.find(s => s.appNum === 10);
 
     for (const w of targetWidths) {
       // 1. Resized Primary Image
-      const primaryResized = await sharp(primaryBuf)
+      const primResized = await sharp(primaryBuf)
         .resize(w)
         .withMetadata()
         .jpeg({ quality: 85 })
         .toBuffer();
 
-      let finalJpgBuf = primaryResized;
+      let finalJpgBuf = primResized;
 
       if (isAppleHdr && secondaryBuf) {
+        // Calculate target secondary height proportionally
+        const targetHeight = Math.round((w / meta.width) * meta.height);
+
         // 2. Resized Secondary Gain Map Image
-        const secondaryRaw = await sharp(secondaryBuf)
+        const secResized = await sharp(secondaryBuf)
           .resize(w)
           .jpeg({ quality: 85, chromaSubsampling: '4:2:0' })
           .toBuffer();
 
-        // Assemble secondary JPEG with original XMP and APP10 segments
-        const secSegments = [];
-        if (secXmp) secSegments.push(secXmp);
-        if (secApp10) secSegments.push(secApp10);
+        // 3. Gain Map XMP & Apple AROT Header
+        const gainMapXmp = createGainMapXmpSegment(w, targetHeight);
+        const secHeaderSegments = [gainMapXmp];
+        if (secApp10) secHeaderSegments.push(secApp10.data);
 
-        const secondaryClean = Buffer.concat([
-          secondaryRaw.subarray(0, 2), // SOI (0xFFD8)
-          ...secSegments,
-          secondaryRaw.subarray(2)     // rest of image
+        const finalSecondary = Buffer.concat([
+          secResized.subarray(0, 2), // SOI 0xFFD8
+          ...secHeaderSegments,
+          secResized.subarray(2)     // Scanned gain map data
         ]);
 
-        // Find position after all APP markers in primary image
+        // 4. Find insertion position in primary (after existing APP segments)
         let insertPos = 2;
-        while (insertPos < primaryResized.length - 1) {
-          if (primaryResized[insertPos] !== 0xFF) break;
-          const m = primaryResized[insertPos + 1];
+        while (insertPos < primResized.length - 1) {
+          if (primResized[insertPos] !== 0xFF) break;
+          const m = primResized[insertPos + 1];
           if (m >= 0xE0 && m <= 0xEF) {
-            const len = primaryResized.readUInt16BE(insertPos + 2);
+            const len = primResized.readUInt16BE(insertPos + 2);
             insertPos += 2 + len;
           } else {
             break;
           }
         }
 
-        const primaryWithApp10 = primaryApp10 ? Buffer.concat([
-          primaryResized.subarray(0, insertPos),
-          primaryApp10,
-          primaryResized.subarray(insertPos)
-        ]) : primaryResized;
+        const primWithApp10 = primApp10 ? Buffer.concat([
+          primResized.subarray(0, insertPos),
+          primApp10.data,
+          primResized.subarray(insertPos)
+        ]) : primResized;
 
-        const totalPrimaryLen = primaryWithApp10.length + 88;
-        const mpfTiffOffset = insertPos + 4;
-        const mpfSeg = createMpfApp2Segment(totalPrimaryLen, secondaryClean.length, mpfTiffOffset);
+        // MPF TIFF header is at insertPos + 8 (0xFFE2 + length + 'MPF\0')
+        const mpfTiffOffset = insertPos + 8;
+        const totalPrimaryLen = primWithApp10.length + 88;
+
+        const mpfSeg = createExactMpfSegment(totalPrimaryLen, finalSecondary.length, mpfTiffOffset);
 
         const finalPrimary = Buffer.concat([
-          primaryWithApp10.subarray(0, insertPos),
+          primWithApp10.subarray(0, insertPos),
           mpfSeg,
-          primaryWithApp10.subarray(insertPos)
+          primWithApp10.subarray(insertPos)
         ]);
 
-        finalJpgBuf = Buffer.concat([finalPrimary, secondaryClean]);
+        finalJpgBuf = Buffer.concat([finalPrimary, finalSecondary]);
       }
 
       // Save JPEG
