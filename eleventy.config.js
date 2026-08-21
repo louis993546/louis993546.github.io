@@ -52,9 +52,7 @@ export default function(eleventyConfig) {
             const classText = classMatch ? classMatch[1] : "";
 
             const pictureHtml = `<picture>` +
-              (imgData.isHdr ? `\n    <source media="(dynamic-range: high)" type="image/jpeg" srcset="${imgData.hdrJpgSources.join(', ')}" sizes="(max-width: 800px) 100vw, 1200px">` : '') +
-              `\n    <source type="image/avif" srcset="${imgData.avifSources.join(', ')}" sizes="(max-width: 800px) 100vw, 1200px">` +
-              `\n    <source type="image/webp" srcset="${imgData.webpSources.join(', ')}" sizes="(max-width: 800px) 100vw, 1200px">` +
+              `\n    <source type="image/jpeg" srcset="${imgData.jpgSources.join(', ')}" sizes="(max-width: 800px) 100vw, 1200px">` +
               `\n    <img src="${imgData.fallbackUrl}" alt="${altText}"${classText ? ` class="${classText}"` : ''} loading="lazy" decoding="async">` +
               `\n  </picture>`;
 
