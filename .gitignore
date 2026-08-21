@@ -10,7 +10,6 @@ _site/
 # Local cache/metadata
 .11ty-metadata/
 .sass-cache/
-.cache/
 
 # Editor/OS specific files
 .DS_Store
