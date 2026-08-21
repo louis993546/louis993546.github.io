@@ -55,15 +55,24 @@ function createMpfApp2Segment(primaryTotalLen, secondaryTotalLen, mpfTiffOffsetI
   return mpfBuf;
 }
 
-// Find secondary JPEG offset in Apple dual-stream MPF JPEGs
+// Find secondary JPEG offset from MPF tag or fallback search
 function findSecondaryJpegOffset(buf) {
-  let searchPos = 1000;
+  const mpfIdx = buf.indexOf(Buffer.from('MPF\0'));
+  if (mpfIdx !== -1 && mpfIdx + 78 <= buf.length) {
+    const tiffOffset = mpfIdx + 4; // 'MM\0\x2A' starts 4 bytes after 'MPF\0'
+    const entry2Offset = buf.readUInt32BE(mpfIdx + 74); // offset of entry 2 from TIFF header
+    const candidateOffset = tiffOffset + entry2Offset;
+    if (candidateOffset < buf.length && buf[candidateOffset] === 0xFF && buf[candidateOffset + 1] === 0xD8) {
+      return candidateOffset;
+    }
+  }
+
+  // Fallback: scan for SOI after offset 50000
+  let searchPos = 50000;
   while (searchPos < buf.length - 2) {
     const idx = buf.indexOf(Buffer.from([0xFF, 0xD8]), searchPos);
     if (idx === -1) break;
-    
-    // Check if followed by APP1 or APP2 tag (typical for gain map image)
-    if (idx + 3 < buf.length && buf[idx + 2] === 0xFF && (buf[idx + 3] === 0xE1 || buf[idx + 3] === 0xE2 || buf[idx + 3] === 0xDB)) {
+    if (idx + 3 < buf.length && buf[idx + 2] === 0xFF && (buf[idx + 3] === 0xE1 || buf[idx + 3] === 0xE2 || buf[idx + 3] === 0xEA)) {
       return idx;
     }
     searchPos = idx + 2;
