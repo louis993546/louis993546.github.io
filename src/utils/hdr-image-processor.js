@@ -4,7 +4,7 @@ import path from 'path';
 import crypto from 'crypto';
 
 // MPF APP2 segment generator for 2-image Apple HDR JPEGs
-function createMpfApp2Segment(primaryLen, secondaryLen) {
+function createMpfApp2Segment(primaryTotalLen, secondaryTotalLen, mpfTiffOffsetInPrimary) {
   const mpfBuf = Buffer.alloc(88);
   mpfBuf.writeUInt16BE(0xFFE2, 0); // APP2 marker
   mpfBuf.writeUInt16BE(86, 2);     // Segment length excluding 2-byte marker
@@ -38,18 +38,18 @@ function createMpfApp2Segment(primaryLen, secondaryLen) {
   // Next IFD = 0
   mpfBuf.writeUInt32BE(0, 54);
 
-  const fullPrimaryLen = primaryLen + 88;
-
   // Primary image entry
   mpfBuf.writeUInt32BE(0x030000, 58);
-  mpfBuf.writeUInt32BE(fullPrimaryLen, 62);
+  mpfBuf.writeUInt32BE(primaryTotalLen, 62);
   mpfBuf.writeUInt32BE(0, 66);
   mpfBuf.writeUInt16BE(0, 70);
 
   // Secondary image (Gain Map) entry
   mpfBuf.writeUInt32BE(0x000000, 74);
-  mpfBuf.writeUInt32BE(secondaryLen, 78);
-  mpfBuf.writeUInt32BE(fullPrimaryLen - 8, 82);
+  mpfBuf.writeUInt32BE(secondaryTotalLen, 78);
+  // Offset relative to TIFF header in primary JPEG
+  const secOffsetFromTiff = primaryTotalLen - mpfTiffOffsetInPrimary;
+  mpfBuf.writeUInt32BE(secOffsetFromTiff, 82);
   mpfBuf.writeUInt16BE(0, 86);
 
   return mpfBuf;
@@ -69,6 +69,30 @@ function findSecondaryJpegOffset(buf) {
     searchPos = idx + 2;
   }
   return -1;
+}
+
+// Extract APP segment by marker from buffer (e.g. 0xEA for APP10)
+function extractAppSegment(buf, appMarker) {
+  let offset = 2;
+  while (offset < buf.length - 1) {
+    if (buf[offset] !== 0xFF) {
+      offset++;
+      continue;
+    }
+    const marker = buf[offset + 1];
+    if (marker === 0xDA || marker === 0xD9) break;
+    if (marker === appMarker) {
+      const len = buf.readUInt16BE(offset + 2);
+      return buf.subarray(offset, offset + 2 + len);
+    }
+    if (marker >= 0xE0 && marker <= 0xEF) {
+      const len = buf.readUInt16BE(offset + 2);
+      offset += 2 + len;
+    } else {
+      offset += 2;
+    }
+  }
+  return null;
 }
 
 export async function processHdrImage(inputPath, outputDir = '_site/assets/images/processed') {
@@ -96,9 +120,7 @@ export async function processHdrImage(inputPath, outputDir = '_site/assets/image
     width: meta.width,
     height: meta.height,
     isHdr: isAppleHdr,
-    hdrJpgSources: [],
-    avifSources: [],
-    webpSources: [],
+    jpgSources: [],
     fallbackUrl: ''
   };
 
@@ -108,6 +130,11 @@ export async function processHdrImage(inputPath, outputDir = '_site/assets/image
     const primaryBuf = isAppleHdr ? fileBuf.subarray(0, secOffset) : fileBuf;
     const secondaryBuf = isAppleHdr ? fileBuf.subarray(secOffset) : null;
 
+    // Extract original Apple APP segments
+    const primaryApp10 = isAppleHdr ? extractAppSegment(primaryBuf, 0xEA) : null;
+    const secXmp = isAppleHdr && secondaryBuf ? extractAppSegment(secondaryBuf, 0xE1) : null;
+    const secApp10 = isAppleHdr && secondaryBuf ? extractAppSegment(secondaryBuf, 0xEA) : null;
+
     for (const w of targetWidths) {
       // 1. Resized Primary Image
       const primaryResized = await sharp(primaryBuf)
@@ -116,52 +143,61 @@ export async function processHdrImage(inputPath, outputDir = '_site/assets/image
         .jpeg({ quality: 85 })
         .toBuffer();
 
-      let finalHdrJpgBuf = primaryResized;
+      let finalJpgBuf = primaryResized;
 
       if (isAppleHdr && secondaryBuf) {
         // 2. Resized Secondary Gain Map Image
-        const secondaryResized = await sharp(secondaryBuf)
+        const secondaryRaw = await sharp(secondaryBuf)
           .resize(w)
-          .withMetadata()
           .jpeg({ quality: 85, chromaSubsampling: '4:2:0' })
           .toBuffer();
 
-        // 3. Inject MPF segment into primary image after initial APP segment
-        const mpfSeg = createMpfApp2Segment(primaryResized.length, secondaryResized.length);
-        let insertPos = 2;
-        if (primaryResized.readUInt16BE(2) >= 0xFFE0 && primaryResized.readUInt16BE(2) <= 0xFFEF) {
-          const appLen = primaryResized.readUInt16BE(4);
-          insertPos += 2 + appLen;
-        }
+        // Assemble secondary JPEG with original XMP and APP10 segments
+        const secSegments = [];
+        if (secXmp) secSegments.push(secXmp);
+        if (secApp10) secSegments.push(secApp10);
 
-        const primaryWithMpf = Buffer.concat([
-          primaryResized.subarray(0, insertPos),
-          mpfSeg,
-          primaryResized.subarray(insertPos)
+        const secondaryClean = Buffer.concat([
+          secondaryRaw.subarray(0, 2), // SOI (0xFFD8)
+          ...secSegments,
+          secondaryRaw.subarray(2)     // rest of image
         ]);
 
-        finalHdrJpgBuf = Buffer.concat([primaryWithMpf, secondaryResized]);
+        // Find position after all APP markers in primary image
+        let insertPos = 2;
+        while (insertPos < primaryResized.length - 1) {
+          if (primaryResized[insertPos] !== 0xFF) break;
+          const m = primaryResized[insertPos + 1];
+          if (m >= 0xE0 && m <= 0xEF) {
+            const len = primaryResized.readUInt16BE(insertPos + 2);
+            insertPos += 2 + len;
+          } else {
+            break;
+          }
+        }
+
+        const primaryWithApp10 = primaryApp10 ? Buffer.concat([
+          primaryResized.subarray(0, insertPos),
+          primaryApp10,
+          primaryResized.subarray(insertPos)
+        ]) : primaryResized;
+
+        const totalPrimaryLen = primaryWithApp10.length + 88;
+        const mpfTiffOffset = insertPos + 4;
+        const mpfSeg = createMpfApp2Segment(totalPrimaryLen, secondaryClean.length, mpfTiffOffset);
+
+        const finalPrimary = Buffer.concat([
+          primaryWithApp10.subarray(0, insertPos),
+          mpfSeg,
+          primaryWithApp10.subarray(insertPos)
+        ]);
+
+        finalJpgBuf = Buffer.concat([finalPrimary, secondaryClean]);
       }
 
-      // Save HDR JPEG
-      const hdrFilename = `${baseName}-${w}w-hdr.jpg`;
-      fs.writeFileSync(path.join(cacheDir, hdrFilename), finalHdrJpgBuf);
-
-      // 4. Resized SDR AVIF
-      const avifFilename = `${baseName}-${w}w.avif`;
-      const avifBuf = await sharp(primaryBuf)
-        .resize(w)
-        .avif({ quality: 75 })
-        .toBuffer();
-      fs.writeFileSync(path.join(cacheDir, avifFilename), avifBuf);
-
-      // 5. Resized SDR WebP
-      const webpFilename = `${baseName}-${w}w.webp`;
-      const webpBuf = await sharp(primaryBuf)
-        .resize(w)
-        .webp({ quality: 80 })
-        .toBuffer();
-      fs.writeFileSync(path.join(cacheDir, webpFilename), webpBuf);
+      // Save JPEG
+      const filename = isAppleHdr ? `${baseName}-${w}w-hdr.jpg` : `${baseName}-${w}w.jpg`;
+      fs.writeFileSync(path.join(cacheDir, filename), finalJpgBuf);
     }
   }
 
@@ -177,13 +213,13 @@ export async function processHdrImage(inputPath, outputDir = '_site/assets/image
   const webDistPath = `/assets/images/processed/${hash}`;
 
   for (const w of targetWidths) {
-    results.hdrJpgSources.push(`${webDistPath}/${baseName}-${w}w-hdr.jpg ${w}w`);
-    results.avifSources.push(`${webDistPath}/${baseName}-${w}w.avif ${w}w`);
-    results.webpSources.push(`${webDistPath}/${baseName}-${w}w.webp ${w}w`);
+    const filename = isAppleHdr ? `${baseName}-${w}w-hdr.jpg` : `${baseName}-${w}w.jpg`;
+    results.jpgSources.push(`${webDistPath}/${filename} ${w}w`);
   }
 
   const defaultWidth = targetWidths[Math.floor(targetWidths.length / 2)] || targetWidths[0];
-  results.fallbackUrl = `${webDistPath}/${baseName}-${defaultWidth}w-hdr.jpg`;
+  const defaultFilename = isAppleHdr ? `${baseName}-${defaultWidth}w-hdr.jpg` : `${baseName}-${defaultWidth}w.jpg`;
+  results.fallbackUrl = `${webDistPath}/${defaultFilename}`;
 
   return results;
 }
