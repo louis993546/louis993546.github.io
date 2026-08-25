@@ -66,9 +66,10 @@ The source stylesheets under `src/assets/css/` are split into:
 
 ---
 
-## 🖼️ Asset Resolution Policies
+## 🖼️ Asset Resolution & Image Plugin Architecture
 
-- **Local Storage:** All media assets must be stored locally in `src/assets/images/downloaded_images/` (e.g. no hotlinking to external hosts).
+### 1. Asset Storage Policies
+- **Local Storage:** All media assets must be stored locally under `src/assets/images/YYYY/` matching the post organization (e.g. no hotlinking to external hosts; legacy ghost imports reside in `src/assets/images/downloaded_images/`).
 - **Profile Avatar:** The homepage author photo is located at `/assets/images/profile.jpg` (optimized at 800px width).
 - **Responsive Embeds:** Video `iframe` structures must be fully responsive. Applied globally in base styles using:
   ```css
@@ -78,6 +79,18 @@ The source stylesheets under `src/assets/css/` are split into:
     height: auto;
   }
   ```
+
+### 2. Custom Image Optimization Plugin
+We use a custom, modular image processing plugin located under `src/plugins/` and `src/utils/` rather than relying on black-box plugins.
+
+- **Plugin Entry ([image-plugin.js](file:///D:/repositories/website/src/plugins/image-plugin.js)):** Registered via `eleventyConfig.addPlugin(imagePlugin)`. Scans generated HTML pages for `<img>` tags and upgrades them to responsive `<picture>` elements.
+- **SDR Image Processor ([sdr-image-processor.js](file:///D:/repositories/website/src/utils/sdr-image-processor.js)):**
+  - Automatically generates responsive widths (`600w`, `900w`, `1200w`, `1600w`) for standard images.
+  - Generates multi-format sources: **AVIF** (`image/avif`), **WebP** (`image/webp`), and optimized **JPEG/PNG** fallbacks.
+  - Caches processed variants under `.image-cache/sdr-pipeline/<hash>/` so `npm run dev` and `npm run build` stay fast.
+- **HDR Detection ([hdr-detector.js](file:///D:/repositories/website/src/utils/hdr-detector.js)):**
+  - Analyzes JPEG containers for Apple Gain Map MPF headers and ISO 21496-1 metadata.
+  - Bypasses standard SDR compressors to prevent stripping Apple `APP10 AROT` and secondary Gain Map byte streams.
 
 ---
 

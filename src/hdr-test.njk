@@ -1,0 +1,95 @@
+---
+layout: base.njk
+bodyClass: "page-template is-head-left-logo"
+title: "HDR Test"
+permalink: /hdr-test/index.html
+eleventyExcludeFromCollections: true
+---
+
+<main id="site-main" class="site-main site-outer">
+    <div class="site-inner">
+        <article class="site-article post no-image">
+            <header class="site-article-header site-canvas">
+                <h1 class="site-article-title">HDR & Image Pipeline Test</h1>
+                <p class="site-article-excerpt">Private standalone testing page for Apple Ultra HDR Gain Map rendering, SDR responsive optimization, and CC BY metadata.</p>
+            </header>
+
+            <section class="site-content site-canvas">
+                <h2>Photo 1 (IMG_2076.JPG - Apple HDR Gain Map)</h2>
+                <figure class="kg-card kg-image-card">
+                    <img src="/assets/images/2026/08/IMG_2076.JPG" alt="HDR Test Photo 1 - IMG_2076" loading="lazy">
+                    <figcaption>
+                        Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
+                    </figcaption>
+                </figure>
+
+                <hr>
+
+                <h2>Photo 2 (DSC_2856.jpg - Apple HDR Gain Map)</h2>
+                <figure class="kg-card kg-image-card">
+                    <img src="/assets/images/2026/08/DSC_2856.jpg" alt="HDR Test Photo 2 - DSC_2856" loading="lazy">
+                    <figcaption>
+                        Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
+                    </figcaption>
+                </figure>
+
+                <hr>
+
+                <h2>Photo 3 (SDR Control Image - Responsive AVIF / WebP Pipeline)</h2>
+                <figure class="kg-card kg-image-card">
+                    <img src="/assets/images/profile.jpg" alt="SDR Optimized Profile Photo" loading="lazy">
+                    <figcaption>This standard SDR image verifies automated multi-breakpoint AVIF, WebP, and JPEG fallback generation.</figcaption>
+                </figure>
+            </section>
+        </article>
+    </div>
+</main>
+
+<script>
+document.querySelectorAll('.copy-license-btn').forEach(btn => {
+    const copyHandler = async () => {
+        const plainText = 'Photo by Louis Tsai (https://louis993546.com/) / CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)';
+        const htmlText = 'Photo by <a href="https://louis993546.com/">Louis Tsai</a> / <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>';
+
+        try {
+            if (navigator.clipboard && window.ClipboardItem) {
+                const blobHtml = new Blob([htmlText], { type: 'text/html' });
+                const blobPlain = new Blob([plainText], { type: 'text/plain' });
+                await navigator.clipboard.write([
+                    new ClipboardItem({
+                        'text/html': blobHtml,
+                        'text/plain': blobPlain
+                    })
+                ]);
+            } else if (navigator.clipboard) {
+                await navigator.clipboard.writeText(plainText);
+            } else {
+                const tempInput = document.createElement('textarea');
+                tempInput.value = plainText;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+            }
+
+            btn.textContent = '✅';
+            btn.setAttribute('title', 'Copied!');
+
+            setTimeout(() => {
+                btn.textContent = '📋';
+                btn.setAttribute('title', 'Copy attribution');
+            }, 2000);
+        } catch (err) {
+            console.error('Failed to copy: ', err);
+        }
+    };
+
+    btn.addEventListener('click', copyHandler);
+    btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            copyHandler();
+        }
+    });
+});
+</script>
