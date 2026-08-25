@@ -1,9 +1,11 @@
 import esbuild from "esbuild";
 import pluginRss from "@11ty/eleventy-plugin-rss";
+import { imagePlugin } from "./src/plugins/image-plugin.js";
 
 export default function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(imagePlugin);
 
   // Pass-through copies
   eleventyConfig.addPassthroughCopy("src/assets/built");
