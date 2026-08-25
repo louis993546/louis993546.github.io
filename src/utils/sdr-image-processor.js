@@ -26,7 +26,7 @@ export async function processSdrImage(inputPath, outputBaseDir = '_site/assets/i
   const hash = crypto.createHash('md5').update(fileBuf).digest('hex').slice(0, 10);
   const baseName = path.basename(inputPath, ext).replace(/[^a-zA-Z0-9_-]/g, '_');
   
-  const cacheDir = path.join('.cache', 'sdr-pipeline', hash);
+  const cacheDir = path.join('.image-cache', 'sdr-pipeline', hash);
   const targetDistDir = path.join(outputBaseDir, hash);
   
   const meta = await sharp(fileBuf).metadata();

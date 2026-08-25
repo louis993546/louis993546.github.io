@@ -87,7 +87,7 @@ We use a custom, modular image processing plugin located under `src/plugins/` an
 - **SDR Image Processor ([sdr-image-processor.js](file:///D:/repositories/website/src/utils/sdr-image-processor.js)):**
   - Automatically generates responsive widths (`600w`, `900w`, `1200w`, `1600w`) for standard images.
   - Generates multi-format sources: **AVIF** (`image/avif`), **WebP** (`image/webp`), and optimized **JPEG/PNG** fallbacks.
-  - Caches processed variants under `.cache/sdr-pipeline/<hash>/` so `npm run dev` and `npm run build` stay fast.
+  - Caches processed variants under `.image-cache/sdr-pipeline/<hash>/` so `npm run dev` and `npm run build` stay fast.
 - **HDR Detection ([hdr-detector.js](file:///D:/repositories/website/src/utils/hdr-detector.js)):**
   - Analyzes JPEG containers for Apple Gain Map MPF headers and ISO 21496-1 metadata.
   - Bypasses standard SDR compressors to prevent stripping Apple `APP10 AROT` and secondary Gain Map byte streams.
