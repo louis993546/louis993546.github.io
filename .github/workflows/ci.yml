@@ -32,3 +32,8 @@ jobs:
 
       - name: Build Static Site
         run: npm run build
+
+      - name: run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.15.x
+          lhci autorun
