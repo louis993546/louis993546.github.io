@@ -10,6 +10,7 @@ export default function(eleventyConfig) {
   // Pass-through copies
   eleventyConfig.addPassthroughCopy("src/assets/built");
   eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("src/favicon.svg");
 
   // Minify CSS on build using esbuild
   eleventyConfig.on("eleventy.before", async () => {

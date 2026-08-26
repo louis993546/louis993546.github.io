@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title or site.title }}</title>
     <link rel="stylesheet" href="/assets/css/screen.css">
-    {% if page.url == "/" and site.about.image %}
-    <link rel="preload" as="image" href="{{ site.about.image }}">
-    {% endif %}
-    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
     <style>
         :root {
             --background-color: {{ site.accentColor }};
