@@ -27,10 +27,16 @@ export function imagePlugin(eleventyConfig) {
             const classMatch = attrs.match(/class=["']([^"']*)["']/i);
             const classText = classMatch ? classMatch[1] : '';
 
+            const loadingMatch = attrs.match(/loading=["']([^"']*)["']/i);
+            const loadingAttr = loadingMatch ? loadingMatch[1] : 'lazy';
+
+            const fetchpriorityMatch = attrs.match(/fetchpriority=["']([^"']*)["']/i);
+            const fetchpriorityAttr = fetchpriorityMatch ? ` fetchpriority="${fetchpriorityMatch[1]}"` : '';
+
             const pictureHtml = `<picture>` +
               `\n    <source type="image/avif" srcset="${imgData.avifSrcset.join(', ')}" sizes="(max-width: 800px) 100vw, 1200px">` +
               `\n    <source type="image/webp" srcset="${imgData.webpSrcset.join(', ')}" sizes="(max-width: 800px) 100vw, 1200px">` +
-              `\n    <img src="${imgData.fallbackUrl}" srcset="${imgData.fallbackSrcset.join(', ')}" sizes="(max-width: 800px) 100vw, 1200px" alt="${altText}"${classText ? ` class="${classText}"` : ''} loading="lazy" decoding="async" width="${imgData.width}" height="${imgData.height}">` +
+              `\n    <img src="${imgData.fallbackUrl}" srcset="${imgData.fallbackSrcset.join(', ')}" sizes="(max-width: 800px) 100vw, 1200px" alt="${altText}"${classText ? ` class="${classText}"` : ''} loading="${loadingAttr}"${fetchpriorityAttr} decoding="async" width="${imgData.width}" height="${imgData.height}">` +
               `\n  </picture>`;
 
             replacements.push({ fullTag, pictureHtml });

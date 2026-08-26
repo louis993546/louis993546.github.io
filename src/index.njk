@@ -12,7 +12,7 @@ permalink: "/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber }}/
 <section class="site-about site-outer">
     <div class="site-about-inner site-inner">
         {% if site.about.image %}
-        <img class="site-about-image" src="{{ site.about.image }}" alt="{{ site.title }}" width="1200" height="1600">
+        <img class="site-about-image" src="{{ site.about.image }}" alt="{{ site.title }}" width="1200" height="1600" loading="eager" fetchpriority="high">
         {% endif %}
         <div class="site-about-content">
             <div class="site-about-content-inner">
