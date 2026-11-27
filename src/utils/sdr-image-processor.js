@@ -82,34 +82,29 @@ async function processImageInternal(inputPath, outputBaseDir) {
   if (!fs.existsSync(cacheDir)) {
     fs.mkdirSync(cacheDir, { recursive: true });
 
-    for (const w of targetWidths) {
-      // 1. AVIF format
-      const avifName = `${baseName}-${w}w.avif`;
-      const avifBuf = await sharp(fileBuf)
-        .rotate()
-        .keepIccProfile()
-        .resize(w)
-        .avif({ quality: 75, effort: 4 })
-        .toBuffer();
-      fs.writeFileSync(path.join(cacheDir, avifName), avifBuf);
+    try {
+      for (const w of targetWidths) {
+        const resized = sharp(fileBuf).rotate().keepIccProfile().resize(w);
 
-      // 2. WebP format
-      const webpName = `${baseName}-${w}w.webp`;
-      const webpBuf = await sharp(fileBuf)
-        .rotate()
-        .keepIccProfile()
-        .resize(w)
-        .webp({ quality: 80, effort: 4 })
-        .toBuffer();
-      fs.writeFileSync(path.join(cacheDir, webpName), webpBuf);
+        const avifName = `${baseName}-${w}w.avif`;
+        const webpName = `${baseName}-${w}w.webp`;
+        const fallbackName = `${baseName}-${w}w.${fallbackExt}`;
 
-      // 3. Fallback format (JPEG / PNG)
-      const fallbackName = `${baseName}-${w}w.${fallbackExt}`;
-      const imgInstance = sharp(fileBuf).rotate().keepIccProfile().resize(w);
-      const fallbackBuf = isPng
-        ? await imgInstance.png({ compressionLevel: 8 }).toBuffer()
-        : await imgInstance.jpeg({ quality: 85, mozjpeg: true }).toBuffer();
-      fs.writeFileSync(path.join(cacheDir, fallbackName), fallbackBuf);
+        const [avifBuf, webpBuf, fallbackBuf] = await Promise.all([
+          resized.clone().avif({ quality: 75, effort: 2 }).toBuffer(),
+          resized.clone().webp({ quality: 80, effort: 4 }).toBuffer(),
+          isPng
+            ? resized.clone().png({ compressionLevel: 8 }).toBuffer()
+            : resized.clone().jpeg({ quality: 85, mozjpeg: true }).toBuffer()
+        ]);
+
+        fs.writeFileSync(path.join(cacheDir, avifName), avifBuf);
+        fs.writeFileSync(path.join(cacheDir, webpName), webpBuf);
+        fs.writeFileSync(path.join(cacheDir, fallbackName), fallbackBuf);
+      }
+    } catch (err) {
+      fs.rmSync(cacheDir, { recursive: true, force: true });
+      throw err;
     }
   }
 

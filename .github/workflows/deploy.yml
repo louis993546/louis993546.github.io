@@ -22,7 +22,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
 
     steps:
       - name: Checkout Code
@@ -44,9 +44,10 @@ jobs:
         uses: actions/cache@v6
         with:
           path: .image-cache
-          key: ${{ runner.os }}-image-cache-${{ github.sha }}
+          key: image-cache-${{ hashFiles('src/assets/images/**', 'src/utils/*image-processor.js', 'src/utils/hdr-detector.js') }}
           restore-keys: |
-            ${{ runner.os }}-image-cache-
+            image-cache-
+            Linux-image-cache-
 
       - name: Build Static Site
         run: npm run build
