@@ -57,6 +57,9 @@ export function imagePlugin(eleventyConfig) {
           return null;
         }
 
+        // Force SDR pipeline hook (e.g. SDR control next to HDR on test pages)
+        const forceSdr = /\bdata-sdr\b/i.test(attrs);
+
         const srcPath = decodeURIComponent(rawSrc).replace(/\\/g, '/');
         const localPath = path.join(process.cwd(), 'src', srcPath);
 
@@ -64,7 +67,7 @@ export function imagePlugin(eleventyConfig) {
           return null;
         }
 
-        const imgData = await processImage(localPath);
+        const imgData = await processImage(localPath, undefined, { forceSdr });
         if (!imgData) {
           return null;
         }

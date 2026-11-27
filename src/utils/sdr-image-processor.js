@@ -15,13 +15,17 @@ export function clearImageMemo() {
   buildMemo.clear();
 }
 
-export async function processImage(inputPath, outputBaseDir = '_site/assets/images/optimized') {
-  const memoKey = `${inputPath}::${outputBaseDir}`;
+export async function processImage(
+  inputPath,
+  outputBaseDir = '_site/assets/images/optimized',
+  { forceSdr = false } = {}
+) {
+  const memoKey = `${inputPath}::${outputBaseDir}::${forceSdr ? 'sdr' : 'auto'}`;
   if (buildMemo.has(memoKey)) {
     return buildMemo.get(memoKey);
   }
 
-  const promise = processImageInternal(inputPath, outputBaseDir);
+  const promise = processImageInternal(inputPath, outputBaseDir, { forceSdr });
   buildMemo.set(memoKey, promise);
   return promise;
 }
@@ -29,7 +33,7 @@ export async function processImage(inputPath, outputBaseDir = '_site/assets/imag
 // Backwards-compatible alias
 export const processSdrImage = processImage;
 
-async function processImageInternal(inputPath, outputBaseDir) {
+async function processImageInternal(inputPath, outputBaseDir, { forceSdr = false } = {}) {
   if (!fs.existsSync(inputPath)) {
     return null;
   }
@@ -42,13 +46,18 @@ async function processImageInternal(inputPath, outputBaseDir) {
   const fileBuf = fs.readFileSync(inputPath);
   const meta = await sharp(fileBuf).metadata();
 
-  const hdrInfo = await detectHdr(fileBuf, inputPath, meta);
-  if (hdrInfo.isHdr) {
-    return processHdrImage(fileBuf, inputPath, hdrInfo, outputBaseDir);
+  let width = meta.autoOrient?.width ?? meta.width;
+  let height = meta.autoOrient?.height ?? meta.height;
+
+  if (!forceSdr) {
+    const hdrInfo = await detectHdr(fileBuf, inputPath, meta);
+    if (hdrInfo.isHdr) {
+      return processHdrImage(fileBuf, inputPath, hdrInfo, outputBaseDir);
+    }
+    width = hdrInfo.width;
+    height = hdrInfo.height;
   }
 
-  const width = hdrInfo.width;
-  const height = hdrInfo.height;
   if (!width || !height) {
     return null;
   }

@@ -6,6 +6,28 @@ permalink: /hdr-test/index.html
 eleventyExcludeFromCollections: true
 ---
 
+<style>
+.site-canvas > .hdr-compare-grid {
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+.hdr-compare-grid figure {
+    margin: 0;
+}
+.hdr-compare-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 767px) {
+    .site-canvas > .hdr-compare-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
 <main id="site-main" class="site-main site-outer">
     <div class="site-inner">
         <article class="site-article post no-image">
@@ -15,19 +37,28 @@ eleventyExcludeFromCollections: true
             </header>
 
             <section class="site-content site-canvas">
-                <h2>Photo 1 (IMG_2076.JPG — Legacy Apple MPF Fallback vs Original)</h2>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                    <figure class="kg-card kg-image-card" style="margin: 0;">
+                <p id="hdr-env-status" style="font-family: monospace; font-size: 0.9em; opacity: 0.8;"></p>
+
+                <h2>Photo 1 (IMG_2076.JPG — Legacy Apple MPF Fallback vs Original vs SDR)</h2>
+                <div class="hdr-compare-grid">
+                    <figure class="kg-card kg-image-card">
                         <img src="/assets/images/2026/08/IMG_2076.JPG" alt="HDR Test Photo 1 Pipeline - IMG_2076" loading="lazy">
                         <figcaption>
                             Pipeline output (original passthrough fallback until upstream libultrahdr fix)<br>
                             Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
                         </figcaption>
                     </figure>
-                    <figure class="kg-card kg-image-card" style="margin: 0;">
+                    <figure class="kg-card kg-image-card">
                         <img src="/assets/images/2026/08/IMG_2076.JPG" data-original alt="HDR Test Photo 1 Original - IMG_2076" loading="lazy">
                         <figcaption>
                             Original passthrough (1.16 MB)<br>
+                            Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="kg-card kg-image-card">
+                        <img src="/assets/images/2026/08/IMG_2076.JPG" data-sdr alt="HDR Test Photo 1 SDR - IMG_2076" loading="lazy">
+                        <figcaption>
+                            SDR control (gain map stripped)<br>
                             Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
                         </figcaption>
                     </figure>
@@ -35,19 +66,26 @@ eleventyExcludeFromCollections: true
 
                 <hr>
 
-                <h2>Photo 2 (DSC_2856.jpg — Optimized HDR via keepGainMap vs Original)</h2>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                    <figure class="kg-card kg-image-card" style="margin: 0;">
+                <h2>Photo 2 (DSC_2856.jpg — Optimized HDR via keepGainMap vs Original vs SDR)</h2>
+                <div class="hdr-compare-grid">
+                    <figure class="kg-card kg-image-card">
                         <img src="/assets/images/2026/08/DSC_2856.jpg" alt="HDR Test Photo 2 Optimized - DSC_2856" loading="lazy">
                         <figcaption>
                             Optimized responsive ISO 21496-1 (~176 KB @ 1200w)<br>
                             Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
                         </figcaption>
                     </figure>
-                    <figure class="kg-card kg-image-card" style="margin: 0;">
+                    <figure class="kg-card kg-image-card">
                         <img src="/assets/images/2026/08/DSC_2856.jpg" data-original alt="HDR Test Photo 2 Original - DSC_2856" loading="lazy">
                         <figcaption>
                             Original passthrough (8.48 MB)<br>
+                            Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="kg-card kg-image-card">
+                        <img src="/assets/images/2026/08/DSC_2856.jpg" data-sdr alt="HDR Test Photo 2 SDR - DSC_2856" loading="lazy">
+                        <figcaption>
+                            SDR control (gain map stripped)<br>
                             Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
                         </figcaption>
                     </figure>
@@ -66,6 +104,13 @@ eleventyExcludeFromCollections: true
 </main>
 
 <script>
+const envStatus = document.getElementById('hdr-env-status');
+if (envStatus && window.matchMedia) {
+    const hdr = window.matchMedia('(dynamic-range: high)').matches;
+    const p3 = window.matchMedia('(color-gamut: p3)').matches;
+    envStatus.textContent = `Browser display check — dynamic-range: high = ${hdr}, color-gamut: p3 = ${p3}`;
+}
+
 document.querySelectorAll('.copy-license-btn').forEach(btn => {
     const copyHandler = async () => {
         const plainText = 'Photo by Louis Tsai (https://louis993546.com/) / CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)';
