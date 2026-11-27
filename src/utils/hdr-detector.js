@@ -26,51 +26,52 @@ export function findSecondaryJpegOffset(buf) {
   return -1;
 }
 
-// Single unified HDR detection function (works directly on buffer)
-export async function detectHdr(fileBuf, filePath = '') {
-  const secOffset = findSecondaryJpegOffset(fileBuf);
-  const isMpf = fileBuf.toString('binary').includes('MPF\0');
+// Unified HDR detection using sharp/libultrahdr metadata with MPF/XMP fallback
+export async function detectHdr(fileBuf, filePath = '', existingMeta = null) {
+  const meta = existingMeta ?? await sharp(fileBuf).metadata();
+  const width = meta.autoOrient?.width ?? meta.width;
+  const height = meta.autoOrient?.height ?? meta.height;
 
-  if (secOffset > 0 && isMpf) {
-    const primaryBuf = fileBuf.subarray(0, secOffset);
-    const secondaryBuf = fileBuf.subarray(secOffset);
-    const secStr = secondaryBuf.toString('utf8');
+  const hasNativeGainMap = Boolean(meta.gainMap?.image);
+  const hasIsoMarker = fileBuf.includes('urn:iso:std:iso:ts:21496:-1') || fileBuf.includes('hdrgm:Version');
+  const hasAppleMarker = fileBuf.includes('HDRGainMap') || fileBuf.includes('hdrgainmap');
 
-    const isAppleHdr = secStr.includes('HDRGainMap') || secStr.includes('hdrgainmap');
-    const isIsoHdr = secStr.includes('hdrgm:Version') || secStr.includes('iso:ts:21496');
-
-    if (isAppleHdr || isIsoHdr) {
-      const primaryMeta = await sharp(primaryBuf).metadata();
-      const secMeta = await sharp(secondaryBuf).metadata();
-
-      const info = {
-        isHdr: true,
-        type: isAppleHdr ? 'Apple HDR Gain Map (MPF)' : 'ISO 21496-1 / Ultra HDR',
-        primary: {
-          width: primaryMeta.width,
-          height: primaryMeta.height,
-          sizeBytes: primaryBuf.length,
-          sizeMb: (primaryBuf.length / (1024 * 1024)).toFixed(2)
-        },
-        secondary: {
-          width: secMeta.width,
-          height: secMeta.height,
-          sizeBytes: secondaryBuf.length,
-          sizeKb: (secondaryBuf.length / 1024).toFixed(1),
-          offset: secOffset
-        }
-      };
-
-      if (filePath) {
-        console.log(`\n📷 [HDR Detected] ${path.relative(process.cwd(), filePath).replace(/\\/g, '/')}`);
-        console.log(`   ├─ Type: ${info.type}`);
-        console.log(`   ├─ Primary Image: ${info.primary.width}x${info.primary.height} (${info.primary.sizeMb} MB)`);
-        console.log(`   └─ Gain Map Layer: ${info.secondary.width}x${info.secondary.height} (${info.secondary.sizeKb} KB at byte offset ${info.secondary.offset})`);
-      }
-
-      return info;
+  if (hasNativeGainMap || (meta.format === 'jpeg' && (hasIsoMarker || hasAppleMarker))) {
+    let type = 'ISO 21496-1 / Ultra HDR';
+    if (hasAppleMarker && !hasIsoMarker) {
+      type = 'Apple HDR Gain Map (MPF)';
     }
+
+    const gainMapBytes = meta.gainMap?.image?.length ?? 0;
+    const info = {
+      isHdr: true,
+      hasNativeGainMap,
+      type,
+      width,
+      height,
+      primary: {
+        width,
+        height,
+        sizeBytes: fileBuf.length,
+        sizeMb: (fileBuf.length / (1024 * 1024)).toFixed(2)
+      },
+      secondary: {
+        sizeBytes: gainMapBytes,
+        sizeKb: (gainMapBytes / 1024).toFixed(1)
+      }
+    };
+
+    if (filePath) {
+      console.log(`\n📷 [HDR Detected] ${path.relative(process.cwd(), filePath).replace(/\\/g, '/')}`);
+      console.log(`   ├─ Type: ${info.type}`);
+      console.log(`   ├─ Dimensions: ${width}x${height} (${info.primary.sizeMb} MB original)`);
+      if (gainMapBytes > 0) {
+        console.log(`   └─ Embedded Gain Map: ${info.secondary.sizeKb} KB`);
+      }
+    }
+
+    return info;
   }
 
-  return { isHdr: false };
+  return { isHdr: false, width, height };
 }

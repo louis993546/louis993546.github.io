@@ -15,23 +15,31 @@ eleventyExcludeFromCollections: true
             </header>
 
             <section class="site-content site-canvas">
-                <h2>Photo 1 (IMG_2076.JPG - Apple HDR Gain Map)</h2>
-                <figure class="kg-card kg-image-card">
-                    <img src="/assets/images/2026/08/IMG_2076.JPG" alt="HDR Test Photo 1 - IMG_2076" loading="lazy">
-                    <figcaption>
-                        Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
-                    </figcaption>
-                </figure>
+                <h2>Photo 1 (IMG_2076.JPG — Optimized HDR via withGainMap vs Original)</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                    <figure class="kg-card kg-image-card" style="margin: 0;">
+                        <img src="/assets/images/2026/08/IMG_2076.JPG" alt="HDR Test Photo 1 Optimized - IMG_2076" loading="lazy">
+                        <figcaption>Optimized responsive ISO 21496-1 (~183 KB @ 1200w)</figcaption>
+                    </figure>
+                    <figure class="kg-card kg-image-card" style="margin: 0;">
+                        <img src="/assets/images/2026/08/IMG_2076.JPG" data-original alt="HDR Test Photo 1 Original - IMG_2076" loading="lazy">
+                        <figcaption>Original passthrough (1.16 MB)</figcaption>
+                    </figure>
+                </div>
 
                 <hr>
 
-                <h2>Photo 2 (DSC_2856.jpg - Apple HDR Gain Map)</h2>
-                <figure class="kg-card kg-image-card">
-                    <img src="/assets/images/2026/08/DSC_2856.jpg" alt="HDR Test Photo 2 - DSC_2856" loading="lazy">
-                    <figcaption>
-                        Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
-                    </figcaption>
-                </figure>
+                <h2>Photo 2 (DSC_2856.jpg — Optimized HDR via keepGainMap vs Original)</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                    <figure class="kg-card kg-image-card" style="margin: 0;">
+                        <img src="/assets/images/2026/08/DSC_2856.jpg" alt="HDR Test Photo 2 Optimized - DSC_2856" loading="lazy">
+                        <figcaption>Optimized responsive ISO 21496-1 (~176 KB @ 1200w)</figcaption>
+                    </figure>
+                    <figure class="kg-card kg-image-card" style="margin: 0;">
+                        <img src="/assets/images/2026/08/DSC_2856.jpg" data-original alt="HDR Test Photo 2 Original - DSC_2856" loading="lazy">
+                        <figcaption>Original passthrough (8.48 MB)</figcaption>
+                    </figure>
+                </div>
 
                 <hr>
 
