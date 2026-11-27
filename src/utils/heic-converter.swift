@@ -1,6 +1,7 @@
 import Foundation
 import CoreImage
 import ImageIO
+import UniformTypeIdentifiers
 
 func fail(_ message: String) -> Never {
     FileHandle.standardError.write(Data((message + "\n").utf8))
@@ -62,19 +63,49 @@ if !forceSdr,
     }
 }
 
+let isoMarker = Data("urn:iso:std:iso:ts:21496:-1".utf8)
+
+func writePreservingGainMap(from source: CGImageSource, to url: URL) -> Bool {
+    guard let dst = CGImageDestinationCreateWithURL(
+        url as CFURL,
+        UTType.jpeg.identifier as CFString,
+        1,
+        nil
+    ) else {
+        return false
+    }
+
+    let options: [CFString: Any] = [
+        kCGImageDestinationLossyCompressionQuality: 0.95,
+        kCGImageDestinationPreserveGainMap: true
+    ]
+    CGImageDestinationAddImageFromSource(dst, source, 0, options as CFDictionary)
+    guard CGImageDestinationFinalize(dst),
+          let data = try? Data(contentsOf: url) else {
+        return false
+    }
+    // Only keep ImageIO's direct transcode when it produced standard ISO 21496-1 metadata
+    // (avoids legacy Apple MPF JPEGs that fail sharp.keepGainMap()).
+    return data.range(of: isoMarker) != nil
+}
+
 let context = CIContext()
 
 do {
     if isHdr, let hdr = hdrImg {
-        try context.writeJPEGRepresentation(
-            of: sdrImg,
-            to: outputURL,
-            colorSpace: colorSpace,
-            options: [
-                kCGImageDestinationLossyCompressionQuality as CIImageRepresentationOption: 0.95,
-                CIImageRepresentationOption.hdrImage: hdr
-            ]
-        )
+        // Prefer direct ImageIO gain-map preservation (bit-for-bit identical ISO 21496-1 tmap metadata,
+        // zero brightness shift); fall back to CoreImage HDR encoding for legacy pre-iOS 18 HEICs.
+        if !writePreservingGainMap(from: imgSrc, to: outputURL) {
+            try context.writeJPEGRepresentation(
+                of: sdrImg,
+                to: outputURL,
+                colorSpace: colorSpace,
+                options: [
+                    kCGImageDestinationLossyCompressionQuality as CIImageRepresentationOption: 0.95,
+                    CIImageRepresentationOption.hdrImage: hdr
+                ]
+            )
+        }
     } else {
         try context.writeTIFFRepresentation(
             of: sdrImg,
