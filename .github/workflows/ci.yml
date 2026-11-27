@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04-arm
+    runs-on: macos-latest
 
     steps:
       - name: Checkout Code
@@ -26,10 +26,9 @@ jobs:
         uses: actions/cache@v6
         with:
           path: .image-cache
-          key: image-cache-${{ hashFiles('src/assets/images/**', 'src/utils/*image-processor.js', 'src/utils/hdr-detector.js') }}
+          key: image-cache-${{ hashFiles('src/utils/*.js', 'src/utils/*.swift') }}-${{ hashFiles('src/assets/images/**') }}
           restore-keys: |
-            image-cache-
-            Linux-image-cache-
+            image-cache-${{ hashFiles('src/utils/*.js', 'src/utils/*.swift') }}-
 
       - name: Build Static Site
         run: npm run build

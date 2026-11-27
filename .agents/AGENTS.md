@@ -92,12 +92,16 @@ We use a custom, modular image processing plugin located under `src/plugins/` an
   - Detects embedded gain maps natively via `sharp` (`libvips` / `libultrahdr`) with MPF/ISO/Apple marker fallbacks.
   - Generates responsive ISO 21496-1 / Ultra HDR JPEGs (`600w`, `900w`, `1200w`, `1600w`, `2400w`) using `sharp().keepGainMap()`, falling back to serving the original file unmodified with a build warning if an unsupported legacy gain-map JPEG fails `keepGainMap()`.
   - Caches processed HDR variants under `.image-cache/hdr-pipeline/v2/<hash>/` and serves them directly as `<img>` `srcset` (without SDR AVIF/WebP `<source>` tags that would strip HDR).
+- **HEIC Transcoding ([heic-processor.js](src/utils/heic-processor.js) & [heic-converter.swift](src/utils/heic-converter.swift)):**
+  - Decodes `.HEIC`/`.HEIF` originals on macOS via Apple CoreImage (`swiftc`-compiled helper cached in `os.tmpdir()`), preserving Display P3 color profiles and EXIF orientation.
+  - HDR `.HEIC` files are transcoded to ISO 21496-1 Gain-Map JPEGs and routed through `processHdrImage()` (responsive `600w`–`2400w` JPEGs working in Chrome & Safari); non-HDR `.HEIC` files (and `data-sdr`) are decoded losslessly to TIFF and routed through the standard SDR AVIF/WebP/JPEG pipeline.
+  - All results are keyed by the original `.HEIC` SHA-256 hash under `.image-cache/`, so warm builds skip CoreImage completely.
 
 ---
 
 ## ⚙️ CI/CD & Deployments
 
 - Deployments are managed via GitHub Actions:
-  - `.github/workflows/ci.yml`: Validates builds on all incoming Pull Requests targeting `main`.
-  - `.github/workflows/deploy.yml`: Deploys the static site to GitHub Pages on every merge into `main`.
+  - `.github/workflows/ci.yml`: Builds on `macos-latest` (for CoreImage `.HEIC` support) and runs Lighthouse CI on `ubuntu-latest` for all Pull Requests targeting `main`.
+  - `.github/workflows/deploy.yml`: Builds on `macos-latest` and deploys the static site to GitHub Pages on every merge into `main`.
 - Direct pushes to `main` are restricted. Code updates must go through PR reviews.

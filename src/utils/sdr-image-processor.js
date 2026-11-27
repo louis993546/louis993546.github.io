@@ -3,10 +3,12 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import { detectHdr } from './hdr-detector.js';
-import { processHdrImage } from './hdr-image-processor.js';
+import { processHdrImage, tryServeCachedHdr } from './hdr-image-processor.js';
+import { isHeicExtension, convertHeic } from './heic-processor.js';
 
-const RASTER_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.tiff']);
+const RASTER_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.tiff', '.heic', '.heif']);
 const SDR_WIDTHS = [600, 900, 1200, 1600];
+const HEIC_META_CACHE_DIR = path.join('.image-cache', 'heic-meta', 'v1');
 
 // Memoize in-flight and completed work per build so repeated images across pages are only processed once
 const buildMemo = new Map();
@@ -44,15 +46,73 @@ async function processImageInternal(inputPath, outputBaseDir, { forceSdr = false
   }
 
   const fileBuf = fs.readFileSync(inputPath);
-  const meta = await sharp(fileBuf).metadata();
+  const hash = crypto.createHash('sha256').update(fileBuf).digest('hex').slice(0, 12);
+  const baseName = path.basename(inputPath, ext).replace(/[^a-zA-Z0-9_-]/g, '_');
+  const cacheDir = path.join('.image-cache', 'sdr-pipeline', hash);
+  const targetDistDir = path.join(outputBaseDir, hash);
 
+  const meta = await sharp(fileBuf).metadata();
   let width = meta.autoOrient?.width ?? meta.width;
   let height = meta.autoOrient?.height ?? meta.height;
+  let sourceBuf = fileBuf;
 
-  if (!forceSdr) {
+  if (isHeicExtension(ext)) {
+    const heicMetaPath = path.join(HEIC_META_CACHE_DIR, `${hash}.json`);
+
+    if (!forceSdr) {
+      // 1. Fast path: HDR variants already cached under original HEIC hash
+      const cachedHdr = tryServeCachedHdr(inputPath, hash, outputBaseDir);
+      if (cachedHdr) {
+        return cachedHdr;
+      }
+
+      // 2. Fast path: previously probed as non-HDR HEIC and SDR cache is populated
+      let knownNonHdr = false;
+      if (fs.existsSync(heicMetaPath) && fs.existsSync(cacheDir)) {
+        try {
+          const cachedMeta = JSON.parse(fs.readFileSync(heicMetaPath, 'utf8'));
+          if (cachedMeta.isHdr === false) {
+            knownNonHdr = true;
+            width = cachedMeta.width ?? width;
+            height = cachedMeta.height ?? height;
+          }
+        } catch {
+          // Re-probe via CoreImage if metadata cache is unreadable
+        }
+      }
+
+      // 3. Cache miss: decode via macOS CoreImage (preserves HDR gain map or outputs lossless SDR TIFF)
+      if (!knownNonHdr) {
+        const converted = await convertHeic(inputPath, { forceSdr: false });
+        width = converted.width || width;
+        height = converted.height || height;
+
+        fs.mkdirSync(HEIC_META_CACHE_DIR, { recursive: true });
+        fs.writeFileSync(
+          heicMetaPath,
+          JSON.stringify({ isHdr: converted.isHdr, width, height, headroom: converted.headroom })
+        );
+
+        if (converted.isHdr) {
+          const hdrInfo = await detectHdr(converted.buffer, inputPath);
+          return processHdrImage(converted.buffer, inputPath, hdrInfo, outputBaseDir, {
+            cacheHash: hash
+          });
+        }
+
+        sourceBuf = converted.buffer;
+      }
+    } else if (!fs.existsSync(cacheDir)) {
+      // Forced SDR (e.g. data-sdr control) on cache miss: decode lossless SDR TIFF via CoreImage
+      const converted = await convertHeic(inputPath, { forceSdr: true });
+      width = converted.width || width;
+      height = converted.height || height;
+      sourceBuf = converted.buffer;
+    }
+  } else if (!forceSdr) {
     const hdrInfo = await detectHdr(fileBuf, inputPath, meta);
     if (hdrInfo.isHdr) {
-      return processHdrImage(fileBuf, inputPath, hdrInfo, outputBaseDir);
+      return processHdrImage(fileBuf, inputPath, hdrInfo, outputBaseDir, { cacheHash: hash });
     }
     width = hdrInfo.width;
     height = hdrInfo.height;
@@ -61,12 +121,6 @@ async function processImageInternal(inputPath, outputBaseDir, { forceSdr = false
   if (!width || !height) {
     return null;
   }
-
-  const hash = crypto.createHash('sha256').update(fileBuf).digest('hex').slice(0, 12);
-  const baseName = path.basename(inputPath, ext).replace(/[^a-zA-Z0-9_-]/g, '_');
-
-  const cacheDir = path.join('.image-cache', 'sdr-pipeline', hash);
-  const targetDistDir = path.join(outputBaseDir, hash);
 
   let targetWidths = SDR_WIDTHS.filter((w) => w <= width);
   if (targetWidths.length === 0) {
@@ -93,7 +147,7 @@ async function processImageInternal(inputPath, outputBaseDir, { forceSdr = false
 
     try {
       for (const w of targetWidths) {
-        const resized = sharp(fileBuf).rotate().keepIccProfile().resize(w);
+        const resized = sharp(sourceBuf).rotate().keepIccProfile().resize(w);
 
         const avifName = `${baseName}-${w}w.avif`;
         const webpName = `${baseName}-${w}w.webp`;

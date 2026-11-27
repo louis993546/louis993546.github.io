@@ -93,7 +93,34 @@ eleventyExcludeFromCollections: true
 
                 <hr>
 
-                <h2>Photo 3 (SDR Control Image - Responsive AVIF / WebP Pipeline)</h2>
+                <h2>Photo 3 (IMG_3504.HEIC — iPhone HDR HEIC → ISO 21496-1 JPEG vs Original HEIC vs SDR)</h2>
+                <div class="hdr-compare-grid">
+                    <figure class="kg-card kg-image-card">
+                        <img src="/assets/images/2026/11/IMG_3504.HEIC" alt="HDR Test Photo 3 Pipeline - IMG_3504 HEIC" loading="lazy">
+                        <figcaption>
+                            Optimized responsive ISO 21496-1 JPEG (~328 KB @ 1200w, transcoded from HEIC via ImageIO PreserveGainMap + keepGainMap)<br>
+                            Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="kg-card kg-image-card">
+                        <img src="/assets/images/2026/11/IMG_3504.HEIC" data-original alt="HDR Test Photo 3 Original - IMG_3504 HEIC" loading="lazy">
+                        <figcaption>
+                            Original HEIC passthrough (1.63 MB — renders natively in Safari only)<br>
+                            Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="kg-card kg-image-card">
+                        <img src="/assets/images/2026/11/IMG_3504.HEIC" data-sdr alt="HDR Test Photo 3 SDR - IMG_3504 HEIC" loading="lazy">
+                        <figcaption>
+                            SDR control (gain map stripped, AVIF / WebP / JPEG)<br>
+                            Photo by <a href="https://louis993546.com/" target="_blank" rel="noopener">Louis Tsai</a> · Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> <span class="copy-license-btn" role="button" tabindex="0" title="Copy attribution" style="cursor: pointer; user-select: none;">📋</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <hr>
+
+                <h2>Photo 4 (SDR Control Image - Responsive AVIF / WebP Pipeline)</h2>
                 <figure class="kg-card kg-image-card">
                     <img src="/assets/images/profile.jpg" alt="SDR Optimized Profile Photo" loading="lazy">
                     <figcaption>This standard SDR image verifies automated multi-breakpoint AVIF, WebP, and JPEG fallback generation.</figcaption>
