@@ -90,8 +90,8 @@ We use a custom, modular image processing plugin located under `src/plugins/` an
   - Caches processed variants under `.image-cache/sdr-pipeline/<hash>/` and memoizes per build so `npm run dev` and `npm run build` stay fast.
 - **HDR Detection ([hdr-detector.js](src/utils/hdr-detector.js)) & HDR Processor ([hdr-image-processor.js](src/utils/hdr-image-processor.js)):**
   - Detects embedded gain maps natively via `sharp` (`libvips` / `libultrahdr`) with MPF/ISO/Apple marker fallbacks.
-  - Generates responsive ISO 21496-1 / Ultra HDR JPEGs (`600w`, `900w`, `1200w`, `1600w`, `2400w`) using `sharp().keepGainMap()` (with automatic fallback to `sharp().withGainMap()` for legacy Apple gain-map JPEGs missing an alternate ICC marker).
-  - Caches processed HDR variants under `.image-cache/hdr-pipeline/v1/<hash>/` and serves them directly as `<img>` `srcset` (without SDR AVIF/WebP `<source>` tags that would strip HDR).
+  - Generates responsive ISO 21496-1 / Ultra HDR JPEGs (`600w`, `900w`, `1200w`, `1600w`, `2400w`) using `sharp().keepGainMap()`, falling back to serving the original file unmodified with a build warning if an unsupported legacy gain-map JPEG fails `keepGainMap()`.
+  - Caches processed HDR variants under `.image-cache/hdr-pipeline/v2/<hash>/` and serves them directly as `<img>` `srcset` (without SDR AVIF/WebP `<source>` tags that would strip HDR).
 
 ---
 

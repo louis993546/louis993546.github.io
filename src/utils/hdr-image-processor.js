@@ -3,36 +3,18 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 
-const HDR_CACHE_VERSION = 'v1';
+const HDR_CACHE_VERSION = 'v2';
 const HDR_WIDTHS = [600, 900, 1200, 1600, 2400];
 const HDR_JPEG_QUALITY = 85;
 
-async function encodeHdrVariant(fileBuf, width, preferKeepGainMap) {
-  if (preferKeepGainMap) {
-    try {
-      const buf = await sharp(fileBuf)
-        .rotate()
-        .keepIccProfile()
-        .keepGainMap()
-        .resize({ width, withoutEnlargement: true })
-        .jpeg({ quality: HDR_JPEG_QUALITY })
-        .toBuffer();
-      return { buf, mode: 'keepGainMap' };
-    } catch {
-      // Some legacy Apple gain-map JPEGs lack an alternate ICC marker on the gain map,
-      // which libultrahdr requires for keepGainMap(). Fall back to withGainMap() to
-      // reconstruct HDR and encode a fresh standard ISO 21496-1 gain map.
-    }
-  }
-
-  const buf = await sharp(fileBuf)
+async function encodeHdrVariant(fileBuf, width) {
+  return sharp(fileBuf)
     .rotate()
     .keepIccProfile()
-    .withGainMap()
+    .keepGainMap()
     .resize({ width, withoutEnlargement: true })
     .jpeg({ quality: HDR_JPEG_QUALITY })
     .toBuffer();
-  return { buf, mode: 'withGainMap' };
 }
 
 export async function processHdrImage(
@@ -73,17 +55,13 @@ export async function processHdrImage(
   if (!fs.existsSync(manifestPath)) {
     fs.mkdirSync(cacheDir, { recursive: true });
 
-    let preferKeepGainMap = true;
     try {
       for (const w of targetWidths) {
         const outName = `${baseName}-${w}w-hdr.jpg`;
-        const encoded = await encodeHdrVariant(fileBuf, w, preferKeepGainMap);
-        mode = encoded.mode;
-        if (encoded.mode === 'withGainMap') {
-          preferKeepGainMap = false;
-        }
-        fs.writeFileSync(path.join(cacheDir, outName), encoded.buf);
+        const buf = await encodeHdrVariant(fileBuf, w);
+        fs.writeFileSync(path.join(cacheDir, outName), buf);
       }
+      mode = 'keepGainMap';
       fs.writeFileSync(
         manifestPath,
         JSON.stringify({ mode, widths: targetWidths, width: hdrInfo.width, height: hdrInfo.height })
