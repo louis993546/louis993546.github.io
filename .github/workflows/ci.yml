@@ -26,10 +26,9 @@ jobs:
         uses: actions/cache@v6
         with:
           path: .image-cache
-          key: image-cache-${{ hashFiles('src/assets/images/**', 'src/utils/*.js', 'src/utils/*.swift') }}
+          key: image-cache-${{ hashFiles('src/utils/*.js', 'src/utils/*.swift') }}-${{ hashFiles('src/assets/images/**') }}
           restore-keys: |
-            image-cache-
-            Linux-image-cache-
+            image-cache-${{ hashFiles('src/utils/*.js', 'src/utils/*.swift') }}-
 
       - name: Build Static Site
         run: npm run build
