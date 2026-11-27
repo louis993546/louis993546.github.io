@@ -64,8 +64,80 @@ if !forceSdr,
 }
 
 let isoMarker = Data("urn:iso:std:iso:ts:21496:-1".utf8)
+let context = CIContext()
 
-func writePreservingGainMap(from source: CGImageSource, to url: URL) -> Bool {
+// Bake EXIF orientation into both primary pixels and ISO gain map (orientation = 1)
+// so downstream sharp().rotate().keepGainMap() avoids libvips autorot+gainmap bugs
+// while preserving bit-for-bit ISO 21496-1 metadata (zero brightness shift).
+func writeUprightIsoGainMapJpeg(
+    from source: CGImageSource,
+    sdrImage: CIImage,
+    colorSpace: CGColorSpace,
+    to url: URL
+) -> Bool {
+    guard #available(macOS 15.0, *),
+          let isoDict = CGImageSourceCopyAuxiliaryDataInfoAtIndex(
+              source,
+              0,
+              kCGImageAuxiliaryDataTypeISOGainMap
+          ) as? [CFString: Any],
+          let auxData = isoDict[kCGImageAuxiliaryDataInfoData] as? Data,
+          let auxDesc = isoDict[kCGImageAuxiliaryDataInfoDataDescription] as? [CFString: Any],
+          let auxW = auxDesc[kCGImagePropertyWidth] as? Int,
+          let auxH = auxDesc[kCGImagePropertyHeight] as? Int,
+          let auxBPR = auxDesc[kCGImagePropertyBytesPerRow] as? Int,
+          let auxPixFmt = auxDesc[kCGImagePropertyPixelFormat] as? UInt32,
+          // 1-channel 8-bit grayscale ('L008' / kCVPixelFormatType_OneComponent8)
+          auxPixFmt == 1278226488 else {
+        return false
+    }
+
+    guard let primaryCG = context.createCGImage(
+        sdrImage,
+        from: sdrImage.extent,
+        format: .RGBA8,
+        colorSpace: colorSpace
+    ) else {
+        return false
+    }
+
+    let props = CGImageSourceCopyPropertiesAtIndex(source, 0, nil) as? [CFString: Any]
+    let orientRaw = (props?[kCGImagePropertyOrientation] as? UInt32) ?? 1
+
+    var newIsoDict = isoDict
+    if orientRaw != 1 {
+        let grayCS = CGColorSpaceCreateDeviceGray()
+        guard let provider = CGDataProvider(data: auxData as CFData),
+              let auxCG = CGImage(
+                  width: auxW,
+                  height: auxH,
+                  bitsPerComponent: 8,
+                  bitsPerPixel: 8,
+                  bytesPerRow: auxBPR,
+                  space: grayCS,
+                  bitmapInfo: CGBitmapInfo(rawValue: 0),
+                  provider: provider,
+                  decode: nil,
+                  shouldInterpolate: false,
+                  intent: .defaultIntent
+              ) else {
+            return false
+        }
+
+        let auxCI = CIImage(cgImage: auxCG).oriented(forExifOrientation: Int32(orientRaw))
+        guard let rotCG = context.createCGImage(auxCI, from: auxCI.extent, format: .L8, colorSpace: grayCS),
+              let rotData = rotCG.dataProvider?.data as Data? else {
+            return false
+        }
+
+        var newDesc = auxDesc
+        newDesc[kCGImagePropertyWidth] = rotCG.width
+        newDesc[kCGImagePropertyHeight] = rotCG.height
+        newDesc[kCGImagePropertyBytesPerRow] = rotCG.bytesPerRow
+        newIsoDict[kCGImageAuxiliaryDataInfoData] = rotData as CFData
+        newIsoDict[kCGImageAuxiliaryDataInfoDataDescription] = newDesc
+    }
+
     guard let dst = CGImageDestinationCreateWithURL(
         url as CFURL,
         UTType.jpeg.identifier as CFString,
@@ -75,27 +147,29 @@ func writePreservingGainMap(from source: CGImageSource, to url: URL) -> Bool {
         return false
     }
 
-    let options: [CFString: Any] = [
+    CGImageDestinationAddImage(dst, primaryCG, [
         kCGImageDestinationLossyCompressionQuality: 0.95,
-        kCGImageDestinationPreserveGainMap: true
-    ]
-    CGImageDestinationAddImageFromSource(dst, source, 0, options as CFDictionary)
+        kCGImagePropertyOrientation: 1
+    ] as CFDictionary)
+    CGImageDestinationAddAuxiliaryDataInfo(
+        dst,
+        kCGImageAuxiliaryDataTypeISOGainMap,
+        newIsoDict as CFDictionary
+    )
+
     guard CGImageDestinationFinalize(dst),
           let data = try? Data(contentsOf: url) else {
         return false
     }
-    // Only keep ImageIO's direct transcode when it produced standard ISO 21496-1 metadata
-    // (avoids legacy Apple MPF JPEGs that fail sharp.keepGainMap()).
+
     return data.range(of: isoMarker) != nil
 }
 
-let context = CIContext()
-
 do {
     if isHdr, let hdr = hdrImg {
-        // Prefer direct ImageIO gain-map preservation (bit-for-bit identical ISO 21496-1 tmap metadata,
-        // zero brightness shift); fall back to CoreImage HDR encoding for legacy pre-iOS 18 HEICs.
-        if !writePreservingGainMap(from: imgSrc, to: outputURL) {
+        // Prefer upright ISO 21496-1 gain-map preservation (exact metadata, zero brightness shift);
+        // fall back to CoreImage HDR encoding for legacy pre-iOS 18 or multi-channel HEICs.
+        if !writeUprightIsoGainMapJpeg(from: imgSrc, sdrImage: sdrImg, colorSpace: colorSpace, to: outputURL) {
             try context.writeJPEGRepresentation(
                 of: sdrImg,
                 to: outputURL,

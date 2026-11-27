@@ -7,14 +7,23 @@ const HDR_CACHE_VERSION = 'v2';
 const HDR_WIDTHS = [600, 900, 1200, 1600, 2400];
 const HDR_JPEG_QUALITY = 85;
 
-async function encodeHdrVariant(fileBuf, width) {
-  return sharp(fileBuf)
-    .rotate()
-    .keepIccProfile()
-    .keepGainMap()
-    .resize({ width, withoutEnlargement: true })
-    .jpeg({ quality: HDR_JPEG_QUALITY })
-    .toBuffer();
+// Serialize sharp.keepGainMap() pipelines: libvips/libultrahdr corrupts JPEG
+// gain-map streams when multiple keepGainMap() operations run concurrently.
+let hdrEncodeQueue = Promise.resolve();
+
+function encodeHdrVariant(fileBuf, width) {
+  const run = () =>
+    sharp(fileBuf)
+      .rotate()
+      .keepIccProfile()
+      .keepGainMap()
+      .resize({ width, withoutEnlargement: true })
+      .jpeg({ quality: HDR_JPEG_QUALITY })
+      .toBuffer();
+
+  const result = hdrEncodeQueue.then(run, run);
+  hdrEncodeQueue = result.catch(() => {});
+  return result;
 }
 
 function buildHdrResult(inputPath, hash, targetWidths, width, height, mode, outputBaseDir) {
