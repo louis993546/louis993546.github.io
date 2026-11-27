@@ -3,42 +3,74 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import { detectHdr } from './hdr-detector.js';
+import { processHdrImage } from './hdr-image-processor.js';
 
-export async function processSdrImage(inputPath, outputBaseDir = '_site/assets/images/optimized') {
+const RASTER_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.tiff']);
+const SDR_WIDTHS = [600, 900, 1200, 1600];
+
+// Memoize in-flight and completed work per build so repeated images across pages are only processed once
+const buildMemo = new Map();
+
+export function clearImageMemo() {
+  buildMemo.clear();
+}
+
+export async function processImage(
+  inputPath,
+  outputBaseDir = '_site/assets/images/optimized',
+  { forceSdr = false } = {}
+) {
+  const memoKey = `${inputPath}::${outputBaseDir}::${forceSdr ? 'sdr' : 'auto'}`;
+  if (buildMemo.has(memoKey)) {
+    return buildMemo.get(memoKey);
+  }
+
+  const promise = processImageInternal(inputPath, outputBaseDir, { forceSdr });
+  buildMemo.set(memoKey, promise);
+  return promise;
+}
+
+// Backwards-compatible alias
+export const processSdrImage = processImage;
+
+async function processImageInternal(inputPath, outputBaseDir, { forceSdr = false } = {}) {
   if (!fs.existsSync(inputPath)) {
     return null;
   }
 
   const ext = path.extname(inputPath).toLowerCase();
-  // Only process raster formats (jpeg, jpg, png, webp, tiff)
-  if (!['.jpg', '.jpeg', '.png', '.webp', '.tiff'].includes(ext)) {
+  if (!RASTER_EXTENSIONS.has(ext)) {
     return null;
   }
 
   const fileBuf = fs.readFileSync(inputPath);
+  const meta = await sharp(fileBuf).metadata();
 
-  // Single unified check: if HDR, return detection info immediately without processing SDR variants
-  const hdrInfo = await detectHdr(fileBuf, inputPath);
-  if (hdrInfo.isHdr) {
-    return { isHdr: true, ...hdrInfo, path: inputPath };
+  let width = meta.autoOrient?.width ?? meta.width;
+  let height = meta.autoOrient?.height ?? meta.height;
+
+  if (!forceSdr) {
+    const hdrInfo = await detectHdr(fileBuf, inputPath, meta);
+    if (hdrInfo.isHdr) {
+      return processHdrImage(fileBuf, inputPath, hdrInfo, outputBaseDir);
+    }
+    width = hdrInfo.width;
+    height = hdrInfo.height;
+  }
+
+  if (!width || !height) {
+    return null;
   }
 
   const hash = crypto.createHash('sha256').update(fileBuf).digest('hex').slice(0, 12);
   const baseName = path.basename(inputPath, ext).replace(/[^a-zA-Z0-9_-]/g, '_');
-  
+
   const cacheDir = path.join('.image-cache', 'sdr-pipeline', hash);
   const targetDistDir = path.join(outputBaseDir, hash);
-  
-  const meta = await sharp(fileBuf).metadata();
-  if (!meta.width || !meta.height) {
-    return null;
-  }
 
-  // Standard responsive breakpoints
-  const standardWidths = [600, 900, 1200, 1600];
-  let targetWidths = standardWidths.filter(w => w <= meta.width);
+  let targetWidths = SDR_WIDTHS.filter((w) => w <= width);
   if (targetWidths.length === 0) {
-    targetWidths = [meta.width];
+    targetWidths = [width];
   }
 
   const isPng = ext === '.png';
@@ -46,9 +78,10 @@ export async function processSdrImage(inputPath, outputBaseDir = '_site/assets/i
 
   const results = {
     isHdr: false,
+    optimized: true,
     hash,
-    width: meta.width,
-    height: meta.height,
+    width,
+    height,
     avifSrcset: [],
     webpSrcset: [],
     fallbackSrcset: [],
@@ -58,40 +91,40 @@ export async function processSdrImage(inputPath, outputBaseDir = '_site/assets/i
   if (!fs.existsSync(cacheDir)) {
     fs.mkdirSync(cacheDir, { recursive: true });
 
-    for (const w of targetWidths) {
-      // 1. AVIF format
-      const avifName = `${baseName}-${w}w.avif`;
-      const avifBuf = await sharp(fileBuf)
-        .resize(w)
-        .avif({ quality: 75, effort: 4 })
-        .toBuffer();
-      fs.writeFileSync(path.join(cacheDir, avifName), avifBuf);
+    try {
+      for (const w of targetWidths) {
+        const resized = sharp(fileBuf).rotate().keepIccProfile().resize(w);
 
-      // 2. WebP format
-      const webpName = `${baseName}-${w}w.webp`;
-      const webpBuf = await sharp(fileBuf)
-        .resize(w)
-        .webp({ quality: 80, effort: 4 })
-        .toBuffer();
-      fs.writeFileSync(path.join(cacheDir, webpName), webpBuf);
+        const avifName = `${baseName}-${w}w.avif`;
+        const webpName = `${baseName}-${w}w.webp`;
+        const fallbackName = `${baseName}-${w}w.${fallbackExt}`;
 
-      // 3. Fallback format (JPEG / PNG)
-      const fallbackName = `${baseName}-${w}w.${fallbackExt}`;
-      const imgInstance = sharp(fileBuf).resize(w);
-      const fallbackBuf = isPng
-        ? await imgInstance.png({ compressionLevel: 8 }).toBuffer()
-        : await imgInstance.jpeg({ quality: 85, mozjpeg: true }).toBuffer();
-      fs.writeFileSync(path.join(cacheDir, fallbackName), fallbackBuf);
+        const [avifBuf, webpBuf, fallbackBuf] = await Promise.all([
+          resized.clone().avif({ quality: 75, effort: 2 }).toBuffer(),
+          resized.clone().webp({ quality: 80, effort: 4 }).toBuffer(),
+          isPng
+            ? resized.clone().png({ compressionLevel: 8 }).toBuffer()
+            : resized.clone().jpeg({ quality: 85, mozjpeg: true }).toBuffer()
+        ]);
+
+        fs.writeFileSync(path.join(cacheDir, avifName), avifBuf);
+        fs.writeFileSync(path.join(cacheDir, webpName), webpBuf);
+        fs.writeFileSync(path.join(cacheDir, fallbackName), fallbackBuf);
+      }
+    } catch (err) {
+      fs.rmSync(cacheDir, { recursive: true, force: true });
+      throw err;
     }
   }
 
-  // Ensure output directory exists in _site
   fs.mkdirSync(targetDistDir, { recursive: true });
-  
-  // Copy cached files to dist directory
+
   const files = fs.readdirSync(cacheDir);
   for (const f of files) {
-    fs.copyFileSync(path.join(cacheDir, f), path.join(targetDistDir, f));
+    const dstFile = path.join(targetDistDir, f);
+    if (!fs.existsSync(dstFile)) {
+      fs.copyFileSync(path.join(cacheDir, f), dstFile);
+    }
   }
 
   const webDistPath = `/assets/images/optimized/${hash}`;

@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
 
     steps:
       - name: Checkout Code
@@ -26,14 +26,41 @@ jobs:
         uses: actions/cache@v6
         with:
           path: .image-cache
-          key: ${{ runner.os }}-image-cache-${{ github.sha }}
+          key: image-cache-${{ hashFiles('src/assets/images/**', 'src/utils/*image-processor.js', 'src/utils/hdr-detector.js') }}
           restore-keys: |
-            ${{ runner.os }}-image-cache-
+            image-cache-
+            Linux-image-cache-
 
       - name: Build Static Site
         run: npm run build
 
-      - name: run Lighthouse CI
+      - name: Upload Built Site
+        uses: actions/upload-artifact@v7
+        with:
+          name: site-build
+          path: _site
+          retention-days: 1
+
+  lighthouse:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 'lts/*'
+
+      - name: Download Built Site
+        uses: actions/download-artifact@v8
+        with:
+          name: site-build
+          path: _site
+
+      - name: Run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.15.x
           lhci autorun
